@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JDMyIDCardController">
+            <connections>
+                <outlet property="QRCodeImageView" destination="tjd-OJ-XRC" id="yuv-7M-Dec"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBb-Q9-nbd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tjd-OJ-XRC">
+                            <rect key="frame" x="180" y="50" width="240" height="240"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="240" id="7yB-gj-Zqe"/>
+                                <constraint firstAttribute="width" constant="240" id="YBQ-b5-2bF"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="灌篮高手郭敬明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlD-Vo-rLh">
+                            <rect key="frame" x="230" y="315" width="140" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="打开手机扫一扫关注我吧。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vij-X5-m5x">
+                            <rect key="frame" x="210" y="354" width="180" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="UlD-Vo-rLh" firstAttribute="centerX" secondItem="DBb-Q9-nbd" secondAttribute="centerX" id="4P0-iU-zzJ"/>
+                        <constraint firstItem="tjd-OJ-XRC" firstAttribute="top" secondItem="DBb-Q9-nbd" secondAttribute="top" constant="50" id="Hvu-wI-xfx"/>
+                        <constraint firstItem="Vij-X5-m5x" firstAttribute="centerX" secondItem="DBb-Q9-nbd" secondAttribute="centerX" id="I23-a2-fLS"/>
+                        <constraint firstItem="tjd-OJ-XRC" firstAttribute="centerX" secondItem="DBb-Q9-nbd" secondAttribute="centerX" id="Wkq-i9-nnW"/>
+                        <constraint firstItem="UlD-Vo-rLh" firstAttribute="top" secondItem="tjd-OJ-XRC" secondAttribute="bottom" constant="25" id="c2u-Ki-kbn"/>
+                        <constraint firstItem="Vij-X5-m5x" firstAttribute="top" secondItem="UlD-Vo-rLh" secondAttribute="bottom" constant="15" id="s7w-3g-lxs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DBb-Q9-nbd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2rm-Qh-PoG"/>
+                <constraint firstItem="DBb-Q9-nbd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cpf-6H-SnQ"/>
+                <constraint firstAttribute="trailing" secondItem="DBb-Q9-nbd" secondAttribute="trailing" id="uMa-MQ-5Cm"/>
+                <constraint firstAttribute="bottom" secondItem="DBb-Q9-nbd" secondAttribute="bottom" constant="200" id="uU2-Q4-Wgn"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

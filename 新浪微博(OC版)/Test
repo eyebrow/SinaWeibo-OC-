@@ -1,0 +1,2427 @@
+{
+"allow_all_act_msg" = 0;
+"allow_all_comment" = 0;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.218.83.466.466.1024/006fgIzyjw8eyq1qmap2ej310g0k0aci.jpg";
+"avatar_large" = "http://tp1.sinaimg.cn/5722426620/180/5744359981/1";
+"bi_followers_count" = 1;
+"block_app" = 0;
+"block_word" = 0;
+city = 1;
+class = 1;
+"cover_image_phone" = "http://ww1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg";
+"created_at" = "Fri Oct 09 16:21:44 +0800 2015";
+"credit_score" = 80;
+description = "\U7d20\U98df\U4e3b\U4e49\U8005\U3001\U6e38\U620f\U7231\U597d\U8005\U3001iOS\U5f00\U53d1\U8005";
+domain = "";
+"favourites_count" = 3;
+"follow_me" = 0;
+"followers_count" = 4;
+following = 0;
+"friends_count" = 13;
+gender = m;
+"geo_enabled" = 1;
+id = 5722426620;
+idstr = 5722426620;
+lang = "zh-cn";
+location = "\U56db\U5ddd \U6210\U90fd";
+mbrank = 0;
+mbtype = 0;
+name = "\U8d2b\U7a77\U4e0d\U662f\U5171\U4ea7\U4e3b\U4e49";
+"online_status" = 0;
+"pagefriends_count" = 0;
+"profile_image_url" = "http://tp1.sinaimg.cn/5722426620/50/5744359981/1";
+"profile_url" = "u/5722426620";
+province = 51;
+ptype = 0;
+remark = "";
+"screen_name" = "\U8d2b\U7a77\U4e0d\U662f\U5171\U4ea7\U4e3b\U4e49";
+star = 0;
+"statuses_count" = 0;
+urank = 4;
+url = "";
+"user_ability" = 0;
+verified = 0;
+"verified_reason" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_trade" = "";
+"verified_type" = "-1";
+weihao = "";
+}
+2016-03-30 14:24:10.640 新浪微博(OC版)[14134:946004] <----> {
+ad =     (
+);
+advertises =     (
+);
+"has_unread" = 0;
+hasvisible = 0;
+interval = 2000;
+"max_id" = 3958661044394575;
+"next_cursor" = 3958661044394575;
+"previous_cursor" = 0;
+"since_id" = 3958732343819124;
+statuses =     (
+{
+"attitudes_count" = 39;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww4.sinaimg.cn/bmiddle/7049c17bjw1f2euhyv41ng2096055npe.gif";
+"comments_count" = 18;
+"created_at" = "Wed Mar 30 14:20:03 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958732343819124;
+idstr = 3958732343819124;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958732343819124;
+mlevel = 0;
+"original_pic" = "http://ww4.sinaimg.cn/large/7049c17bjw1f2euhyv41ng2096055npe.gif";
+"page_type" = 32;
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/7049c17bjw1f2euhyv41ng2096055npe.gif";
+}
+);
+"reposts_count" = 2;
+rid = "0_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#NBA\U7cbe\U5f69GIF# \U56de\U987e\U5e93\U91cc\U672c\U573a\U6bd4\U8d5b\U7b2c6\U8bb0\U4e09\U5206\Uff0c\U72ec\U5360\U5386\U53f2\U4e09\U5206\U699c21\U4f4d\U7684\U90a3\U4e00\U7403\Uff01\U5e93\U91cc75\U573a\U6bd4\U8d5b\U5355\U573a6\U8bb0\U4e09\U5206\Uff0c\U771f\U662f\U8ba9\U4eba\U671b\U5c18\U83ab\U53ca\U554a\Uff0c\U8fd8\U6ca1\U6709\U5176\U4ed6\U4eba\U80fd\U8d85\U8fc750\U573a\U5462~#NBA\U6570\U636e\U9177#";
+textLength = 149;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/7049c17bjw1f2euhyv41ng2096055npe.gif";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 20;
+"biz_feature" = 0;
+"comments_count" = 19;
+"created_at" = "Wed Mar 30 14:17:18 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958731651481163;
+idstr = 3958731651481163;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958731651481163;
+mlevel = 0;
+"pic_urls" =             (
+);
+"reposts_count" = 4;
+"retweeted_status" =             {
+"attitudes_count" = 200;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww4.sinaimg.cn/bmiddle/7049c17bjw1f2es1wcav3g20960964qr.gif";
+"comments_count" = 99;
+"created_at" = "Wed Mar 30 12:29:52 +0800 2016";
+"darwin_tags" =                 (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =                 (
+);
+id = 3958704610558793;
+idstr = 3958704610558793;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958704610558793;
+mlevel = 0;
+"original_pic" = "http://ww4.sinaimg.cn/large/7049c17bjw1f2es1wcav3g20960964qr.gif";
+"page_type" = 32;
+"pic_urls" =                 (
+{
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/7049c17bjw1f2es1wcav3g20960964qr.gif";
+}
+);
+"reposts_count" = 20;
+source = "<a href=\"http://app.weibo.com/t/feed/1sxHP2\" rel=\"nofollow\">\U4e13\U4e1a\U7248\U5fae\U535a</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#NBA\U7cbe\U5f69GIF# \U683c\U6797\U7838\U677f\U52a9\U653b\Uff01 #\U5947\U624dvs\U52c7\U58eb# \U4e0a\U4e00\U6b21\U683c\U6797\U5728\U534e\U76db\U987f\U62ff\U4e0b12\U520612\U52a9\U653b10\U7bee\U677f\U7684\U4e09\U53cc\U6570\U636e\Uff0c\U518d\U6218\U5947\U624d\Uff0c\U683c\U6797\U76ee\U524d\U5df2\U7ecf\U662f12\U520612\U7bee\U677f8\U52a9\U653b\Uff0c\U4e09\U53cc\U8fd8\U8fdc\U5417\Uff1f#NBA\U6570\U636e\U9177#";
+textLength = 155;
+"text_tag_tips" =                 (
+);
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/7049c17bjw1f2es1wcav3g20960964qr.gif";
+truncated = 0;
+user =                 {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =                 {
+"list_id" = 0;
+type = 0;
+};
+};
+rid = "1_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U672c\U8d5b\U5b63\U7b2c3\U6b21\U53ea\U5dee1\U52a9\U653b\U7684\U51c6\U4e09\U53cc[\U9634\U9669]\Uff0c\U540c\U65f6\U4e3a\U672c\U8d5b\U5b63\U7b2c31\U6b21\U4e24\U53cc\Uff0c\U672c\U8d5b\U5b63\U4e4b\U524d\Uff0c\U683c\U6797\U7684\U4e24\U53cc\U4e5f\U53ea\U670921\U6b21\U800c\U5df2\U3002";
+"text_tag_tips" =             (
+);
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 44;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww4.sinaimg.cn/bmiddle/61e36371jw1f2ev2yczchj20gl093q4k.jpg";
+cardid = "star_005";
+"comments_count" = 23;
+"created_at" = "Wed Mar 30 14:15:14 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958731131509389;
+idstr = 3958731131509389;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 1;
+mid = 3958731131509389;
+mlevel = 0;
+"original_pic" = "http://ww4.sinaimg.cn/large/61e36371jw1f2ev2yczchj20gl093q4k.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/61e36371jw1f2ev2yczchj20gl093q4k.jpg";
+}
+);
+"reposts_count" = 10;
+rid = "2_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U79d1\U6bd4\Uff1a\U6bcf\U5929\U558a\U9192\U6211\U7684\U662f\U672a\U77e5\U7684\U6311\U6218\U3011\U201c\U6bcf\U5929\U558a\U8d77\U6211\U7684\U4e0d\U662f\U95f9\U949f\Uff0c\U662f\U672a\U77e5\U7684\U6311\U6218\U3002\U201d\U79d1\U6bd4\U8bf4\U9053\U3002\U5728\U88ab\U95ee\U5230\U5982\U679c\U65f6\U5149\U91cd\U6765\Uff0c\U4ed6\U4f1a\U544a\U8bc917\U5c81\U7684\U81ea\U5df1\U4ec0\U4e48\U65f6\Uff0c\U79d1\U6bd4\U8868\U793a\Uff1a\U201c\U65e0\U8bba\U6211\U8bf4\U4ec0\U4e48\Uff0c\U90a3\U65f6\U5019\U7684\U6211\U90fd\U4e0d\U4f1a\U542c\U81ea\U5df1\U7684\U3002\U201d\U8c08\U5230\U81ea\U5df1\U672c\U8d5b\U5b63\U7684\U6700\U540e\U4e00\U573a\U6bd4\U8d5b\Uff0c\U79d1\U6bd4\U8868\U793a\Uff1a\U201c\U6211\U4f1a\U50cf\U5bf9\U5f85\U5176\U4ed6\U6bd4\U8d5b\U4e00\U6837\U5bf9\U5f85\U8fd9\U573a\U6bd4\U8d5b\Uff0c\U6211\U77e5\U9053\U5c4a\U65f6\U4f1a\U5f88\U75af...\U5168\U6587\Uff1a http://m.weibo.cn/1642292081/3958731131509389";
+textLength = 286;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/61e36371jw1f2ev2yczchj20gl093q4k.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 169;
+"biz_feature" = 0;
+"comments_count" = 21;
+"created_at" = "Wed Mar 30 14:00:33 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958727436419891;
+idstr = 3958727436419891;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958727436419891;
+mlevel = 0;
+"pic_urls" =             (
+);
+"reposts_count" = 18;
+"retweeted_status" =             {
+"attitudes_count" = 858;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww3.sinaimg.cn/bmiddle/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+"comments_count" = 107;
+"created_at" = "Wed Mar 30 12:35:28 +0800 2016";
+"darwin_tags" =                 (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =                 (
+);
+id = 3958706029416109;
+idstr = 3958706029416109;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958706029416109;
+mlevel = 0;
+"original_pic" = "http://ww3.sinaimg.cn/large/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+"page_type" = 32;
+"pic_urls" =                 (
+{
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+}
+);
+"reposts_count" = 114;
+source = "<a href=\"http://app.weibo.com/t/feed/1sxHP2\" rel=\"nofollow\">\U4e13\U4e1a\U7248\U5fae\U535a</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#NBA\U9177\U56fe# \U4eca\U5929\U7684\U8428\U683c\U5e05\U4e0d\U5e05\Uff01\Uff01\Uff01";
+textLength = 32;
+"text_tag_tips" =                 (
+);
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+truncated = 0;
+user =                 {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =                 {
+"list_id" = 0;
+type = 0;
+};
+};
+rid = "3_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U8428\U683c\U56de\U6765\U7684\U7b2c\U4e00\U5929\Uff0c\U5e93\U91cc\U5728\U8d5b\U540e\U5bf9\U4ed6\U8bf4\Uff1b\U201c\U4f60\U7684\U51fa\U73b0\U6fc0\U53d1\U4e86\U6211\U4eec\Uff01\U201d[\U5fc3]";
+"text_tag_tips" =             (
+);
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 119;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww1.sinaimg.cn/bmiddle/61e36371jw1f2et6spb87g207q044npe.gif";
+cardid = "star_005";
+"comments_count" = 99;
+"created_at" = "Wed Mar 30 13:45:03 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958723531207336;
+idstr = 3958723531207336;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 1;
+mid = 3958723531207336;
+mlevel = 0;
+"original_pic" = "http://ww1.sinaimg.cn/large/61e36371jw1f2et6spb87g207q044npe.gif";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/61e36371jw1f2et6spb87g207q044npe.gif";
+}
+);
+"reposts_count" = 121;
+rid = "4_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U60e8\Uff01\U521d\U4e2d\U6bd4\U8d5b\U7edd\U6740\U7403\U505c\U5728\U7bee\U8116\U5b50\U4e0a\U8f93\U6389\U6bd4\U8d5b\U3011\U5728\U4e00\U573a\U521d\U4e2d\U7bee\U7403\U961f\U4e4b\U95f4\U7684\U6bd4\U8d5b\U4e2d\Uff0c\U8eab\U7a7f\U9ed1\U8272\U6218\U888d\U7684\U7403\U961f\U7ec8\U573a\U524d\U843d\U540e\Uff0c\U6b64\U65f6\U4ed6\U4eec\U624b\U63e1\U6700\U540e\U4e00\U653b\U7684\U7403\U6743\Uff0c\U53ea\U8981\U5c06\U7403\U6253\U8fdb\U5c31\U80fd\U6273\U5e73\U6216\U8005\U7edd\U6740\U3002\U7136\U800c\Uff0c\U4e0d\U5e78\U7684\U4e8b\U60c5\U8fd8\U662f\U53d1\U751f\U4e86\U2026\U2026\U9ed1\U82723\U53f7\U7403\U5458\U63a5\U7403\U540e\U653b\U51fb\U7bee\U7b50\Uff0c\U5728\U7ec8\U573a\U54e8\U54cd\U4e4b\U524d\U5c06\U7403\U6295\U51fa\U3002\U7bee\U7403\U5728\U7b50\U5185\U5f39\U4e86\U4e24\U4e0b\U4e4b\U540e\Uff0c\U795e\U5947\U5730\U505c\U5728\U4e86\U7bee...\U5168\U6587\Uff1a http://m.weibo.cn/1642292081/3958723531207336";
+textLength = 369;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/61e36371jw1f2et6spb87g207q044npe.gif";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 144;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww2.sinaimg.cn/bmiddle/61e36371jw1f2est417vrj20i209ojtd.jpg";
+cardid = "star_005";
+"comments_count" = 104;
+"created_at" = "Wed Mar 30 13:20:12 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958717282694002;
+idstr = 3958717282694002;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 1;
+mid = 3958717282694002;
+mlevel = 0;
+"original_pic" = "http://ww2.sinaimg.cn/large/61e36371jw1f2est417vrj20i209ojtd.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/61e36371jw1f2est417vrj20i209ojtd.jpg";
+}
+);
+"reposts_count" = 35;
+rid = "5_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U6000\U7279\U585e\U5fb7\Uff1a\U6211\U4e0d\U662f\U4e3a\U4e86\U94b1\U800c\U6253\U7403\U3011\U201c\U5f53\U4f60\U662f\U4e2a\U5b69\U5b50\U7684\U65f6\U5019\Uff0c\U4f60\U6c38\U8fdc\U4e0d\U4f1a\U77e5\U9053\U90a3\U4e9b\U4eba\U80fd\U8d5a\U591a\U5c11\U94b1\Uff0c\U201d\U6000\U7279\U585e\U5fb7\U8bf4\Uff0c\U201c\U4f60\U53ea\U77e5\U9053\U4ed6\U4eec\U80fd\U4e0a\U7535\U89c6\Uff0c\U4f60\U5bf9\U6570\U5b57\U8fd8\U6ca1\U6709\U6982\U5ff5\U3002\U6211\U5f53\U65f6\U53ea\U77e5\U9053\U6211\U60f3\U5728\U6211\U68a6\U60f3\U7684\U7bee\U7403\U9886\U57df\U6709\U6240\U6210\U529f\Uff0c\U80fd\U8d5a\U94b1\U5f53\U7136\U662f\U4ef6\U597d\U4e8b\Uff0c\U4f46\U4f60\U4e0d\U80fd\U53ea\U8ffd\U9010\U91d1\U94b1\U3002\U6211\U77e5\U9053\U6211\U5728\U573a\U4e0a\U80fd\U505a\U4ec0\U4e48\Uff0c\U5982\U679c\U6211\U4eec\U80fd\U8d62\U7403\Uff0c\U5f88\U591a\U4e8b\U60c5\U5c31\U4f1a...\U5168\U6587\Uff1a http://m.weibo.cn/1642292081/3958717282694002";
+textLength = 290;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/61e36371jw1f2est417vrj20i209ojtd.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 132;
+"biz_feature" = 0;
+"biz_ids" =             (
+0
+);
+"bmiddle_pic" = "http://ww2.sinaimg.cn/bmiddle/61e36371jw1f2esqmqm7uj20hc09t76x.jpg";
+cardid = "star_005";
+"comments_count" = 168;
+"created_at" = "Wed Mar 30 12:54:07 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958710718440489;
+idstr = 3958710718440489;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 1;
+mid = 3958710718440489;
+mlevel = 0;
+"original_pic" = "http://ww2.sinaimg.cn/large/61e36371jw1f2esqmqm7uj20hc09t76x.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/61e36371jw1f2esqmqm7uj20hc09t76x.jpg";
+}
+);
+"reposts_count" = 62;
+rid = "6_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U62c9\U585e\U5c14\U56e0\U5f55\U50cf\U4e8b\U4ef6\U5df2\U53d7\U5230\U6e56\U4eba\U5185\U90e8\U5b64\U7acb\Uff1f\U3011\U8baf \U636eESPN\U8bb0\U8005Baxter Holmes\U548cMarc Stein\U62a5\U9053\Uff0c\U6e56\U4eba\U961f\U5185\U90e8\U6d88\U606f\U4eba\U58eb\U900f\U9732\Uff0c\U65b0\U79c0\U4e39\U5409\U6d1b-\U62c9\U585e\U5c14\U6b63\U5728\U9762\U4e34\U4e00\U6b21\U201c\U4fe1\U4efb\U5371\U673a\U201d\U3002\U4e0a\U5468\Uff0c\U4e00\U6bb5\U62c9\U585e\U5c14\U548c\U5c3c\U514b-\U6768\U4e4b\U95f4\U5bf9\U8bdd\U7684\U79c1\U4eba\U89c6\U9891\U88ab\U66dd\U5149\Uff0c\U6768\U5728\U6ca1\U6709\U610f\U8bc6\U5230\U81ea\U5df1\U88ab\U5f55\U50cf\U7684\U60c5\U51b5\U4e0b\U5411\U62c9\U585e\U5c14\U5168\U76d8\U9053\U51fa\U4e86\U81ea\U5df1\U7684\U5077\U8165\U5b9e\U60c5\U3002...\U5168\U6587\Uff1a http://m.weibo.cn/1642292081/3958710718440489";
+textLength = 287;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/61e36371jw1f2esqmqm7uj20hc09t76x.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 858;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww3.sinaimg.cn/bmiddle/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+"comments_count" = 107;
+"created_at" = "Wed Mar 30 12:35:28 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958706029416109;
+idstr = 3958706029416109;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958706029416109;
+mlevel = 0;
+"original_pic" = "http://ww3.sinaimg.cn/large/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+"page_type" = 32;
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+}
+);
+"reposts_count" = 114;
+rid = "7_0_1_2666872505534451700";
+source = "<a href=\"http://app.weibo.com/t/feed/1sxHP2\" rel=\"nofollow\">\U4e13\U4e1a\U7248\U5fae\U535a</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#NBA\U9177\U56fe# \U4eca\U5929\U7684\U8428\U683c\U5e05\U4e0d\U5e05\Uff01\Uff01\Uff01";
+textLength = 32;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/7049c17bjw1f2es73kafej20go0bvq4j.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 121;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww4.sinaimg.cn/bmiddle/61e36371jw1f2eqbnodhvj20he09oq3f.jpg";
+cardid = "star_005";
+"comments_count" = 66;
+"created_at" = "Wed Mar 30 12:30:03 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958704661327457;
+idstr = 3958704661327457;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 1;
+mid = 3958704661327457;
+mlevel = 0;
+"original_pic" = "http://ww4.sinaimg.cn/large/61e36371jw1f2eqbnodhvj20he09oq3f.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/61e36371jw1f2eqbnodhvj20he09oq3f.jpg";
+}
+);
+"reposts_count" = 12;
+rid = "8_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U4e50\U798f\U4e0e\U9a91\U58eb\U7403\U8ff7\U6253\U8da3\Uff1a\U522b\U4ea4\U6613\U6211\Uff0c\U597d\U5417\Uff1f\U3011\U636eESPN\U9a91\U58eb\U961f\U8bb0\U8005Dave McMenamin\U62a5\U9053\Uff0c\U9a91\U58eb\U961f\U524d\U950b\U51ef\U6587-\U4e50\U798f\U5728\U4eca\U5929\U4e0e\U706b\U7bad\U961f\U7684\U8d5b\U524d\U4e0e\U4e00\U4f4d\U5c0f\U7403\U8ff7\U5f00\U8d77\U4e86\U73a9\U7b11\U3002\U9a91\U58eb\U961f\U5728\U6b64\U524d\U4e3a\U7403\U8ff7\U7ec4\U7ec7\U4e86\U4e00\U573a\U6bd4\U8d5b\Uff0c\U6bd4\U8d5b\U7684\U8d62\U5bb6\U5c06\U62c5\U4efb\U9a91\U58eb\U961f\U4e00\U5929\U7684\U603b\U7ecf\U7406\Uff0c\U4f53\U9a8c\U5927\U536b-\U683c\U91cc\U82ac\U7684\U65e5\U5e38\U751f\U6d3b\U3002\U867d\U7136\U8fd9\U4e00\U804c\U4f4d\U53ea\U662f\U540d\U4e49\U4e0a\U7684\Uff0c\U4f46\U4e50\U798f\U8fd8\U662f\U8ddf\U4ed6\U201c\U63a2...\U5168\U6587\Uff1a http://m.weibo.cn/1642292081/3958704661327457";
+textLength = 346;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/61e36371jw1f2eqbnodhvj20he09oq3f.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 109;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww3.sinaimg.cn/bmiddle/61e36371jw1f2epyewq7xj20gs0943z6.jpg";
+cardid = "star_005";
+"comments_count" = 67;
+"created_at" = "Wed Mar 30 12:05:03 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958698365168050;
+idstr = 3958698365168050;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 1;
+mid = 3958698365168050;
+mlevel = 0;
+"original_pic" = "http://ww3.sinaimg.cn/large/61e36371jw1f2epyewq7xj20gs0943z6.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/61e36371jw1f2epyewq7xj20gs0943z6.jpg";
+}
+);
+"reposts_count" = 10;
+rid = "9_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U65af\U8482\U82ac-\U6770\U514b\U900a\Uff1a\U9686\U591a\U5e94\U653e\U4e0b\U5c0f\U725b\U90a3\U6bb5\U7ecf\U5386\U3011\U201c\U4ed6\U5e94\U8be5\U8ba9\U8fd9\U6bb5\U7ecf\U5386\U8fc7\U53bb\U4e86\Uff0c\U4f46\U662f\U5f53\U4ed6\U5bf9\U9635\U5c0f\U725b\U961f\U7684\U65f6\U5019\Uff0c\U4ed6\U80af\U5b9a\U4f1a\U6709\U4e9b\U7279\U6b8a\U7684\U60c5\U611f\Uff0c\U201d\U6770\U514b\U900a\U8bf4\U9053\Uff0c\U201c\U4efb\U4f55\U65f6\U5019\U5f53\U4e00\U652f\U7403\U961f\U5728\U5b63\U540e\U8d5b\U51b7\U85cf\U4f60\Uff0c\U8ba9\U4f60\U4e0d\U80fd\U52a0\U76df\U53e6\U4e00\U652f\U7403\U961f\U4e4b\U65f6\Uff0c\U8fd9\U79cd\U611f\U89c9\U5f88\U4f24\U5fc3\Uff0c\U56e0\U4e3a\U6211\U4e5f\U6709\U8fc7\U8fd9\U6837\U7684\U7ecf\U5386\U3002\U8fd9\U4f1a\U5728\U4f60\U7684\U804c\U4e1a\U751f\U6daf\U91cc\U7559\U4e0b\U4e2a\U6c61\U70b9\Uff0c\U65e0\U8bba\U662f\U4f5c\U4e3a\U4e00...\U5168\U6587\Uff1a http://m.weibo.cn/1642292081/3958698365168050";
+textLength = 403;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/61e36371jw1f2epyewq7xj20gs0943z6.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+annotations =             (
+{
+"client_mblogid" = "6ef11573-c5cd-4f2c-8308-af25c941bb4e";
+},
+{
+"mapi_request" = 1;
+}
+);
+"attitudes_count" = 1853;
+"biz_feature" = 4294967300;
+"bmiddle_pic" = "http://ww1.sinaimg.cn/bmiddle/68418ffbjw1f2erb930f8j21be0qon17.jpg";
+"comments_count" = 604;
+"created_at" = "Wed Mar 30 12:04:08 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958698139784655;
+idstr = 3958698139784655;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958698139784655;
+mlevel = 0;
+"original_pic" = "http://ww1.sinaimg.cn/large/68418ffbjw1f2erb930f8j21be0qon17.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/68418ffbjw1f2erb930f8j21be0qon17.jpg";
+}
+);
+"reposts_count" = 324;
+rid = "10_0_1_2666872505534451700";
+source = "<a href=\"http://app.weibo.com/t/feed/4J5QJ9\" rel=\"nofollow\">\U5c0f\U7c73\U624b\U673a5</a>";
+"source_allowclick" = 1;
+"source_type" = 1;
+text = "\U201c\U6211\U5c31\U60f3\U505a\U66f4\U597d\U7684\U7535\U996d\U7172\Uff0c\U518d\U5356\U5230\U65e5\U672c\U53bb\Uff01\U201d \U5185\U85e4\U6bc5\U5148\U751f\U662f\U538b\U529bIH\U7535\U996d\U7172\U53d1\U660e\U4eba\Uff0c\U5df2\U7ecf\U9000\U4f11\U4e86\Uff0c\U5927\U5bb6\U95ee\U4ed6\U4e3a\U5565\U91cd\U65b0\U51fa\U5c71\U505a\U7c73\U5bb6\U7535\U996d\U7172\U65f6\Uff0c\U4ed6\U5c31\U662f\U8fd9\U6837\U56de\U7b54\U7684\U3002\U4e00\U4e2a\U597d\U7684\U5de5\U7a0b\U5e08\Uff0c\U5c31\U662f\U6c38\U8fdc\U5e0c\U671b\U505a\U51fa\U66f4\U597d\U7684\U4e1c\U897f\Uff01";
+textLength = 183;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/68418ffbjw1f2erb930f8j21be0qon17.jpg";
+truncated = 0;
+user =             {
+"ability_tags" = "\U5185\U5bb9\U8d44\U8baf";
+"allow_all_act_msg" = 0;
+"allow_all_comment" = 0;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.1080.1080.1024/68418ffbjw8ehsussziz7j20u00u00zq.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1749127163/180/5698832636/1";
+"bi_followers_count" = 852;
+"block_app" = 1;
+"block_word" = 0;
+city = 8;
+class = 1;
+"cover_image_phone" = "http://ww1.sinaimg.cn/crop.0.0.640.640.640/6cf8d7ebjw1ehfr4xa8psj20hs0hsgpg.jpg";
+"created_at" = "Mon May 31 23:07:59 +0800 2010";
+"credit_score" = 80;
+description = "\U5c0f\U7c73\U8463\U4e8b\U957f\Uff0c\U91d1\U5c71\U8f6f\U4ef6\U8463\U4e8b\U957f\U3002\U4e1a\U4f59\U7231\U597d\U662f\U5929\U4f7f\U6295\U8d44\U3002";
+domain = leijun;
+"favourites_count" = 42;
+"follow_me" = 0;
+"followers_count" = 13054618;
+following = 1;
+"friends_count" = 1002;
+gender = m;
+"geo_enabled" = 1;
+id = 1749127163;
+idstr = 1749127163;
+lang = "zh-cn";
+location = "\U5317\U4eac \U6d77\U6dc0\U533a";
+mbrank = 6;
+mbtype = 12;
+name = "\U96f7\U519b";
+"online_status" = 0;
+"pagefriends_count" = 2;
+"profile_image_url" = "http://tp4.sinaimg.cn/1749127163/50/5698832636/1";
+"profile_url" = leijun;
+province = 11;
+ptype = 1;
+remark = "";
+"screen_name" = "\U96f7\U519b";
+star = 0;
+"statuses_count" = 5850;
+urank = 37;
+url = "http://www.leijun.com";
+"user_ability" = 12;
+verified = 1;
+"verified_contact_email" = "";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 1;
+"verified_reason" = "\U5c0f\U7c73\U521b\U529e\U4eba\Uff0c\U8463\U4e8b\U957f\U517cCEO\Uff1b\U91d1\U5c71\U8f6f\U4ef6\U8463\U4e8b\U957f\Uff1b\U5929\U4f7f\U6295\U8d44\U4eba\U3002";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = 1181;
+"verified_type" = 0;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 496;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww2.sinaimg.cn/bmiddle/7049c17bjw1f2eqku4j4rg2096096x6q.gif";
+"comments_count" = 343;
+"created_at" = "Wed Mar 30 11:38:51 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958691776607200;
+idstr = 3958691776607200;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958691776607200;
+mlevel = 0;
+"original_pic" = "http://ww2.sinaimg.cn/large/7049c17bjw1f2eqku4j4rg2096096x6q.gif";
+"page_type" = 32;
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/7049c17bjw1f2eqku4j4rg2096096x6q.gif";
+}
+);
+"reposts_count" = 95;
+rid = "11_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#\U5947\U624dvs\U52c7\U58eb# \U5c0f\U5b66\U751f\U88ab\U5899\U5e3d\U4e86[\U9634\U9669]#NBA\U7cbe\U5f69GIF#";
+textLength = 45;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/7049c17bjw1f2eqku4j4rg2096096x6q.gif";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 442;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww3.sinaimg.cn/bmiddle/61e36371jw1f2eqaj47sdg207p04ckjm.gif";
+cardid = "star_005";
+"comments_count" = 194;
+"created_at" = "Wed Mar 30 11:29:01 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958689302353019;
+idstr = 3958689302353019;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958689302353019;
+mlevel = 0;
+"original_pic" = "http://ww3.sinaimg.cn/large/61e36371jw1f2eqaj47sdg207p04ckjm.gif";
+"page_type" = 32;
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/61e36371jw1f2eqaj47sdg207p04ckjm.gif";
+}
+);
+"reposts_count" = 248;
+rid = "12_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#GIF# \U6208\U767b\U8fd9\U4e2a\U5b9e\U6218\U7f5a\U7403\U7ebf\U5185\U4e00\U6b65\U8d77\U8df3\U66b4\U6263\U4f60\U6253\U51e0\U5206\Uff1f";
+textLength = 48;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/61e36371jw1f2eqaj47sdg207p04ckjm.gif";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 243;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww2.sinaimg.cn/bmiddle/61e36371jw1f2ephukt3jj20ho09wtan.jpg";
+cardid = "star_005";
+"comments_count" = 156;
+"created_at" = "Wed Mar 30 11:15:03 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958685787225283;
+idstr = 3958685787225283;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 1;
+mid = 3958685787225283;
+mlevel = 0;
+"original_pic" = "http://ww2.sinaimg.cn/large/61e36371jw1f2ephukt3jj20ho09wtan.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/61e36371jw1f2ephukt3jj20ho09wtan.jpg";
+}
+);
+"reposts_count" = 181;
+rid = "13_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U79d1\U6bd4\Uff1a\U9001\U978b\U6ca1\U6709\U6807\U51c6\Uff0c\U53ea\U8981\U6709\U4eba\U8981\U5c31\U4f1a\U9001\U3011\U4e8b\U5b9e\U4e0a\Uff0c\U79d1\U6bd4\U6bcf\U6b21\U5ba2\U573a\U6bd4\U8d5b\U90fd\U4f1a\U5e26\U4e0a\U4e94\U53cc\U978b\Uff0c\U6700\U591a\U4e00\U6b21\U5e26\U4e86\U4e03\U53cc\Uff0c\U56e0\U4e3a\U4ed6\U77e5\U9053\U9700\U6c42\U91cf\U592a\U9ad8\U3002\U6240\U4ee5\Uff0c\U79d1\U6bd4\U5bf9\U4e8e\U7b7e\U540d\U978b\U8d60\U9001\U5bf9\U8c61\U6709\U4f55\U8981\U6c42\U5417\Uff1f\U201c\U4e3a\U4ec0\U4e48\U8981\U6709\U8981\U6c42\Uff1f\U4f60\U60f3\U8981\U4e00\U53cc\U5417\Uff1f\U201d\U79d1\U6bd4\U7b11\U7740\U8bf4\U9053\Uff0c\U201c\U6ca1\U6709\U8981\U6c42\Uff0c\U901a\U5e38\U6765\U8bf4\Uff0c\U53ea\U8981\U6709\U4eba\U95ee\Uff0c\U6211\U5c31\U4f1a\U9001\U7ed9\U4ed6\U4eec\Uff0c\U6211\U8fd8\U6709\U5f88\U591a\U8d27\U5462\Uff0c\U6240\U4ee5\U6211...\U5168\U6587\Uff1a http://m.weibo.cn/1642292081/3958685787225283";
+textLength = 294;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/61e36371jw1f2ephukt3jj20ho09wtan.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 149;
+"biz_feature" = 0;
+"biz_ids" =             (
+0
+);
+"bmiddle_pic" = "http://ww1.sinaimg.cn/bmiddle/61e36371jw1f2ep9t1thoj20h909i3zf.jpg";
+cardid = "star_005";
+"comments_count" = 80;
+"created_at" = "Wed Mar 30 10:53:44 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958680423019368;
+idstr = 3958680423019368;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958680423019368;
+mlevel = 0;
+"original_pic" = "http://ww1.sinaimg.cn/large/61e36371jw1f2ep9t1thoj20h909i3zf.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/61e36371jw1f2ep9t1thoj20h909i3zf.jpg";
+}
+);
+"reposts_count" = 60;
+rid = "14_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U706b\U7bad\U5c06\U4e8e10\U6708\U643a\U624b\U9e48\U9e55\U5f81\U6218NBA\U4e2d\U56fd\U8d5b\U3011NBA\U4eca\U5929\U5b98\U65b9\U5ba3\U5e03\Uff0c\U706b\U7bad\U961f\U4e0b\U8d5b\U5b63\U5c06\U643a\U624b\U9e48\U9e55\U961f\U6765\U5230\U4e2d\U56fd\U7684\U4e0a\U6d77\U548c\U5317\U4eac\U5f81\U6218\U5b63\U524d\U8d5b\U3002\n\U5317\U4eac\U65f6\U95f410\U670810\U65e5\Uff0c\U4e24\U961f\U5c06\U5728\U4e0a\U6d77\U6885\U8d5b\U5fb7\U65af-\U5954\U9a70\U6587\U5316\U4e2d\U5fc3\U8fdb\U884c\U9996\U573a\U6bd4\U8d5b\Uff0c10\U670813\U65e5\Uff0c\U4e24\U961f\U79fb\U5e08\U5317\U4eac\U4e50\U89c6\U4f53\U80b2\U751f\U6001\U4e2d\U5fc3\Uff08\U539f\U4e94\U68f5\U677e\U4f53\U80b2\U9986\Uff09\U518d\U6b21\U4ea4\U624b\U3002http://t.cn/RqZ8Vad";
+textLength = 261;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/61e36371jw1f2ep9t1thoj20h909i3zf.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.179.179.1024/61e36371gw1epuy49f5vpj2050050jrj.jpg";
+"avatar_large" = "http://tp2.sinaimg.cn/1642292081/180/40080250721/0";
+"bi_followers_count" = 867;
+"block_app" = 1;
+"block_word" = 0;
+cardid = "star_005";
+city = 9;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/61e36371gw1epuy88kbk9j20pk08cwfc.jpg";
+"cover_image_phone" = "http://ww2.sinaimg.cn/crop.0.0.0.0/61e36371jw1ej39ylighxj20vk0vk77s.jpg";
+"created_at" = "Thu Aug 27 15:00:13 +0800 2009";
+"credit_score" = 80;
+description = "\U864e\U6251\U7bee\U7403\U6c38\U4e0d\U7184\Uff01";
+domain = hoopchina;
+"favourites_count" = 0;
+"follow_me" = 0;
+"followers_count" = 2704138;
+following = 1;
+"friends_count" = 915;
+gender = f;
+"geo_enabled" = 0;
+id = 1642292081;
+idstr = 1642292081;
+lang = "zh-cn";
+location = "\U4e0a\U6d77 \U8679\U53e3\U533a";
+mbrank = 3;
+mbtype = 12;
+name = "\U864e\U6251\U7bee\U7403";
+"online_status" = 0;
+"pagefriends_count" = 7;
+"profile_image_url" = "http://tp2.sinaimg.cn/1642292081/50/40080250721/0";
+"profile_url" = hoopchina;
+province = 31;
+ptype = 0;
+remark = "";
+"screen_name" = "\U864e\U6251\U7bee\U7403";
+star = 0;
+"statuses_count" = 91422;
+urank = 35;
+url = "http://nba.hupu.com";
+"user_ability" = 0;
+verified = 1;
+"verified_contact_email" = "sunhao@hupu.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U864e\U6251\U7bee\U7403\U7f51\U5b98\U65b9\U5fae\U535a nba.hupu.com";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 3;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 206;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww1.sinaimg.cn/bmiddle/7049c17bjw1f2ep0r42crg20ak0akhdv.gif";
+"comments_count" = 202;
+"created_at" = "Wed Mar 30 10:45:07 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958678249276505;
+idstr = 3958678249276505;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958678249276505;
+mlevel = 0;
+"original_pic" = "http://ww1.sinaimg.cn/large/7049c17bjw1f2ep0r42crg20ak0akhdv.gif";
+"page_type" = 32;
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/7049c17bjw1f2ep0r42crg20ak0akhdv.gif";
+}
+);
+"reposts_count" = 42;
+rid = "15_0_1_2666872505534451700";
+source = "<a href=\"http://app.weibo.com/t/feed/1sxHP2\" rel=\"nofollow\">\U4e13\U4e1a\U7248\U5fae\U535a</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#\U706b\U7badvs\U9a91\U58eb# \U8a79\U7687\U73b0\U5728\U7684\U5fc3\U60c5\U662f\Uff1f\U6bd4\U8d5b\U8fd8\U670917\U79d2\Uff0c\U706b\U7bad101-97\U9006\U8f6c\U9886\U5148\U9a91\U58eb\U3002#NBA\U7cbe\U5f69GIF#";
+textLength = 81;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/7049c17bjw1f2ep0r42crg20ak0akhdv.gif";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 78;
+"biz_feature" = 0;
+"biz_ids" =             (
+230442
+);
+"comments_count" = 42;
+"created_at" = "Wed Mar 30 10:33:44 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958675389348766;
+idstr = 3958675389348766;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958675389348766;
+mlevel = 0;
+"page_type" = 32;
+"pic_urls" =             (
+);
+"reposts_count" = 72;
+rid = "16_0_1_2666872505534451700";
+source = "<a href=\"http://app.weibo.com/t/feed/cUcI1A\" rel=\"nofollow\">\U5206\U4eab\U6309\U94ae</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#\U706b\U7badvs\U9a91\U58eb# \U5927\U80e1\U5b50\U5e26\U961f\U8ffd\U5206\U5566\Uff01#NBA\U96f6\U8ddd\U79bb# \Uff08\U5206\U4eab\U81ea @\U79d2\U62cd\Uff09 http://t.cn/RqZ3E2C";
+textLength = 79;
+"text_tag_tips" =             (
+);
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 411;
+"biz_feature" = 0;
+"biz_ids" =             (
+230442
+);
+"comments_count" = 120;
+"created_at" = "Wed Mar 30 10:24:49 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958673145574659;
+idstr = 3958673145574659;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958673145574659;
+mlevel = 0;
+"page_type" = 32;
+"pic_urls" =             (
+);
+"reposts_count" = 199;
+rid = "17_0_1_2666872505534451700";
+source = "<a href=\"http://app.weibo.com/t/feed/cUcI1A\" rel=\"nofollow\">\U5206\U4eab\U6309\U94ae</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "#\U5947\U624dvs\U52c7\U58eb# \U4f60\U5e93\U65e9\U65e9\U5c31\U51c6\U5907\U597d\U4e86\Uff01#NBA\U96f6\U8ddd\U79bb# \Uff08\U5206\U4eab\U81ea @\U79d2\U62cd\Uff09 http://t.cn/RqZ3M2y";
+textLength = 81;
+"text_tag_tips" =             (
+);
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+"attitudes_count" = 116;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww1.sinaimg.cn/bmiddle/7049c17bjw1f2envzgo89j20az0gi423.jpg";
+"comments_count" = 124;
+"created_at" = "Wed Mar 30 10:06:14 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958668463998193;
+idstr = 3958668463998193;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958668463998193;
+mlevel = 0;
+"original_pic" = "http://ww1.sinaimg.cn/large/7049c17bjw1f2envzgo89j20az0gi423.jpg";
+"pic_urls" =             (
+{
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/7049c17bjw1f2envzgo89j20az0gi423.jpg";
+},
+{
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/7049c17bjw1f2enw1cscyj20b00giadw.jpg";
+},
+{
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/7049c17bjw1f2enw2nja6j20gi0b00wx.jpg";
+},
+{
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/7049c17bjw1f2enw03068j20b00gidk2.jpg";
+},
+{
+"thumbnail_pic" = "http://ww4.sinaimg.cn/thumbnail/7049c17bjw1f2enw0q4wij20gi0az43w.jpg";
+},
+{
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/7049c17bjw1f2enw202hsj20az0gi0vv.jpg";
+}
+);
+"reposts_count" = 42;
+rid = "18_0_1_2666872505534451700";
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U5a01\U5c11\U6253\U94c1 \U6d3b\U585e88-82\U80dc\U96f7\U9706\U3011\U96f7\U97068\U8fde\U80dc\U906d\U7ec8\U7ed3\Uff0c\U675c\U5170\U7279\U548c\U4f0a\U5df4\U5361\U4f11\U6218\Uff0c\U5a01\U5c1128\U6295\U4ec5\U4e2d8\U5f97\U523024\U52064\U7bee\U677f6\U52a9\U653b\Uff0c\U574e\U727914\U520614\U7bee\U677f\Uff0c\U7ef4\U7279\U65af8\U4e2d1\U3002\U6d3b\U585e\U961f\U5fb7\U62c9\U8499\U5fb7\U4e24\U53cc13\U520615\U7bee\U677f\Uff0c\U54c8\U91cc\U65af17\U52067\U7bee\U677f\Uff0c\U83ab\U91cc\U65af24\U52067\U7bee\U677f\Uff0c\U96f7\U5409\U9762\U5bf9\U65e7\U4e3b13\U52066\U52a9\U653b\U3002http://t.cn/RqZuN4e";
+textLength = 232;
+"text_tag_tips" =             (
+);
+"thumbnail_pic" = "http://ww1.sinaimg.cn/thumbnail/7049c17bjw1f2envzgo89j20az0gi423.jpg";
+truncated = 0;
+user =             {
+"allow_all_act_msg" = 1;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva2.sinaimg.cn/crop.50.50.126.126.1024/7049c17bjw8eujf8ahs4zj206b06bt8n.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1883881851/180/5733103170/1";
+"bi_followers_count" = 110;
+"block_app" = 0;
+"block_word" = 0;
+city = 1000;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/7049c17bgw1epvr30cb20j20pk08cgnj.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/7049c17bjw1ew6fe6zfgmj20hs0hrdie.jpg";
+"created_at" = "Mon Dec 06 11:44:29 +0800 2010";
+"credit_score" = 80;
+description = "NBA\U4e2d\U56fd\U516c\U53f8\U6210\U7acb\U4e8e2008\U5e741\U6708\Uff0c\U4e3b\U8981\U7ba1\U7406NBA\U5728\U5927\U4e2d\U534e\U533a\U7684\U8054\U8d5b\U76f8\U5173\U4e1a\U52a1\U3002\U6b64\U524d, NBA\U4e8e1992\U5e74\U5728\U9999\U6e2f\U8bbe\U7acb\U4e86\U5927\U4e2d\U534e\U533a\U7684\U9996\U4e2a\U529e\U4e8b\U5904\U3002NBA\U4e0e\U4e2d\U56fd\U7bee\U7403\U754c\U7684\U5408\U4f5c\U53ca\U4ea4\U6d41\U6e90\U4e8e\U6570\U5341\U5e74\U524d\Uff0c\U5305\U62ec1985\U5e74\U9996\U6b21\U9080\U8bf7\U4e2d\U56fd\U56fd\U5bb6\U961f\U524d\U5f80\U7f8e\U56fd\U6bd4\U8d5b\U3002\U76ee\U524dNBA\U4e0e\U4e2d\U56fd\U4f17\U591a\U5168\U56fd\U53ca\U5730\U65b9\U7535\U89c6\U53f0\U548c\U6570\U5b57\U5a92\U4f53\U7ed3\U76df\Uff0c\U5176\U4e2d\U5305\U62ec\U4e0eNBA\U5408\U4f5c\U903e20\U5e74\Uff0c\U5411\U5168\U56fd\U8f6c\U64adNBA\U8d5b\U4e8b\U7684\U4e2d\U592e\U7535\U89c6\U53f0\U3002\U8054\U76df\U6bcf\U5e74\U4e3a\U7403\U8ff7\U4e3e\U529e\U6570\U767e\U573a\U57fa\U5c42\U7bee\U7403\U6d3b\U52a8\U3001\U793e\U533a\U6d3b\U52a8, \U5e76\U4e0e\U591a\U5bb6\U672c\U5730\U53ca\U56fd\U9645\U4f01\U4e1a\U5efa\U7acb\U4e86\U5e02\U573a\U5408\U4f5c\U4f19\U4f34\U5173\U7cfb\U3002";
+domain = nba;
+"favourites_count" = 28;
+"follow_me" = 0;
+"followers_count" = 31749089;
+following = 1;
+"friends_count" = 185;
+gender = m;
+"geo_enabled" = 1;
+id = 1883881851;
+idstr = 1883881851;
+lang = "zh-cn";
+location = "\U5317\U4eac";
+mbrank = 1;
+mbtype = 2;
+name = NBA;
+"online_status" = 0;
+"pagefriends_count" = 38;
+"profile_image_url" = "http://tp4.sinaimg.cn/1883881851/50/5733103170/1";
+"profile_url" = nba;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = NBA;
+star = 0;
+"statuses_count" = 101061;
+urank = 33;
+url = "http://china.nba.com/";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "nbachinainfo@nba.com";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "NBA\U5b98\U65b9\U5fae\U535a";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 7;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+},
+{
+annotations =             (
+{
+"client_mblogid" = "da6fd3c4-07a2-48d5-8968-d0912cf0c35a";
+},
+{
+"mapi_request" = 1;
+}
+);
+"attitudes_count" = 614;
+"biz_feature" = 0;
+"comments_count" = 334;
+"created_at" = "Wed Mar 30 09:46:01 +0800 2016";
+"darwin_tags" =             (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =             (
+);
+id = 3958663384981152;
+idstr = 3958663384981152;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958663384981152;
+mlevel = 0;
+"pic_urls" =             (
+);
+pid = 3958328331563225;
+"reposts_count" = 721;
+"retweeted_status" =             {
+"attitudes_count" = 496;
+"biz_feature" = 0;
+"bmiddle_pic" = "http://ww3.sinaimg.cn/bmiddle/e9212d4fjw1f2djtsp8x9j20u01hcn07.jpg";
+"comments_count" = 1814;
+"created_at" = "Tue Mar 29 11:30:03 +0800 2016";
+"darwin_tags" =                 (
+);
+favorited = 0;
+geo = "<null>";
+"hot_weibo_tags" =                 (
+);
+id = 3958327174149525;
+idstr = 3958327174149525;
+"in_reply_to_screen_name" = "";
+"in_reply_to_status_id" = "";
+"in_reply_to_user_id" = "";
+isLongText = 0;
+mid = 3958327174149525;
+mlevel = 0;
+"original_pic" = "http://ww3.sinaimg.cn/large/e9212d4fjw1f2djtsp8x9j20u01hcn07.jpg";
+"page_type" = 32;
+"pic_urls" =                 (
+{
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/e9212d4fjw1f2djtsp8x9j20u01hcn07.jpg";
+}
+);
+"reposts_count" = 6793;
+source = "<a href=\"http://weibo.com/\" rel=\"nofollow\">\U5fae\U535a weibo.com</a>";
+"source_allowclick" = 0;
+"source_type" = 1;
+text = "\U3010\U66f4\U5feb\U66f4\U5f3a\Uff0c\U4e0d\U6b62\U56db\U5929\U7ebf\Uff01#\U5c0f\U7c73\U8def\U7531\U56683# \U6b63\U5f0f\U53d1\U5e03\Uff01\U30114\U6839\U5916\U7f6e\U5168\U5411\U591a\U632f\U5b50\U9ad8\U589e\U76ca\U5929\U7ebf\Uff0c802.11ac \U5343\U5146Wi-Fi\Uff0c\U4fe1\U53f7\U66f4\U597d\Uff0c\U8986\U76d6\U9762\U79ef\U66f4\U5927\U3002128M\U8d85\U5927Flash\U914d\U7f6e\U8ba9\U8fd0\U884c\U66f4\U7a33\U5b9a\Uff0c\U4e13\U5c5eApp\U63d0\U4f9b\U4e30\U5bcc\U7684\U5f71\U97f3\U5185\U5bb9\U548c\U597d\U73a9\U7684\U529f\U80fd\U63d2\U4ef6\U3002149\U5143\Uff0c\U4f9d\U65e7\U6027\U4ef7\U6bd4\U9996\U9009\Uff0c4\U67086\U65e5\U5f00\U552e\Uff0c\U8f6c\U53d1\U9001\U51fa\U65b0\U54c15\U53f0\Uff01";
+textLength = 249;
+"text_tag_tips" =                 (
+);
+"thumbnail_pic" = "http://ww3.sinaimg.cn/thumbnail/e9212d4fjw1f2djtsp8x9j20u01hcn07.jpg";
+truncated = 0;
+user =                 {
+"allow_all_act_msg" = 0;
+"allow_all_comment" = 1;
+"avatar_hd" = "http://tva4.sinaimg.cn/crop.60.0.1434.1434.1024/e9212d4fgw1et0dmucvmhj216613zn5f.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/3911265615/180/40088727861/0";
+"bi_followers_count" = 111;
+"block_app" = 0;
+"block_word" = 0;
+city = 8;
+class = 1;
+"cover_image" = "http://ww4.sinaimg.cn/crop.0.0.920.300/e9212d4fgw1eyueqrh7a1j20pk08caau.jpg";
+"cover_image_phone" = "http://ww4.sinaimg.cn/crop.0.0.0.0/e9212d4fjw1esz1ttj16oj20ku0kujsu.jpg";
+"created_at" = "Tue Nov 19 10:25:24 +0800 2013";
+"credit_score" = 80;
+description = "\U5c0f\U7c73\U8def\U7531\U5668\Uff1a\U5185\U7f6e1T\U786c\U76d8\U3001\U4f01\U4e1a\U7ea7\U6027\U80fd\U7684\U53cc\U9891AC\U8def\U7531\Uff1b\U5c0f\U7c73\U8def\U7531\U5668mini\Uff1a\U53cc\U9891AC\U667a\U80fd\U8def\U7531\Uff0c129\U5143\U9ad8\U6027\U4ef7\U6bd4\Uff0c\U6b63\U5728\U53d1\U552e\Uff01\U5173\U6ce8\U5b98\U65b9\U5fae\U4fe1\Uff1aMiWiFiRom \U83b7\U53d6\U66f4\U591a\U8d44\U8baf\U670d\U52a1\U3002";
+domain = xiaomiluyouqi;
+"favourites_count" = 622;
+"follow_me" = 0;
+"followers_count" = 2002842;
+following = 0;
+"friends_count" = 249;
+gender = f;
+"geo_enabled" = 1;
+id = 3911265615;
+idstr = 3911265615;
+lang = "zh-cn";
+location = "\U5317\U4eac \U6d77\U6dc0\U533a";
+mbrank = 0;
+mbtype = 0;
+name = "\U5c0f\U7c73\U8def\U7531\U5668";
+"online_status" = 0;
+"pagefriends_count" = 26;
+"profile_image_url" = "http://tp4.sinaimg.cn/3911265615/50/40088727861/0";
+"profile_url" = xiaomiluyouqi;
+province = 11;
+ptype = 0;
+remark = "";
+"screen_name" = "\U5c0f\U7c73\U8def\U7531\U5668";
+star = 0;
+"statuses_count" = 2932;
+urank = 25;
+url = "";
+"user_ability" = 4;
+verified = 1;
+"verified_contact_email" = "xiaomiluyouqi@xiaomi.com";
+"verified_contact_mobile" = "400-100-5678";
+"verified_contact_name" = "";
+"verified_level" = 3;
+"verified_reason" = "\U5317\U4eac\U5c0f\U7c73\U79d1\U6280\U6709\U9650\U8d23\U4efb\U516c\U53f8";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = "";
+"verified_type" = 2;
+weihao = "";
+};
+userType = 0;
+visible =                 {
+"list_id" = 0;
+type = 0;
+};
+};
+rid = "19_0_1_2666872505534451700";
+source = "<a href=\"http://app.weibo.com/t/feed/4J5QJ9\" rel=\"nofollow\">\U5c0f\U7c73\U624b\U673a5</a>";
+"source_allowclick" = 1;
+"source_type" = 1;
+text = "[good] //@\U5510\U6c90thomas: \U56db\U6839\U5168\U5411\U9ad8\U589e\U76ca\U5929\U7ebf\Uff0c128M \U5927\U5b58\U50a8\U8fd0\U884c\U66f4\U7a33\U5b9a\Uff0c\U4f9d\U7136\U662fac\U8def\U7531\U5668\U6027\U4ef7\U6bd4\U4e4b\U738b\Uff01";
+"text_tag_tips" =             (
+);
+truncated = 0;
+user =             {
+"ability_tags" = "\U5185\U5bb9\U8d44\U8baf";
+"allow_all_act_msg" = 0;
+"allow_all_comment" = 0;
+"avatar_hd" = "http://tva1.sinaimg.cn/crop.0.0.1080.1080.1024/68418ffbjw8ehsussziz7j20u00u00zq.jpg";
+"avatar_large" = "http://tp4.sinaimg.cn/1749127163/180/5698832636/1";
+"bi_followers_count" = 852;
+"block_app" = 1;
+"block_word" = 0;
+city = 8;
+class = 1;
+"cover_image_phone" = "http://ww1.sinaimg.cn/crop.0.0.640.640.640/6cf8d7ebjw1ehfr4xa8psj20hs0hsgpg.jpg";
+"created_at" = "Mon May 31 23:07:59 +0800 2010";
+"credit_score" = 80;
+description = "\U5c0f\U7c73\U8463\U4e8b\U957f\Uff0c\U91d1\U5c71\U8f6f\U4ef6\U8463\U4e8b\U957f\U3002\U4e1a\U4f59\U7231\U597d\U662f\U5929\U4f7f\U6295\U8d44\U3002";
+domain = leijun;
+"favourites_count" = 42;
+"follow_me" = 0;
+"followers_count" = 13054618;
+following = 1;
+"friends_count" = 1002;
+gender = m;
+"geo_enabled" = 1;
+id = 1749127163;
+idstr = 1749127163;
+lang = "zh-cn";
+location = "\U5317\U4eac \U6d77\U6dc0\U533a";
+mbrank = 6;
+mbtype = 12;
+name = "\U96f7\U519b";
+"online_status" = 0;
+"pagefriends_count" = 2;
+"profile_image_url" = "http://tp4.sinaimg.cn/1749127163/50/5698832636/1";
+"profile_url" = leijun;
+province = 11;
+ptype = 1;
+remark = "";
+"screen_name" = "\U96f7\U519b";
+star = 0;
+"statuses_count" = 5850;
+urank = 37;
+url = "http://www.leijun.com";
+"user_ability" = 12;
+verified = 1;
+"verified_contact_email" = "";
+"verified_contact_mobile" = "";
+"verified_contact_name" = "";
+"verified_level" = 1;
+"verified_reason" = "\U5c0f\U7c73\U521b\U529e\U4eba\Uff0c\U8463\U4e8b\U957f\U517cCEO\Uff1b\U91d1\U5c71\U8f6f\U4ef6\U8463\U4e8b\U957f\Uff1b\U5929\U4f7f\U6295\U8d44\U4eba\U3002";
+"verified_reason_modified" = "";
+"verified_reason_url" = "";
+"verified_source" = "";
+"verified_source_url" = "";
+"verified_state" = 0;
+"verified_trade" = 1181;
+"verified_type" = 0;
+weihao = "";
+};
+userType = 0;
+visible =             {
+"list_id" = 0;
+type = 0;
+};
+}
+);
+"total_number" = 150;
+"uve_blank" = "-1";
+}
