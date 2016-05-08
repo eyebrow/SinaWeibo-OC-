@@ -10,6 +10,9 @@
 
 @interface JDCustomTabBarItem : UIButton
 
+/**
+ *  用于提取属性的item：
+ */
 @property (nonatomic, strong) UITabBarItem *item;
 
 @end

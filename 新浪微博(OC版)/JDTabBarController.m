@@ -14,7 +14,7 @@
 #import "JDNavigationController.h"
 #import "JDCustomTabBar.h"
 
-@interface JDTabBarController ()
+@interface JDTabBarController () <JDCustomTabBarDelegate>
 
 /**
  *  主页：
@@ -32,7 +32,6 @@
  *  个人中心：
  */
 @property (nonatomic, strong) JDProfileController *profileVC;
-
 /**
  *  自定义的tabBar：
  */
@@ -47,6 +46,7 @@
     // 创建自定义的tabBar：
     JDCustomTabBar *customTabBar = [[JDCustomTabBar alloc] init];
     customTabBar.frame = self.tabBar.frame;
+    customTabBar.delegate = self;
     self.customTabBar = customTabBar;
 }
 
@@ -119,6 +119,13 @@
     JDNavigationController *navVC = [[JDNavigationController alloc] initWithRootViewController:viewController];
     [self addChildViewController:navVC];
     return viewController;
+}
+
+#pragma mark - JDCustomTabBarDelegate:
+
+-(void)customTabBar:(JDCustomTabBar *)customTabBar didClickWithStartPoint:(NSInteger)startPoint endPoint:(NSInteger)endPoint {
+    // 一行代码切换控制器：
+    self.selectedIndex = endPoint;
 }
 
 @end

@@ -75,12 +75,13 @@
     [self addSubview:customItem];
     // 事件监听：
     [customItem addTarget:self action:@selector(clickToSwitchOtherViewController:) forControlEvents:UIControlEventTouchDown];
-    // 存入数组：
-    [self.customItemsArray addObject:customItem];
     // 默认首页按钮被选中：
-    if (self.customItemsArray.count == 1) {
+    if (self.customItemsArray.count == 0) {
         [self clickToSwitchOtherViewController:customItem];
     }
+    customItem.tag = self.customItemsArray.count;
+    // 存入数组：
+    [self.customItemsArray addObject:customItem];
 }
 
 /**
@@ -89,6 +90,11 @@
  *  @param sender
  */
 -(void)clickToSwitchOtherViewController:(UIButton *)sender {
+    JDLog(@"startPoint:%ld -- endPoint:%ld", self.currentButton.tag, sender.tag);
+    if ([self.delegate respondsToSelector:@selector(customTabBar:didClickWithStartPoint:endPoint:)]) {
+        [self.delegate customTabBar:self didClickWithStartPoint:self.currentButton.tag endPoint:sender.tag];
+    }
+
     self.currentButton.selected = NO;
     sender.selected = YES;
     self.currentButton = sender;
