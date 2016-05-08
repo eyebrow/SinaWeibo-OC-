@@ -91,13 +91,26 @@
  */
 -(void)clickToSwitchOtherViewController:(UIButton *)sender {
     JDLog(@"startPoint:%ld -- endPoint:%ld", self.currentButton.tag, sender.tag);
+    // 实现代理方法：
     if ([self.delegate respondsToSelector:@selector(customTabBar:didClickWithStartPoint:endPoint:)]) {
         [self.delegate customTabBar:self didClickWithStartPoint:self.currentButton.tag endPoint:sender.tag];
     }
-
+    // 按钮选中：
     self.currentButton.selected = NO;
     sender.selected = YES;
     self.currentButton = sender;
+    // 按钮点击缩放动画：
+    [UIView animateWithDuration:0.16f animations:^{
+        sender.transform = CGAffineTransformMakeScale(0.7f, 0.7f);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.16f animations:^{
+            sender.transform = CGAffineTransformMakeScale(1.3f, 1.3f);
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.16f animations:^{
+                sender.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
+            }];
+        }];
+    }];
 }
 
 /**
