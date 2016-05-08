@@ -1,0 +1,40 @@
+//
+//  JDWeiboHeaders.pch
+//  新浪微博(OC版)
+//
+//  Created by JiangDi on 16/5/8.
+//  Copyright © 2016年 Google. All rights reserved.
+//
+
+#ifndef JDWeiboHeaders_pch
+#define JDWeiboHeaders_pch
+/**-----------------------------------------------------------*/
+/**-----------------------快捷代码区：--------------------------*/
+
+// 屏幕尺寸相关：
+#define JDScreenBounds [UIScreen mainScreen].bounds
+#define JDScreenSize [UIScreen mainScreen].bounds.size
+#define JDScreenWidth [UIScreen mainScreen].bounds.size.width
+#define JDScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 颜色相关：
+#define JDRandomNumber(number) arc4random_uniform(number)
+#define JDColor(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define JDRandomColor JDColor(JDRandomNumber(256), JDRandomNumber(256), JDRandomNumber(256), 1.0f)
+
+/**-----------------------头文件区：----------------------------*/
+
+#import "UIImage+JDExtension.h"
+
+
+/**-----------------------其他：-------------------------------*/
+
+// 自定义Log输出：
+#ifdef DEBUG // 如果是调试阶段，则JDLog就是NSLog；
+#define JDLog(...) NSLog(__VA_ARGS__)
+#else // 如果是发布阶段，则将JDLog替换为空白。
+#define JDLog(...)
+#endif
+
+/**-----------------------------------------------------------*/
+#endif
