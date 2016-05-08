@@ -33,20 +33,33 @@
  */
 @property (nonatomic, strong) JDProfileController *profileVC;
 
+/**
+ *  自定义的tabBar：
+ */
+@property (nonatomic, strong) JDCustomTabBar *customTabBar;
+
 @end
 
 @implementation JDTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 创建自定义的tabBar：
+    JDCustomTabBar *customTabBar = [[JDCustomTabBar alloc] init];
+    customTabBar.frame = self.tabBar.frame;
+    self.customTabBar = customTabBar;
 }
 
+// 视图即将加载时调用：
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     // 将系统tabBar替换为自定义tabBar：
-    JDCustomTabBar *customTabBar = [[JDCustomTabBar alloc] init];
-    customTabBar.frame = self.tabBar.frame;
-    [self.view addSubview:customTabBar];
+    [self.view addSubview:self.customTabBar];
+}
+
+// 视图加载完成后调用：
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     // 将系统的tabBar删除：
     [self.tabBar removeFromSuperview];
 }
@@ -102,6 +115,7 @@
     [viewController.tabBarItem setImage:[[UIImage imageNamed:norImageName] getOriginalImage]];
     [viewController.tabBarItem setSelectedImage:[[UIImage imageNamed:selImageName] getOriginalImage]];
     [viewController.view setBackgroundColor:JDRandomColor];
+    self.customTabBar.item = viewController.tabBarItem;
     JDNavigationController *navVC = [[JDNavigationController alloc] initWithRootViewController:viewController];
     [self addChildViewController:navVC];
     return viewController;

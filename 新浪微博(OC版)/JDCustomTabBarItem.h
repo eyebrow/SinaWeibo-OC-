@@ -10,4 +10,6 @@
 
 @interface JDCustomTabBarItem : UIButton
 
+@property (nonatomic, strong) UITabBarItem *item;
+
 @end
