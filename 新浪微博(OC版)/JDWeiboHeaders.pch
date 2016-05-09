@@ -26,6 +26,7 @@
 
 #import "UIImage+JDExtension.h"
 #import "UIView+JDExtension.h"
+#import "UIBarButtonItem+JDExtension.h"
 
 /**-----------------------其他：-------------------------------*/
 

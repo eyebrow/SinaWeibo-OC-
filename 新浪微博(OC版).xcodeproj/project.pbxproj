@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA05FE9D1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA05FE9C1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m */; };
 		EAA944561CDEE87800928507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944551CDEE87800928507 /* main.m */; };
 		EAA944611CDEE87800928507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA944601CDEE87800928507 /* Assets.xcassets */; };
 		EAA9446F1CDEE87800928507 /* _____OC__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9446E1CDEE87800928507 /* _____OC__Tests.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA05FE9B1CE00C10004C6756 /* UIBarButtonItem+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JDExtension.h"; sourceTree = "<group>"; };
+		EA05FE9C1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JDExtension.m"; sourceTree = "<group>"; };
 		EAA944511CDEE87800928507 /* 新浪微博(OC版).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博(OC版).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA944551CDEE87800928507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAA944601CDEE87800928507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 				EAA944A91CDEEF5C00928507 /* UIImage+JDExtension.m */,
 				EAA944B61CDF21A200928507 /* UIView+JDExtension.h */,
 				EAA944B71CDF21A200928507 /* UIView+JDExtension.m */,
+				EA05FE9B1CE00C10004C6756 /* UIBarButtonItem+JDExtension.h */,
+				EA05FE9C1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				EAA944A01CDEEDF700928507 /* JDProfileController.m in Sources */,
 				EAA944B21CDEF71500928507 /* JDCustomTabBar.m in Sources */,
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,
+				EA05FE9D1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
