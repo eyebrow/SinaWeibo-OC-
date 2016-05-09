@@ -36,6 +36,18 @@
     self.link = link;
 }
 
+/**
+ *  点击关闭扫码界面：
+ *
+ *  @param sender
+ */
+- (IBAction)clickToCloseScanCodePage:(UIBarButtonItem *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+/**
+ *  扫描过程中执行的操作：
+ */
 -(void)scanning {
     self.barCodeConstraintY.constant += 5;
     if (self.barCodeConstraintY.constant >= 128) {

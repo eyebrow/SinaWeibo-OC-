@@ -60,16 +60,35 @@
                                     <constraint firstAttribute="width" constant="218" id="wuJ-7H-MJA"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUW-jy-cdx">
+                                <rect key="frame" x="270" y="434" width="60" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LxE-Ee-fNG"/>
+                                    <constraint firstAttribute="width" constant="60" id="X6K-mC-ajW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="我的名片" backgroundImage="qrcode_button_background">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToShowMyIDCard:" destination="nTO-6k-cRf" eventType="touchUpInside" id="XRd-Yh-BXK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sLD-8O-049" firstAttribute="centerX" secondItem="HhT-Uh-nWg" secondAttribute="centerX" id="BI9-fL-OVD"/>
                             <constraint firstItem="sLD-8O-049" firstAttribute="centerY" secondItem="HhT-Uh-nWg" secondAttribute="centerY" id="aYf-1I-Hhp"/>
+                            <constraint firstItem="FUW-jy-cdx" firstAttribute="centerX" secondItem="HhT-Uh-nWg" secondAttribute="centerX" id="n3Q-90-Hpb"/>
+                            <constraint firstItem="FUW-jy-cdx" firstAttribute="top" secondItem="sLD-8O-049" secondAttribute="bottom" constant="25" id="rJx-2F-0u7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="二维码" id="HLR-uJ-WQ9">
                         <barButtonItem key="leftBarButtonItem" title="关闭" id="Ovu-bn-gyd">
                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clickToCloseScanCodePage:" destination="nTO-6k-cRf" id="PSP-jZ-L3Z"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="相册" id="Asf-ew-qc7">
                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -148,6 +167,9 @@
                     <navigationItem key="navigationItem" title="条形码" id="pVf-XO-S9d">
                         <barButtonItem key="leftBarButtonItem" title="关闭" id="dyS-ye-t4I">
                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clickToCloseScanCodePage:" destination="Nd4-dg-Hzo" id="D8J-Sa-Owy"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="相册" id="Sjc-wO-mJX">
                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -182,6 +204,7 @@
     </scenes>
     <resources>
         <image name="qrcode_border" width="50" height="50"/>
+        <image name="qrcode_button_background" width="34" height="32"/>
         <image name="qrcode_scanline_barcode" width="248" height="124"/>
         <image name="qrcode_scanline_qrcode" width="218" height="170"/>
         <image name="qrcode_tabbar_background" width="1" height="80"/>
