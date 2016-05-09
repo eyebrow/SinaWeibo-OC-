@@ -11,6 +11,9 @@
 
 @interface JDBarCodeController ()
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *barCodeConstraintY;
+@property (nonatomic, strong) CADisplayLink *link;
+
 @end
 
 @implementation JDBarCodeController
@@ -27,6 +30,17 @@
     [self.navigationController.tabBarItem setSelectedImage:[UIImage imageNamed:@"qrcode_tabbar_icon_barcode"]];
     [self.navigationController.tabBarItem setSelectedImage:[[UIImage imageNamed:@"qrcode_tabbar_icon_barcode_highlighted"] getOriginalImage]];
     [self.navigationController.tabBarController.tabBar setTintColor:[UIColor orangeColor]];
+    
+    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(scanning)];
+    [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+    self.link = link;
+}
+
+-(void)scanning {
+    self.barCodeConstraintY.constant += 5;
+    if (self.barCodeConstraintY.constant >= 128) {
+        self.barCodeConstraintY.constant = -128;
+    }
 }
 
 @end
