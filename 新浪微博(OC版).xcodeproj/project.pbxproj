@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EA05FE9D1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA05FE9C1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m */; };
+		EA05FEA11CE017C1004C6756 /* JDScanCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA05FEA01CE017C1004C6756 /* JDScanCodeController.m */; };
+		EA05FEA31CE017F0004C6756 /* JDScanCodeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA05FEA21CE017F0004C6756 /* JDScanCodeController.storyboard */; };
+		EA05FEA61CE02E32004C6756 /* JDQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA05FEA51CE02E32004C6756 /* JDQRCodeController.m */; };
+		EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA05FEA81CE02E4E004C6756 /* JDBarCodeController.m */; };
 		EAA944561CDEE87800928507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944551CDEE87800928507 /* main.m */; };
 		EAA944611CDEE87800928507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA944601CDEE87800928507 /* Assets.xcassets */; };
 		EAA9446F1CDEE87800928507 /* _____OC__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9446E1CDEE87800928507 /* _____OC__Tests.m */; };
@@ -45,6 +49,13 @@
 /* Begin PBXFileReference section */
 		EA05FE9B1CE00C10004C6756 /* UIBarButtonItem+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JDExtension.h"; sourceTree = "<group>"; };
 		EA05FE9C1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JDExtension.m"; sourceTree = "<group>"; };
+		EA05FE9F1CE017C1004C6756 /* JDScanCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDScanCodeController.h; sourceTree = "<group>"; };
+		EA05FEA01CE017C1004C6756 /* JDScanCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDScanCodeController.m; sourceTree = "<group>"; };
+		EA05FEA21CE017F0004C6756 /* JDScanCodeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDScanCodeController.storyboard; sourceTree = "<group>"; };
+		EA05FEA41CE02E32004C6756 /* JDQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDQRCodeController.h; sourceTree = "<group>"; };
+		EA05FEA51CE02E32004C6756 /* JDQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDQRCodeController.m; sourceTree = "<group>"; };
+		EA05FEA71CE02E4E004C6756 /* JDBarCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBarCodeController.h; sourceTree = "<group>"; };
+		EA05FEA81CE02E4E004C6756 /* JDBarCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBarCodeController.m; sourceTree = "<group>"; };
 		EAA944511CDEE87800928507 /* 新浪微博(OC版).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博(OC版).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA944551CDEE87800928507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAA944601CDEE87800928507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +116,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA05FE9E1CE0173F004C6756 /* ScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				EA05FE9F1CE017C1004C6756 /* JDScanCodeController.h */,
+				EA05FEA01CE017C1004C6756 /* JDScanCodeController.m */,
+				EA05FEA21CE017F0004C6756 /* JDScanCodeController.storyboard */,
+				EA05FEA41CE02E32004C6756 /* JDQRCodeController.h */,
+				EA05FEA51CE02E32004C6756 /* JDQRCodeController.m */,
+				EA05FEA71CE02E4E004C6756 /* JDBarCodeController.h */,
+				EA05FEA81CE02E4E004C6756 /* JDBarCodeController.m */,
+			);
+			name = ScanCode;
+			sourceTree = "<group>";
+		};
 		EAA944481CDEE87800928507 = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +281,7 @@
 		EAA944971CDEEDA500928507 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA05FE9E1CE0173F004C6756 /* ScanCode */,
 				EAA9449A1CDEEDD100928507 /* JDHomeController.h */,
 				EAA9449B1CDEEDD100928507 /* JDHomeController.m */,
 			);
@@ -418,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA05FEA31CE017F0004C6756 /* JDScanCodeController.storyboard in Resources */,
 				EAA944611CDEE87800928507 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +472,7 @@
 			files = (
 				EAA9449C1CDEEDD100928507 /* JDHomeController.m in Sources */,
 				EAA944A41CDEEE0D00928507 /* JDMessageController.m in Sources */,
+				EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */,
 				EAA944911CDEE9F900928507 /* JDAppDelegate.m in Sources */,
 				EAA944961CDEEC0E00928507 /* JDTabBarController.m in Sources */,
 				EAA944561CDEE87800928507 /* main.m in Sources */,
@@ -454,6 +482,8 @@
 				EAA944B51CDEF73900928507 /* JDCustomTabBarItem.m in Sources */,
 				EAA944A01CDEEDF700928507 /* JDProfileController.m in Sources */,
 				EAA944B21CDEF71500928507 /* JDCustomTabBar.m in Sources */,
+				EA05FEA11CE017C1004C6756 /* JDScanCodeController.m in Sources */,
+				EA05FEA61CE02E32004C6756 /* JDQRCodeController.m in Sources */,
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,
 				EA05FE9D1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m in Sources */,
 			);

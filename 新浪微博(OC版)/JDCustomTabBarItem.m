@@ -37,7 +37,7 @@
     [self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
-    self.titleLabel.font = [UIFont systemFontOfSize:13.0f];
+    self.titleLabel.font = [UIFont systemFontOfSize:12.0f];
     // 图片：
     self.imageView.contentMode = UIViewContentModeCenter;
 }
@@ -80,7 +80,7 @@
 // 修改按钮图片的位置：
 -(CGRect)imageRectForContentRect:(CGRect)contentRect {
     CGFloat width = kContentWidth;
-    CGFloat height = kContentHeight * 0.58;
+    CGFloat height = kContentHeight * 0.65;
     CGFloat x = 0;
     CGFloat y = 0;
     return CGRectMake(x, y, width, height);

@@ -8,6 +8,7 @@
 //
 
 #import "JDHomeController.h"
+#import "JDScanCodeController.h"
 
 @interface JDHomeController ()
 
@@ -44,6 +45,10 @@
  */
 -(void)clickToUseCamera:(UIButton *)sender {
     JDLog(@"点击了启动相机按钮....");
+    // 从SB中加载控制器：
+    UIStoryboard *scanSB = [UIStoryboard storyboardWithName:@"JDScanCodeController" bundle:nil];
+    JDScanCodeController *scanVC = [scanSB instantiateInitialViewController];
+    [self presentViewController:scanVC animated:YES completion:nil];
 }
 
 @end

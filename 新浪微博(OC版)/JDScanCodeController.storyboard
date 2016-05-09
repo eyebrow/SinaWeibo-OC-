@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7v9-xv-hka">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--二维码-->
+        <scene sceneID="r0Y-3j-QB8">
+            <objects>
+                <navigationController id="6ls-rr-XEg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="二维码" image="qrcode_tabbar_icon_qrcode" id="99V-jt-DZm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iw7-Jh-RfT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nTO-6k-cRf" kind="relationship" relationship="rootViewController" id="BkG-Re-LpW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7g-FP-02v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="-87"/>
+        </scene>
+        <!--Code Controller-->
+        <scene sceneID="L7x-7B-SVv">
+            <objects>
+                <viewController id="nTO-6k-cRf" customClass="JDQRCodeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pwR-5t-1Gt"/>
+                        <viewControllerLayoutGuide type="bottom" id="gfe-ka-vuH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HhT-Uh-nWg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HLR-uJ-WQ9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZh-QR-W4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="-87"/>
+        </scene>
+        <!--条形码-->
+        <scene sceneID="XHy-En-rFF">
+            <objects>
+                <navigationController id="duE-M2-NT6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="条形码" image="qrcode_tabbar_icon_barcode" id="Evk-a5-Jbw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IFF-Kx-35v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nd4-dg-Hzo" kind="relationship" relationship="rootViewController" id="5ce-Az-F32"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36i-Z2-Bih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="824"/>
+        </scene>
+        <!--Bar Code Controller-->
+        <scene sceneID="5lP-Sa-t9s">
+            <objects>
+                <viewController id="Nd4-dg-Hzo" customClass="JDBarCodeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fq0-Ru-g9G"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xsf-yX-3hB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XhG-rq-zNu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pVf-XO-S9d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbl-1m-O6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="824"/>
+        </scene>
+        <!--Scan Code Controller-->
+        <scene sceneID="cNh-6S-asu">
+            <objects>
+                <tabBarController id="7v9-xv-hka" customClass="JDScanCodeController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vFM-3h-QSH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6ls-rr-XEg" kind="relationship" relationship="viewControllers" id="1hY-aB-oqJ"/>
+                        <segue destination="duE-M2-NT6" kind="relationship" relationship="viewControllers" id="FXr-0o-hHH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDR-Px-nXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
+        <image name="qrcode_tabbar_icon_qrcode" width="40" height="40"/>
+    </resources>
+</document>

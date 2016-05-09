@@ -10,6 +10,17 @@
 
 @interface UIBarButtonItem (JDExtension)
 
+/**
+ *  根据提供的属性，创建barButtonItem：
+ *
+ *  @param title         标题；
+ *  @param norImageName  普通图片；
+ *  @param highImageName 高亮图片；
+ *  @param target        目标；
+ *  @param selector      执行的方法。
+ *
+ *  @return UIBarButtonItem。
+ */
 +(UIBarButtonItem *)createBarButtonItemWithTitle:(NSString *)title normalImageName:(NSString *)norImageName highlightedImageName:(NSString *)highImageName target:(id)target action:(SEL)selector;
 
 @end
