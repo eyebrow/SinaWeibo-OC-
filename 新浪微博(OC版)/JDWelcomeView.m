@@ -46,6 +46,9 @@
  */
 - (IBAction)clickToLogin:(UIButton *)sender {
     JDLog(@"点击了登录按钮....");
+    if ([self.delegate respondsToSelector:@selector(loginWithWelcomeView:loginButton:)]) {
+        [self.delegate loginWithWelcomeView:self loginButton:sender];
+    }
 }
 
 /**

@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class JDWelcomeView;
+
+@protocol JDWelcomeViewDelegate <NSObject>
+
+/**
+ *  点击进入登录授权界面：
+ *
+ *  @param welcomeView
+ *  @param loginButton
+ */
+-(void)loginWithWelcomeView:(JDWelcomeView *)welcomeView loginButton:(UIButton *)loginButton;
+
+@end
+
 @interface JDWelcomeView : UIView
 
 /**
@@ -26,6 +40,10 @@
  *  infoLable顶部的距离：
  */
 @property (nonatomic, assign) CGFloat infoTop;
+/**
+ *  代理属性：
+ */
+@property (nonatomic, weak) id<JDWelcomeViewDelegate> delegate;
 
 /**
  *  快速加载xib：

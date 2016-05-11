@@ -8,8 +8,10 @@
 
 #import "JDBaseController.h"
 #import "JDWelcomeView.h"
+#import "JDLoginController.h"
+#import "JDNavigationController.h"
 
-@interface JDBaseController ()
+@interface JDBaseController () <JDWelcomeViewDelegate>
 
 @end
 
@@ -24,8 +26,17 @@
  */
 -(void)loadView {
     JDWelcomeView *welcomView = [JDWelcomeView getWelcomeViewFromXib];
+    welcomView.delegate = self;
     self.view = welcomView;
     self.welcomView = welcomView;
+}
+
+#pragma mark - JDWelcomeViewDelegate:
+
+-(void)loginWithWelcomeView:(JDWelcomeView *)welcomeView loginButton:(UIButton *)loginButton {
+    JDLoginController *loginVC = [[JDLoginController alloc] init];
+    JDNavigationController *navVC = [[JDNavigationController alloc] initWithRootViewController:loginVC];
+    [self presentViewController:navVC animated:YES completion:nil];
 }
 
 @end
