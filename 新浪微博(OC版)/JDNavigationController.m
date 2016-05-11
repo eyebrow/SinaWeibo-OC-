@@ -18,4 +18,14 @@
     [super viewDidLoad];
 }
 
+/**
+ *  类第一次被加载时调用：
+ */
++(void)initialize {
+    // 统一导航栏按钮文字主题：
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor], NSFontAttributeName:[UIFont systemFontOfSize:16.0f]} forState:UIControlStateNormal];
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor], NSFontAttributeName:[UIFont systemFontOfSize:16.0f]} forState:UIControlStateHighlighted];
+}
+
 @end

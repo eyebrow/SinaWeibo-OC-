@@ -123,6 +123,7 @@
     self.titleButton.selected = NO;
     [self.coverButton removeFromSuperview];
     _window = nil;
+    _contentVC = nil;
 }
 
 /**

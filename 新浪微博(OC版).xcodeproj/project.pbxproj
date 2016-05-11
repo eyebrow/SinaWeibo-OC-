@@ -16,6 +16,7 @@
 		EA05FEAE1CE0A56F004C6756 /* JDMyIDCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA05FEAC1CE0A56F004C6756 /* JDMyIDCardController.xib */; };
 		EA4E3A151CE1774B00DC8612 /* JDCustomTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E3A141CE1774B00DC8612 /* JDCustomTitleView.m */; };
 		EA4E3A1B1CE3054D00DC8612 /* JDMenuContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E3A1A1CE3054D00DC8612 /* JDMenuContentController.m */; };
+		EA4E3A211CE30FBB00DC8612 /* JDCustomSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E3A201CE30FBB00DC8612 /* JDCustomSearchBar.m */; };
 		EAA944561CDEE87800928507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944551CDEE87800928507 /* main.m */; };
 		EAA944611CDEE87800928507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA944601CDEE87800928507 /* Assets.xcassets */; };
 		EAA9446F1CDEE87800928507 /* _____OC__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9446E1CDEE87800928507 /* _____OC__Tests.m */; };
@@ -67,6 +68,8 @@
 		EA4E3A141CE1774B00DC8612 /* JDCustomTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTitleView.m; sourceTree = "<group>"; };
 		EA4E3A191CE3054D00DC8612 /* JDMenuContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMenuContentController.h; sourceTree = "<group>"; };
 		EA4E3A1A1CE3054D00DC8612 /* JDMenuContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMenuContentController.m; sourceTree = "<group>"; };
+		EA4E3A1F1CE30FBB00DC8612 /* JDCustomSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomSearchBar.h; sourceTree = "<group>"; };
+		EA4E3A201CE30FBB00DC8612 /* JDCustomSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomSearchBar.m; sourceTree = "<group>"; };
 		EAA944511CDEE87800928507 /* 新浪微博(OC版).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博(OC版).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA944551CDEE87800928507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAA944601CDEE87800928507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +145,31 @@
 				EA05FEAC1CE0A56F004C6756 /* JDMyIDCardController.xib */,
 			);
 			name = ScanCode;
+			sourceTree = "<group>";
+		};
+		EA4E3A1C1CE30EDE00DC8612 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAA944A51CDEEE5300928507 /* JDDiscoverController.h */,
+				EAA944A61CDEEE5300928507 /* JDDiscoverController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA4E3A1D1CE30EE900DC8612 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA4E3A1F1CE30FBB00DC8612 /* JDCustomSearchBar.h */,
+				EA4E3A201CE30FBB00DC8612 /* JDCustomSearchBar.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA4E3A1E1CE30FA000DC8612 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EAA944481CDEE87800928507 = {
@@ -230,8 +258,9 @@
 		EAA9448B1CDEE97B00928507 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				EAA944A51CDEEE5300928507 /* JDDiscoverController.h */,
-				EAA944A61CDEEE5300928507 /* JDDiscoverController.m */,
+				EA4E3A1E1CE30FA000DC8612 /* Model */,
+				EA4E3A1D1CE30EE900DC8612 /* View */,
+				EA4E3A1C1CE30EDE00DC8612 /* Controller */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -286,6 +315,8 @@
 		EAA944931CDEEBEF00928507 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EAA944AB1CDEF12D00928507 /* JDNavigationController.h */,
+				EAA944AC1CDEF12D00928507 /* JDNavigationController.m */,
 				EAA944941CDEEC0E00928507 /* JDTabBarController.h */,
 				EAA944951CDEEC0E00928507 /* JDTabBarController.m */,
 			);
@@ -325,8 +356,6 @@
 			children = (
 				EAA9449E1CDEEDF700928507 /* JDProfileController.h */,
 				EAA9449F1CDEEDF700928507 /* JDProfileController.m */,
-				EAA944AB1CDEF12D00928507 /* JDNavigationController.h */,
-				EAA944AC1CDEF12D00928507 /* JDNavigationController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -491,6 +520,7 @@
 			files = (
 				EAA9449C1CDEEDD100928507 /* JDHomeController.m in Sources */,
 				EAA944A41CDEEE0D00928507 /* JDMessageController.m in Sources */,
+				EA4E3A211CE30FBB00DC8612 /* JDCustomSearchBar.m in Sources */,
 				EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */,
 				EAA944911CDEE9F900928507 /* JDAppDelegate.m in Sources */,
 				EAA944961CDEEC0E00928507 /* JDTabBarController.m in Sources */,

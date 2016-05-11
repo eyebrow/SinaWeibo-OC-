@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupMessageController];
 }
 
+-(void)setupMessageController {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"发送消息" style:UIBarButtonItemStylePlain target:self action:@selector(clickToSendMessage:)];
+}
+
+/**
+ *  点击发送消息：
+ *
+ *  @param sender
+ */
+-(void)clickToSendMessage:(UIBarButtonItem *)sender {
+    JDLog(@"点击了发送消息的按钮....");
+}
 
 @end
