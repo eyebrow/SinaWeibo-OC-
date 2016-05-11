@@ -34,12 +34,12 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qt-4J-Tat">
                     <rect key="frame" x="319.5" y="477" width="67.5" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="注册" backgroundImage="common_button_white_disable">
-                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="登录" backgroundImage="common_button_white_disable">
+                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <state key="highlighted" backgroundImage="common_button_white_highlighted"/>
                     <connections>
-                        <action selector="clickToRegister:" destination="iN0-l3-epB" eventType="touchUpInside" id="Om7-ap-1Zj"/>
+                        <action selector="clickToLogin:" destination="iN0-l3-epB" eventType="touchUpInside" id="TcW-DS-4w8"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuo-gf-Lj6">
@@ -48,12 +48,12 @@
                         <constraint firstAttribute="height" constant="30" id="sNs-ZB-ey7"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="登录" backgroundImage="common_button_white_disable">
-                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="注册" backgroundImage="common_button_white_disable">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <state key="highlighted" backgroundImage="common_button_white_highlighted"/>
                     <connections>
-                        <action selector="clickToLogin:" destination="iN0-l3-epB" eventType="touchUpInside" id="mIF-rB-3dt"/>
+                        <action selector="clickToRegister:" destination="iN0-l3-epB" eventType="touchUpInside" id="cMW-Zd-XhZ"/>
                     </connections>
                 </button>
             </subviews>
