@@ -11,6 +11,7 @@
 #import "JDScanCodeController.h"
 #import "JDCustomTitleView.h"
 #import "JDMenuContentController.h"
+#import "JDWelcomeView.h"
 
 @interface JDHomeController () {
     UIWindow *_window;
@@ -35,6 +36,18 @@
     [self setupNavigationBar];
 }
 
+// wheelImageView开始旋转：
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.welcomView startRevolve];
+}
+
+// wheelImageView停止：
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.welcomView stopRevolve];
+}
+
 /**
  *  初始化导航栏：
  */
@@ -47,6 +60,9 @@
     [self.navigationItem setTitleView:titleBtn];
     [titleBtn addTarget:self action:@selector(clickToAlertMenuBar:) forControlEvents:UIControlEventTouchUpInside];
     self.titleButton = titleBtn;
+    
+    self.welcomView.iconImageName = @"visitordiscover_feed_image_house";
+    self.welcomView.infoText = @"当你关注一些人后，他们发布的最新消息会显示在这里。";
 }
 
 /**

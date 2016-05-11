@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JDBaseController.h"
 
-@interface JDMessageController : UITableViewController
+@interface JDMessageController : JDBaseController
 
 @end

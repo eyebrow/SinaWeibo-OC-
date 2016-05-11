@@ -114,7 +114,6 @@
     [viewController setTitle:title];
     [viewController.tabBarItem setImage:[[UIImage imageNamed:norImageName] getOriginalImage]];
     [viewController.tabBarItem setSelectedImage:[[UIImage imageNamed:selImageName] getOriginalImage]];
-    [viewController.view setBackgroundColor:JDRandomColor];
     self.customTabBar.item = viewController.tabBarItem;
     JDNavigationController *navVC = [[JDNavigationController alloc] initWithRootViewController:viewController];
     [self addChildViewController:navVC];

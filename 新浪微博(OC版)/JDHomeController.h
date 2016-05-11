@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JDBaseController.h"
 
-@interface JDHomeController : UITableViewController
+@interface JDHomeController : JDBaseController
 
 @end

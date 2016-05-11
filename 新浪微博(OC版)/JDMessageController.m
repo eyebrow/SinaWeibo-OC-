@@ -7,6 +7,7 @@
 //
 
 #import "JDMessageController.h"
+#import "JDWelcomeView.h"
 
 @interface JDMessageController ()
 
@@ -21,6 +22,10 @@
 
 -(void)setupMessageController {
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"发送消息" style:UIBarButtonItemStylePlain target:self action:@selector(clickToSendMessage:)];
+    self.welcomView.wheelHidden = YES;
+    self.welcomView.iconImageName = @"visitordiscover_image_message";
+    self.welcomView.infoText = @"登录后，收到评论、私信和系统消息时，会在这里显示。";
+    self.welcomView.infoTop = -5;
 }
 
 /**
