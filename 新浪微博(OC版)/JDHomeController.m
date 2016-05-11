@@ -10,9 +10,11 @@
 #import "JDHomeController.h"
 #import "JDScanCodeController.h"
 #import "JDCustomTitleView.h"
+#import "JDMenuContentController.h"
 
 @interface JDHomeController () {
     UIWindow *_window;
+    JDMenuContentController *_contentVC;
 }
 
 /**
@@ -54,44 +56,61 @@
  */
 -(void)clickToAlertMenuBar:(UIButton *)sender {
     JDLog(@"点击了弹出菜单条....");
+    // 按钮选中：
     sender.selected = YES;
-    [self setupMenuBar];
+    // 创建显示内容的view：
+    _contentVC = [[JDMenuContentController alloc] init];
+    // 创建菜单条：
+    CGFloat width = 217;
+    CGFloat height = 350;
+    [self setupMenuBarWithTargetView:self.navigationController.navigationBar contentView:_contentVC.view width:width height:height];
 }
 
 /**
  *  初始化菜单条：
+ *
+ *  @param targetView  菜单条弹出后需要指向的view；
+ *  @param contentView 菜单条中显示内容的view；
+ *  @param height 菜单条的高度。
  */
--(void)setupMenuBar {
+-(void)setupMenuBarWithTargetView:(UIView *)targetView contentView:(UIView *)contentView width:(CGFloat)width height:(CGFloat)height {
+    // 添加蒙板，实现点击屏幕除菜单条外的任意位置，收起菜单条的效果：
+    UIButton *coverBtn = [[UIButton alloc] initWithFrame:JDScreenBounds];
+    [coverBtn setBackgroundColor:[UIColor clearColor]];
+#warning UIWindow不要乱创建，能用.keyWindow获取的就尽量这么做。
+    _window = [UIApplication sharedApplication].keyWindow;
+    [_window addSubview:coverBtn];
+    
     // 菜单条的尺寸计算：
-    CGFloat menuWidth = 217;
-    CGFloat menuHeight = 350;
-    CGFloat menuMargin = 11;
+    CGFloat menuWidth = width;
+    CGFloat menuHeight = height;
+    CGFloat menuMargin = 9;
     CGFloat menuX = 0;
-    CGFloat menuY = 66 - menuMargin;
+    CGFloat menuY = 0;
     // 菜单条中显示内容的tableView尺寸的计算：
     CGFloat contentMarginX = 20;
     CGFloat contentMarginY = 30;
     CGFloat contentWidth = menuWidth - contentMarginX;
     CGFloat contentHeight = menuHeight - contentMarginY;
     CGFloat contentX = contentMarginX * 0.5;
-    CGFloat contentY = contentMarginY * 0.55;
+    CGFloat contentY = contentMarginY * 0.56;
     
     // 菜单条：
     UIImageView *menuImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"popover_background"]];
     menuImageView.frame = CGRectMake(menuX, menuY, menuWidth, menuHeight);
-    menuImageView.centerX = JDScreenWidth * 0.5;
     menuImageView.userInteractionEnabled = YES;
-    // 显示内容的tableView：
-    UITableView *contentTableView = [[UITableView alloc] initWithFrame:CGRectMake(contentX, contentY, contentWidth, contentHeight)];
-    [menuImageView addSubview:contentTableView];
+    // 显示内容的view：
+    contentView.frame = CGRectMake(contentX, contentY, contentWidth, contentHeight);
+    [menuImageView addSubview:contentView];
     
-    // 添加蒙板，实现点击屏幕除菜单条外的任意位置，收起菜单条的效果：
-    UIButton *coverBtn = [[UIButton alloc] initWithFrame:JDScreenBounds];
-    [coverBtn setBackgroundColor:[UIColor clearColor]];
+    // 后续操作：
     [coverBtn addSubview:menuImageView];
-    _window = [UIApplication sharedApplication].keyWindow;
-    [_window addSubview:coverBtn];
     [coverBtn addTarget:self action:@selector(clickToCloseMenuBar:) forControlEvents:UIControlEventTouchUpInside];
+    // 由于需要指向的目标view的superView可能和菜单条所在superView不是同一个，这也就意味着双方不在同一个坐标系中，此时就必须用到坐标系的转换：
+    CGRect resultRect = [_window convertRect:targetView.frame fromView:targetView.superview];
+    CGPoint resultPoint = [_window convertPoint:targetView.center fromView:targetView.superview];
+    menuImageView.y = CGRectGetMaxY(resultRect) - menuMargin;
+    menuImageView.centerX = resultPoint.x;
     self.coverButton = coverBtn;
 }
 
@@ -113,7 +132,6 @@
  */
 -(void)clickToSearchFriends:(UIButton *)sender {
     JDLog(@"点击了查找好友按钮....");
-    
 }
 
 /**

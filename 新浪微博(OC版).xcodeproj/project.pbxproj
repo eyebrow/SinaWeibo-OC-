@@ -15,6 +15,7 @@
 		EA05FEAD1CE0A56F004C6756 /* JDMyIDCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA05FEAB1CE0A56F004C6756 /* JDMyIDCardController.m */; };
 		EA05FEAE1CE0A56F004C6756 /* JDMyIDCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA05FEAC1CE0A56F004C6756 /* JDMyIDCardController.xib */; };
 		EA4E3A151CE1774B00DC8612 /* JDCustomTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E3A141CE1774B00DC8612 /* JDCustomTitleView.m */; };
+		EA4E3A1B1CE3054D00DC8612 /* JDMenuContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E3A1A1CE3054D00DC8612 /* JDMenuContentController.m */; };
 		EAA944561CDEE87800928507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944551CDEE87800928507 /* main.m */; };
 		EAA944611CDEE87800928507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA944601CDEE87800928507 /* Assets.xcassets */; };
 		EAA9446F1CDEE87800928507 /* _____OC__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9446E1CDEE87800928507 /* _____OC__Tests.m */; };
@@ -64,6 +65,8 @@
 		EA05FEAC1CE0A56F004C6756 /* JDMyIDCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDMyIDCardController.xib; sourceTree = "<group>"; };
 		EA4E3A131CE1774B00DC8612 /* JDCustomTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomTitleView.h; sourceTree = "<group>"; };
 		EA4E3A141CE1774B00DC8612 /* JDCustomTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTitleView.m; sourceTree = "<group>"; };
+		EA4E3A191CE3054D00DC8612 /* JDMenuContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMenuContentController.h; sourceTree = "<group>"; };
+		EA4E3A1A1CE3054D00DC8612 /* JDMenuContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMenuContentController.m; sourceTree = "<group>"; };
 		EAA944511CDEE87800928507 /* 新浪微博(OC版).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博(OC版).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA944551CDEE87800928507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAA944601CDEE87800928507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -295,6 +298,8 @@
 				EA05FE9E1CE0173F004C6756 /* ScanCode */,
 				EAA9449A1CDEEDD100928507 /* JDHomeController.h */,
 				EAA9449B1CDEEDD100928507 /* JDHomeController.m */,
+				EA4E3A191CE3054D00DC8612 /* JDMenuContentController.h */,
+				EA4E3A1A1CE3054D00DC8612 /* JDMenuContentController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 				EA05FEA11CE017C1004C6756 /* JDScanCodeController.m in Sources */,
 				EA05FEA61CE02E32004C6756 /* JDQRCodeController.m in Sources */,
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,
+				EA4E3A1B1CE3054D00DC8612 /* JDMenuContentController.m in Sources */,
 				EA4E3A151CE1774B00DC8612 /* JDCustomTitleView.m in Sources */,
 				EA05FE9D1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m in Sources */,
 			);
