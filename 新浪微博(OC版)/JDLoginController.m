@@ -19,6 +19,9 @@
 
 @interface JDLoginController () <UIWebViewDelegate>
 
+/**
+ *  用于加载授权界面的webView：
+ */
 @property (nonatomic, weak) UIWebView *loginWebView;
 
 @end
@@ -31,6 +34,7 @@
 }
 
 -(void)loadView {
+    // 将控制器view替换为webView：
     UIWebView *loginWebView = [[UIWebView alloc] init];
     self.view = loginWebView;
     loginWebView.delegate = self;
@@ -46,10 +50,12 @@
     [self loadLoginPage];
 }
 
+/**
+ *  加载登录授权页面：
+ */
 -(void)loadLoginPage {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@", kAuthorizeURL, kClientID, kRedirectURI]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
     UIWebView *loginWebView = (UIWebView *)self.view;
     [loginWebView loadRequest:request];
 }
@@ -86,8 +92,9 @@
     [SVProgressHUD dismiss];
 }
 
+// 加载完后但发生错误时调用：
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    
+    [SVProgressHUD dismiss];
 }
 
 // 每一次发送请求都会调用此方法，返回YES为允许加载：
