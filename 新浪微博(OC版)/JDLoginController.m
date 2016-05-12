@@ -8,12 +8,16 @@
 //
 
 #import "JDLoginController.h"
+#import "SVProgressHUD.h"
+#import "AFNetworking.h"
 
 #define kAuthorizeURL @"https://api.weibo.com/oauth2/authorize"
 #define kClientID @"474455695"
 #define kRedirectURI @"http://ios.itcast.cn"
+#define kAccessToeknURL @"https://api.weibo.com/oauth2/access_token"
+#define kAppSecret @"ecb665fe78736e713b4043ddf24e4a7d"
 
-@interface JDLoginController ()
+@interface JDLoginController () <UIWebViewDelegate>
 
 @property (nonatomic, weak) UIWebView *loginWebView;
 
@@ -29,6 +33,7 @@
 -(void)loadView {
     UIWebView *loginWebView = [[UIWebView alloc] init];
     self.view = loginWebView;
+    loginWebView.delegate = self;
     self.loginWebView = loginWebView;
 }
 
@@ -69,6 +74,78 @@
     // 执行一段JS代码用于自动填充用户名和密码：
     NSString *jsStr = @"document.getElementById('userId').value = '18502860517' , document.getElementById('passwd').value = 'w2owr@sdojjiangD';";
     [self.loginWebView stringByEvaluatingJavaScriptFromString:jsStr];
+}
+
+#pragma mark - UIWebViewDelegate:
+
+-(void)webViewDidStartLoad:(UIWebView *)webView {
+    [SVProgressHUD show];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    [SVProgressHUD dismiss];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    
+}
+
+// 每一次发送请求都会调用此方法，返回YES为允许加载：
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    // code=ae5ca14e5de18a974c1123d398bb016f
+    JDLog(@"%@", request.URL.absoluteString);
+    NSString *urlStr = request.URL.absoluteString;
+    NSRange range = [urlStr rangeOfString:@"code="];
+    if (range.length > 0 && range.location != NSNotFound) {
+        JDLog(@"授权成功....");
+        NSUInteger startIndex = range.location + range.length;
+        NSString *code = [urlStr substringFromIndex:startIndex];
+        JDLog(@"code = %@", code);
+        [self getAccessTokenWithCode:code];
+        return NO;
+    } else {
+        JDLog(@"授权失败....");
+        return YES;
+    }
+}
+
+/**
+ *  根据授权成功返回的code获取access_token：
+ *
+ *  @param code
+ */
+-(void)getAccessTokenWithCode:(NSString *)code {
+    /**
+     必选	类型及范围	说明
+     client_id	true	string	申请应用时分配的AppKey。
+     client_secret	true	string	申请应用时分配的AppSecret。
+     grant_type	true	string	请求的类型，填写authorization_code
+     
+     grant_type为authorization_code时
+     必选	类型及范围	说明
+     code	true	string	调用authorize获得的code值。
+     redirect_uri	true	string	回调地址，需需与注册应用里的回调地址一致。
+     */
+    
+    // 创建网络请求管理对象：
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    // 设置manager支持的类型：
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
+    // 封装请求参数：
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"client_id"] = kClientID;
+    parameters[@"client_secret"] = kAppSecret;
+    parameters[@"grant_type"] = @"authorization_code";
+    parameters[@"code"] = code;
+    parameters[@"redirect_uri"] = kRedirectURI;
+    
+    // 发送POST请求：
+    [manager POST:kAccessToeknURL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        JDLog(@"请求成功.... %@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        JDLog(@"请求失败.... %@", error);
+    }];
 }
 
 @end
