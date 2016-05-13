@@ -10,6 +10,8 @@
 #import "JDLoginController.h"
 #import "SVProgressHUD.h"
 #import "AFNetworking.h"
+#import "MJExtension.h"
+#import "JDAccountModel.h"
 
 #define kAuthorizeURL @"https://api.weibo.com/oauth2/authorize"
 #define kClientID @"474455695"
@@ -150,6 +152,12 @@
     [manager POST:kAccessToeknURL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         JDLog(@"请求成功.... %@", responseObject);
+        // 字典转模型：
+        JDAccountModel *account = [JDAccountModel mj_objectWithKeyValues:responseObject];
+        BOOL result = [account svaeAccountToSandbox];
+        if (result) {
+            JDLog(@"保存授权信息成功....");
+        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         JDLog(@"请求失败.... %@", error);
     }];
