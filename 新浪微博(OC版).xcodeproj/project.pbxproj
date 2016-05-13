@@ -23,6 +23,10 @@
 		EA4E3A311CE3813F00DC8612 /* OAuth_Info in Resources */ = {isa = PBXBuildFile; fileRef = EA4E3A301CE3813F00DC8612 /* OAuth_Info */; };
 		EA870BAD1CE550D800EF9392 /* JDAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BAC1CE550D800EF9392 /* JDAccountModel.m */; };
 		EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BAF1CE55AB300EF9392 /* NSString+JDExtension.m */; };
+		EA870BB81CE56E5A00EF9392 /* JDWelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BB61CE56E5A00EF9392 /* JDWelcomeController.m */; };
+		EA870BB91CE56E5A00EF9392 /* JDWelcomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA870BB71CE56E5A00EF9392 /* JDWelcomeController.xib */; };
+		EA870BBD1CE56E7500EF9392 /* JDNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BBB1CE56E7500EF9392 /* JDNewFeatureController.m */; };
+		EA870BBE1CE56E7500EF9392 /* JDNewFeatureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA870BBC1CE56E7500EF9392 /* JDNewFeatureController.xib */; };
 		EAA6F42C1CE388C600574B04 /* JDLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA6F42B1CE388C600574B04 /* JDLoginController.m */; };
 		EAA944561CDEE87800928507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944551CDEE87800928507 /* main.m */; };
 		EAA944611CDEE87800928507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA944601CDEE87800928507 /* Assets.xcassets */; };
@@ -91,6 +95,12 @@
 		EA870BAC1CE550D800EF9392 /* JDAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAccountModel.m; sourceTree = "<group>"; };
 		EA870BAE1CE55AB300EF9392 /* NSString+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JDExtension.h"; sourceTree = "<group>"; };
 		EA870BAF1CE55AB300EF9392 /* NSString+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JDExtension.m"; sourceTree = "<group>"; };
+		EA870BB51CE56E5A00EF9392 /* JDWelcomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWelcomeController.h; sourceTree = "<group>"; };
+		EA870BB61CE56E5A00EF9392 /* JDWelcomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWelcomeController.m; sourceTree = "<group>"; };
+		EA870BB71CE56E5A00EF9392 /* JDWelcomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDWelcomeController.xib; sourceTree = "<group>"; };
+		EA870BBA1CE56E7500EF9392 /* JDNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDNewFeatureController.h; sourceTree = "<group>"; };
+		EA870BBB1CE56E7500EF9392 /* JDNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDNewFeatureController.m; sourceTree = "<group>"; };
+		EA870BBC1CE56E7500EF9392 /* JDNewFeatureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDNewFeatureController.xib; sourceTree = "<group>"; };
 		EAA6F42A1CE388C600574B04 /* JDLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLoginController.h; sourceTree = "<group>"; };
 		EAA6F42B1CE388C600574B04 /* JDLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLoginController.m; sourceTree = "<group>"; };
 		EAA944511CDEE87800928507 /* 新浪微博(OC版).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博(OC版).app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +245,43 @@
 			sourceTree = "<group>";
 		};
 		EA4E3A281CE31E7C00DC8612 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EA870BB11CE56DE100EF9392 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EA870BB41CE56E2F00EF9392 /* Model */,
+				EA870BB31CE56E2A00EF9392 /* View */,
+				EA870BB21CE56E1E00EF9392 /* Controller */,
+			);
+			name = NewFeature;
+			sourceTree = "<group>";
+		};
+		EA870BB21CE56E1E00EF9392 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA870BB51CE56E5A00EF9392 /* JDWelcomeController.h */,
+				EA870BB61CE56E5A00EF9392 /* JDWelcomeController.m */,
+				EA870BB71CE56E5A00EF9392 /* JDWelcomeController.xib */,
+				EA870BBA1CE56E7500EF9392 /* JDNewFeatureController.h */,
+				EA870BBB1CE56E7500EF9392 /* JDNewFeatureController.m */,
+				EA870BBC1CE56E7500EF9392 /* JDNewFeatureController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA870BB31CE56E2A00EF9392 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA870BB41CE56E2F00EF9392 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -410,6 +457,7 @@
 		EAA944921CDEEAA000928507 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA870BB11CE56DE100EF9392 /* NewFeature */,
 				EAA6F4261CE3869600574B04 /* OAuth */,
 				EA4E3A221CE31C8300DC8612 /* Base */,
 				EAA944881CDEE92E00928507 /* Home */,
@@ -613,9 +661,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA870BB91CE56E5A00EF9392 /* JDWelcomeController.xib in Resources */,
 				EA05FEA31CE017F0004C6756 /* JDScanCodeController.storyboard in Resources */,
 				EAA944611CDEE87800928507 /* Assets.xcassets in Resources */,
 				EA05FEAE1CE0A56F004C6756 /* JDMyIDCardController.xib in Resources */,
+				EA870BBE1CE56E7500EF9392 /* JDNewFeatureController.xib in Resources */,
 				EA4E3A2F1CE3201700DC8612 /* JDWelcomeView.xib in Resources */,
 				EA4E3A311CE3813F00DC8612 /* OAuth_Info in Resources */,
 			);
@@ -691,6 +741,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA9449C1CDEEDD100928507 /* JDHomeController.m in Sources */,
+				EA870BBD1CE56E7500EF9392 /* JDNewFeatureController.m in Sources */,
 				EAA944A41CDEEE0D00928507 /* JDMessageController.m in Sources */,
 				EA4E3A211CE30FBB00DC8612 /* JDCustomSearchBar.m in Sources */,
 				EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */,
@@ -712,6 +763,7 @@
 				EA4E3A261CE31E6900DC8612 /* JDBaseController.m in Sources */,
 				EA05FEA61CE02E32004C6756 /* JDQRCodeController.m in Sources */,
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,
+				EA870BB81CE56E5A00EF9392 /* JDWelcomeController.m in Sources */,
 				EA4E3A1B1CE3054D00DC8612 /* JDMenuContentController.m in Sources */,
 				EA4E3A151CE1774B00DC8612 /* JDCustomTitleView.m in Sources */,
 				EA05FE9D1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m in Sources */,

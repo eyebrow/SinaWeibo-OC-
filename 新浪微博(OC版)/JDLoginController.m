@@ -12,6 +12,8 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "JDAccountModel.h"
+#import "JDNewFeatureController.h"
+#import "JDWelcomeController.h"
 
 #define kAuthorizeURL @"https://api.weibo.com/oauth2/authorize"
 #define kClientID @"474455695"
@@ -152,6 +154,25 @@
     [manager POST:kAccessToeknURL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         JDLog(@"请求成功.... %@", responseObject);
+        // 判断是否为最新版本：
+        NSString *currentVer = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *lastVer = [defaults objectForKey:@"CFBundleShortVersionString"];
+        
+        // 如果当前版本更新，则显示新特性，并存储版本号：
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        if ([currentVer compare:lastVer] == NSOrderedDescending) {
+            // 存储版本号：
+            [defaults setObject:currentVer forKey:@"CFBundleShortVersionString"];
+            [defaults synchronize];
+            // 显示新特性界面：
+            JDNewFeatureController *newFeatureVC = [[JDNewFeatureController alloc] init];
+            window.rootViewController = newFeatureVC;
+        } else {
+            // 显示欢迎界面：
+            JDWelcomeController *welcomVC = [[JDWelcomeController alloc] init];
+            window.rootViewController = welcomVC;
+        }
         // 字典转模型：
         JDAccountModel *account = [JDAccountModel mj_objectWithKeyValues:responseObject];
         BOOL result = [account svaeAccountToSandbox];
