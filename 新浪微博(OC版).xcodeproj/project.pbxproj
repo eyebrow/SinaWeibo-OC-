@@ -47,6 +47,7 @@
 		EAA944B21CDEF71500928507 /* JDCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944B11CDEF71500928507 /* JDCustomTabBar.m */; };
 		EAA944B51CDEF73900928507 /* JDCustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944B41CDEF73900928507 /* JDCustomTabBarItem.m */; };
 		EAA944B81CDF21A200928507 /* UIView+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944B71CDF21A200928507 /* UIView+JDExtension.m */; };
+		EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */; };
 		ECD656EEF890910A835D1322 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A4C93A61DEC42F4986C0F1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +150,8 @@
 		EAA944B41CDEF73900928507 /* JDCustomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTabBarItem.m; sourceTree = "<group>"; };
 		EAA944B61CDF21A200928507 /* UIView+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDExtension.h"; sourceTree = "<group>"; };
 		EAA944B71CDF21A200928507 /* UIView+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDExtension.m"; sourceTree = "<group>"; };
+		EAEBD43C1CE75C2C00147E08 /* NSDate+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JDExtension.h"; sourceTree = "<group>"; };
+		EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JDExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -464,6 +467,8 @@
 				EA870BAF1CE55AB300EF9392 /* NSString+JDExtension.m */,
 				EA5247DF1CE6D1B2001EFFCB /* UIWindow+JDExtension.h */,
 				EA5247E01CE6D1B2001EFFCB /* UIWindow+JDExtension.m */,
+				EAEBD43C1CE75C2C00147E08 /* NSDate+JDExtension.h */,
+				EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -784,6 +789,7 @@
 				EAA944B21CDEF71500928507 /* JDCustomTabBar.m in Sources */,
 				EAA6F42C1CE388C600574B04 /* JDLoginController.m in Sources */,
 				EA05FEA11CE017C1004C6756 /* JDScanCodeController.m in Sources */,
+				EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */,
 				EA4E3A261CE31E6900DC8612 /* JDBaseController.m in Sources */,
 				EA05FEA61CE02E32004C6756 /* JDQRCodeController.m in Sources */,
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,

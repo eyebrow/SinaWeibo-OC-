@@ -29,6 +29,7 @@
 #import "UIBarButtonItem+JDExtension.h"
 #import "NSString+JDExtension.h"
 #import "UIWindow+JDExtension.h"
+#import "NSDate+JDExtension.h"
 
 #import "UIImageView+WebCache.h"
 #import "MJExtension.h"
