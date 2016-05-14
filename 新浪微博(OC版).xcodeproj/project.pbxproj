@@ -22,6 +22,9 @@
 		EA4E3A2F1CE3201700DC8612 /* JDWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4E3A2E1CE3201700DC8612 /* JDWelcomeView.xib */; };
 		EA5247E11CE6D1B2001EFFCB /* UIWindow+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5247E01CE6D1B2001EFFCB /* UIWindow+JDExtension.m */; };
 		EA5247E41CE6EF41001EFFCB /* JDWeiboCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5247E31CE6EF41001EFFCB /* JDWeiboCell.m */; };
+		EA5247E71CE6F6A1001EFFCB /* JDStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5247E61CE6F6A1001EFFCB /* JDStatusModel.m */; };
+		EA5247EA1CE6F6B1001EFFCB /* JDPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5247E91CE6F6B1001EFFCB /* JDPhotoModel.m */; };
+		EA5247ED1CE6F6C0001EFFCB /* JDUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5247EC1CE6F6C0001EFFCB /* JDUserModel.m */; };
 		EA870BAD1CE550D800EF9392 /* JDAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BAC1CE550D800EF9392 /* JDAccountModel.m */; };
 		EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BAF1CE55AB300EF9392 /* NSString+JDExtension.m */; };
 		EA870BB81CE56E5A00EF9392 /* JDWelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BB61CE56E5A00EF9392 /* JDWelcomeController.m */; };
@@ -95,6 +98,12 @@
 		EA5247E01CE6D1B2001EFFCB /* UIWindow+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JDExtension.m"; sourceTree = "<group>"; };
 		EA5247E21CE6EF41001EFFCB /* JDWeiboCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWeiboCell.h; sourceTree = "<group>"; };
 		EA5247E31CE6EF41001EFFCB /* JDWeiboCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWeiboCell.m; sourceTree = "<group>"; };
+		EA5247E51CE6F6A1001EFFCB /* JDStatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusModel.h; sourceTree = "<group>"; };
+		EA5247E61CE6F6A1001EFFCB /* JDStatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusModel.m; sourceTree = "<group>"; };
+		EA5247E81CE6F6B1001EFFCB /* JDPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPhotoModel.h; sourceTree = "<group>"; };
+		EA5247E91CE6F6B1001EFFCB /* JDPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPhotoModel.m; sourceTree = "<group>"; };
+		EA5247EB1CE6F6C0001EFFCB /* JDUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDUserModel.h; sourceTree = "<group>"; };
+		EA5247EC1CE6F6C0001EFFCB /* JDUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDUserModel.m; sourceTree = "<group>"; };
 		EA870BAB1CE550D800EF9392 /* JDAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAccountModel.h; sourceTree = "<group>"; };
 		EA870BAC1CE550D800EF9392 /* JDAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAccountModel.m; sourceTree = "<group>"; };
 		EA870BAE1CE55AB300EF9392 /* NSString+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JDExtension.h"; sourceTree = "<group>"; };
@@ -513,6 +522,12 @@
 		EAA944991CDEEDB100928507 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA5247E51CE6F6A1001EFFCB /* JDStatusModel.h */,
+				EA5247E61CE6F6A1001EFFCB /* JDStatusModel.m */,
+				EA5247E81CE6F6B1001EFFCB /* JDPhotoModel.h */,
+				EA5247E91CE6F6B1001EFFCB /* JDPhotoModel.m */,
+				EA5247EB1CE6F6C0001EFFCB /* JDUserModel.h */,
+				EA5247EC1CE6F6C0001EFFCB /* JDUserModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -752,11 +767,13 @@
 				EAA944A41CDEEE0D00928507 /* JDMessageController.m in Sources */,
 				EA4E3A211CE30FBB00DC8612 /* JDCustomSearchBar.m in Sources */,
 				EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */,
+				EA5247ED1CE6F6C0001EFFCB /* JDUserModel.m in Sources */,
 				EAA944911CDEE9F900928507 /* JDAppDelegate.m in Sources */,
 				EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */,
 				EAA944961CDEEC0E00928507 /* JDTabBarController.m in Sources */,
 				EAA944561CDEE87800928507 /* main.m in Sources */,
 				EA870BAD1CE550D800EF9392 /* JDAccountModel.m in Sources */,
+				EA5247E71CE6F6A1001EFFCB /* JDStatusModel.m in Sources */,
 				EAA944AD1CDEF12D00928507 /* JDNavigationController.m in Sources */,
 				EAA944B81CDF21A200928507 /* UIView+JDExtension.m in Sources */,
 				EA4E3A2B1CE31E8F00DC8612 /* JDWelcomeView.m in Sources */,
@@ -773,6 +790,7 @@
 				EA870BB81CE56E5A00EF9392 /* JDWelcomeController.m in Sources */,
 				EA4E3A1B1CE3054D00DC8612 /* JDMenuContentController.m in Sources */,
 				EA4E3A151CE1774B00DC8612 /* JDCustomTitleView.m in Sources */,
+				EA5247EA1CE6F6B1001EFFCB /* JDPhotoModel.m in Sources */,
 				EA5247E41CE6EF41001EFFCB /* JDWeiboCell.m in Sources */,
 				EA05FE9D1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m in Sources */,
 			);

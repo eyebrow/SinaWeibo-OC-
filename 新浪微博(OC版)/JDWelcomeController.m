@@ -8,7 +8,6 @@
 
 #import "JDWelcomeController.h"
 #import "JDTabBarController.h"
-#import "UIImageView+WebCache.h"
 #import "JDAccountModel.h"
 
 @interface JDWelcomeController ()

@@ -30,6 +30,12 @@
 #import "NSString+JDExtension.h"
 #import "UIWindow+JDExtension.h"
 
+#import "UIImageView+WebCache.h"
+#import "MJExtension.h"
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+#import "MJRefresh.h"
+
 /**-----------------------其他：-------------------------------*/
 
 // 自定义Log输出：

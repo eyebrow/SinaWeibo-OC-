@@ -12,14 +12,17 @@
 #import "JDCustomTitleView.h"
 #import "JDMenuContentController.h"
 #import "JDWelcomeView.h"
-#import "AFNetworking.h"
 #import "JDAccountModel.h"
-#import "UIImageView+WebCache.h"
+#import "JDStatusModel.h"
+#import "JDUserModel.h"
+#import "JDWeiboCell.h"
 
 // 获取用户信息的链接：
 #define kUsersInfoURL @"https://api.weibo.com/2/users/show.json"
 // 获取最新微博数据的链接：
 #define kNewWeiboStatusesURL @"https://api.weibo.com/2/statuses/home_timeline.json"
+// 获取更多微博数据的链接：
+#define kMoreWeiboStatusesURL kNewWeiboStatusesURL
 
 @interface JDHomeController () {
     UIWindow *_window;
@@ -92,8 +95,8 @@
         // 如果welcomeView == nil，则表明用户已经完成授权：
         // 加载用户信息：
         [self loadUserInfo];
-        // 加载最新微博数据：
-        [self loadNewWeiboStatuses];
+        // 添加下拉刷新：
+        [self addRefreshControl];
     }
 }
 
@@ -123,6 +126,23 @@
     }];
 }
 
+-(void)addRefreshControl {
+    // 添加下拉刷新：
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        // 进入刷新状态后会自动调用这个block：
+        [self loadNewWeiboStatuses];
+        [self.tableView.mj_header endRefreshing];
+    }];
+    // 添加上拉刷新：
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        // 进入刷新状态后会自动调用这个block：
+        [self loadMoreWeiboStatuses];
+        [self.tableView.mj_footer endRefreshing];
+    }];
+    // 自动刷新：
+    [self.tableView.mj_header beginRefreshing];
+}
+
 /**
  *  加载最新微博数据：
  */
@@ -131,16 +151,48 @@
     JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"access_token"] = account.access_token;
+    //
+    if (self.statusesArray != nil) {
+        parameters[@"since_id"] = [[self.statusesArray firstObject] idstr];
+    }
     
     [manager GET:kNewWeiboStatusesURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         JDLog(@"加载新微博数据成功.... %@", responseObject[@"statuses"]);
+        // 字典数组转模型数组：
+        NSArray *statusModelsArray = [JDStatusModel mj_objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
         // addObject是将一个数组本身作为元素添加到进去，而addObjectsFromArray是将一个数组中的元素一个一个取出来再加入另一个数组：
-        [self.statusesArray addObjectsFromArray:responseObject[@"statuses"]];
+        //        [self.statusesArray addObjectsFromArray:statusModelsArray];
+        [self.statusesArray insertObjects:statusModelsArray atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, statusModelsArray.count)]];
+        JDLog(@"微博模型数组.... %@", statusModelsArray);
         // 刷新数据：
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         JDLog(@"加载新微博数据失败.... %@", error);
+    }];
+}
+
+/**
+ *  加载更多微博数据：
+ */
+-(void)loadMoreWeiboStatuses {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"access_token"] = account.access_token;
+    // 取出数组的最后一个元素的ID：
+    NSString *lastStatusesID = [[self.statusesArray lastObject] idstr];
+    if (lastStatusesID != nil) {
+        parameters[@"max_id"] = @([lastStatusesID longLongValue] - 1);
+    }
+    
+    [manager GET:kMoreWeiboStatusesURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray *statusModelsArray = [JDStatusModel mj_objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        [self.statusesArray addObjectsFromArray:statusModelsArray];
+        [self.tableView reloadData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
     }];
 }
 
@@ -254,16 +306,9 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reuseID = @"WEIBOCELL";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseID];
-    }
-    NSDictionary *status = self.statusesArray[indexPath.row];
-    NSDictionary *user = status[@"user"];
-    cell.textLabel.text = user[@"name"];
-    cell.detailTextLabel.text = status[@"text"];
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:user[@"profile_image_url"]] placeholderImage:[UIImage imageNamed:@"avatar_default_big"]];
+    JDWeiboCell *cell = [JDWeiboCell getWeiboCellWithTableView:tableView];
+    JDStatusModel *status = self.statusesArray[indexPath.row];
+    cell.status = status;
     return cell;
 }
 

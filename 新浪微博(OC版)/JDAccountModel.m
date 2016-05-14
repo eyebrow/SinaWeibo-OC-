@@ -7,7 +7,6 @@
 //
 
 #import "JDAccountModel.h"
-#import "MJExtension.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
 

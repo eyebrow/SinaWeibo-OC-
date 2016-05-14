@@ -7,18 +7,27 @@
 //
 
 #import "JDWeiboCell.h"
+#import "JDUserModel.h"
+#import "JDStatusModel.h"
 
 @implementation JDWeiboCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
++(instancetype)getWeiboCellWithTableView:(UITableView *)tableView {
+    static NSString *reuseID = @"WEIBOCELL";
+    JDWeiboCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+    if (!cell) {
+        cell = [[self alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
+    }
+    return cell;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)setStatus:(JDStatusModel *)status {
+    _status = status;
+    JDUserModel *user = status.user;
+    self.textLabel.text = user.name;
+    self.detailTextLabel.text = status.text;
+#warning 此处加载图片一定要设置展位图，否则imageView的frame初始时为0，必须下拉一下tableView系统再帮你设置。
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:user.profile_image_url] placeholderImage:[UIImage imageNamed:@"avatar_default_big"]];
 }
 
 @end

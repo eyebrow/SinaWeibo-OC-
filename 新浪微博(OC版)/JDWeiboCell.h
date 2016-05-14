@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class JDStatusModel;
+
 @interface JDWeiboCell : UITableViewCell
+
+@property (nonatomic, strong) JDStatusModel *status;
+
++(instancetype)getWeiboCellWithTableView:(UITableView *)tableView;
 
 @end

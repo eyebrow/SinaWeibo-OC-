@@ -8,9 +8,6 @@
 //
 
 #import "JDLoginController.h"
-#import "SVProgressHUD.h"
-#import "AFNetworking.h"
-#import "MJExtension.h"
 #import "JDAccountModel.h"
 #import "JDNewFeatureController.h"
 #import "JDWelcomeController.h"
