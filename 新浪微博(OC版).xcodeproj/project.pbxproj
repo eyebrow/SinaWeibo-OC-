@@ -21,6 +21,7 @@
 		EA4E3A2B1CE31E8F00DC8612 /* JDWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4E3A2A1CE31E8F00DC8612 /* JDWelcomeView.m */; };
 		EA4E3A2F1CE3201700DC8612 /* JDWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4E3A2E1CE3201700DC8612 /* JDWelcomeView.xib */; };
 		EA4E3A311CE3813F00DC8612 /* OAuth_Info in Resources */ = {isa = PBXBuildFile; fileRef = EA4E3A301CE3813F00DC8612 /* OAuth_Info */; };
+		EA5247E11CE6D1B2001EFFCB /* UIWindow+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5247E01CE6D1B2001EFFCB /* UIWindow+JDExtension.m */; };
 		EA870BAD1CE550D800EF9392 /* JDAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BAC1CE550D800EF9392 /* JDAccountModel.m */; };
 		EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BAF1CE55AB300EF9392 /* NSString+JDExtension.m */; };
 		EA870BB81CE56E5A00EF9392 /* JDWelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BB61CE56E5A00EF9392 /* JDWelcomeController.m */; };
@@ -91,6 +92,8 @@
 		EA4E3A2A1CE31E8F00DC8612 /* JDWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWelcomeView.m; sourceTree = "<group>"; };
 		EA4E3A2E1CE3201700DC8612 /* JDWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDWelcomeView.xib; sourceTree = "<group>"; };
 		EA4E3A301CE3813F00DC8612 /* OAuth_Info */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OAuth_Info; sourceTree = "<group>"; };
+		EA5247DF1CE6D1B2001EFFCB /* UIWindow+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JDExtension.h"; sourceTree = "<group>"; };
+		EA5247E01CE6D1B2001EFFCB /* UIWindow+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JDExtension.m"; sourceTree = "<group>"; };
 		EA870BAB1CE550D800EF9392 /* JDAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAccountModel.h; sourceTree = "<group>"; };
 		EA870BAC1CE550D800EF9392 /* JDAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDAccountModel.m; sourceTree = "<group>"; };
 		EA870BAE1CE55AB300EF9392 /* NSString+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JDExtension.h"; sourceTree = "<group>"; };
@@ -450,6 +453,8 @@
 				EA05FE9C1CE00C10004C6756 /* UIBarButtonItem+JDExtension.m */,
 				EA870BAE1CE55AB300EF9392 /* NSString+JDExtension.h */,
 				EA870BAF1CE55AB300EF9392 /* NSString+JDExtension.m */,
+				EA5247DF1CE6D1B2001EFFCB /* UIWindow+JDExtension.h */,
+				EA5247E01CE6D1B2001EFFCB /* UIWindow+JDExtension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -741,6 +746,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA9449C1CDEEDD100928507 /* JDHomeController.m in Sources */,
+				EA5247E11CE6D1B2001EFFCB /* UIWindow+JDExtension.m in Sources */,
 				EA870BBD1CE56E7500EF9392 /* JDNewFeatureController.m in Sources */,
 				EAA944A41CDEEE0D00928507 /* JDMessageController.m in Sources */,
 				EA4E3A211CE30FBB00DC8612 /* JDCustomSearchBar.m in Sources */,

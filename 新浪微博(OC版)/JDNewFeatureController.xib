@@ -14,7 +14,42 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_feature" translatesAutoresizingMaskIntoConstraints="NO" id="tDS-UE-W3i">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k00-5L-PPw">
+                    <rect key="frame" x="205" y="446" width="190" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBk-yZ-aSx">
+                            <rect key="frame" x="0.0" y="0.0" width="190" height="44"/>
+                            <state key="normal" backgroundImage="new_feature_button"/>
+                            <state key="highlighted" backgroundImage="new_feature_button_highlighted"/>
+                            <connections>
+                                <action selector="clickToStartWeibo:" destination="-1" eventType="touchUpInside" id="Oey-w1-BBC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="Qwb-kx-yiI"/>
+                        <constraint firstAttribute="height" constant="44" id="lyN-II-foh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tDS-UE-W3i" secondAttribute="bottom" id="9rs-hY-Arn"/>
+                <constraint firstItem="tDS-UE-W3i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Irr-l0-Pac"/>
+                <constraint firstItem="tDS-UE-W3i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SpA-pZ-eaj"/>
+                <constraint firstAttribute="trailing" secondItem="tDS-UE-W3i" secondAttribute="trailing" id="gBJ-PV-3Gh"/>
+                <constraint firstItem="k00-5L-PPw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gr1-Eh-pa3"/>
+                <constraint firstAttribute="bottom" secondItem="k00-5L-PPw" secondAttribute="bottom" constant="110" id="i83-Ji-Wsv"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="new_feature" width="320" height="480"/>
+        <image name="new_feature_button" width="190" height="44"/>
+        <image name="new_feature_button_highlighted" width="190" height="44"/>
+    </resources>
 </document>

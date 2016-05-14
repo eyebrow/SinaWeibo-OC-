@@ -37,6 +37,10 @@
  *  真实过期时间：
  */
 @property (nonatomic, strong) NSDate *expires_time;
+/**
+ *  用户头像地址：
+ */
+@property (nonatomic, copy) NSString *profile_image_url;
 
 /**
  *  保存授权模型到沙盒：

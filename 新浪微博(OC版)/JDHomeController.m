@@ -12,6 +12,10 @@
 #import "JDCustomTitleView.h"
 #import "JDMenuContentController.h"
 #import "JDWelcomeView.h"
+#import "AFNetworking.h"
+#import "JDAccountModel.h"
+
+#define kUsersInfoURL @"https://api.weibo.com/2/users/show.json"
 
 @interface JDHomeController () {
     UIWindow *_window;
@@ -39,13 +43,17 @@
 // wheelImageView开始旋转：
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.welcomView startRevolve];
+    if (self.welcomView != nil) {
+        [self.welcomView startRevolve];
+    }
 }
 
 // wheelImageView停止：
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [self.welcomView stopRevolve];
+    if (self.welcomView != nil) {
+        [self.welcomView stopRevolve];
+    }
 }
 
 /**
@@ -61,8 +69,40 @@
     [titleBtn addTarget:self action:@selector(clickToAlertMenuBar:) forControlEvents:UIControlEventTouchUpInside];
     self.titleButton = titleBtn;
     
-    self.welcomView.iconImageName = @"visitordiscover_feed_image_house";
-    self.welcomView.infoText = @"当你关注一些人后，他们发布的最新消息会显示在这里。";
+    // 设置游客欢迎界面：
+    if (self.welcomView != nil) {
+        self.welcomView.iconImageName = @"visitordiscover_feed_image_house";
+        self.welcomView.infoText = @"当你关注一些人后，他们发布的最新消息会显示在这里。";
+    } else {
+        // 如果welcomeView == nil，则表明用户已经完成授权：
+        [self setupUserInfo];
+    }
+}
+
+/**
+ *  初始化用户信息：
+ */
+-(void)setupUserInfo {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"access_token"] = account.access_token;
+    parameters[@"uid"] = account.uid;
+    
+    [manager GET:kUsersInfoURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        JDLog(@"获取用户信息成功.... %@", responseObject);
+        // 存储用户头像：
+        NSString *lastIconURLStr = account.profile_image_url;
+        NSString *currentIconUrlStr = responseObject[@"profile_image_url"];
+        // 重新保存授权模型：
+        if (lastIconURLStr != nil && ![lastIconURLStr isEqualToString:currentIconUrlStr]) {
+            account.profile_image_url = currentIconUrlStr;
+            [account svaeAccountToSandbox];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        JDLog(@"设置用户信息出错.... %@", error);
+    }];
 }
 
 /**

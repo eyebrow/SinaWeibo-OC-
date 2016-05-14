@@ -7,14 +7,49 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JDWelcomeController">
             <connections>
+                <outlet property="iconImageView" destination="URw-IA-uGB" id="iZK-7O-SHr"/>
+                <outlet property="iconImageViewTop" destination="pUE-kE-zS7" id="tx5-2t-nZX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeLabel" destination="RRh-Ya-1wP" id="ikv-74-NCO"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="Dsk-Fg-Gx3">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="URw-IA-uGB">
+                    <rect key="frame" x="250" y="350" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6o4-j0-zIT"/>
+                        <constraint firstAttribute="height" constant="100" id="az2-gp-aoZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRh-Ya-1wP">
+                    <rect key="frame" x="260" y="208" width="80" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="RRh-Ya-1wP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2LE-1P-Ndm"/>
+                <constraint firstItem="RRh-Ya-1wP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="4Ud-at-j2l"/>
+                <constraint firstItem="Dsk-Fg-Gx3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EUy-ub-5XM"/>
+                <constraint firstItem="URw-IA-uGB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="M5E-Ne-v1u"/>
+                <constraint firstAttribute="bottom" secondItem="Dsk-Fg-Gx3" secondAttribute="bottom" id="Qbj-z4-GdO"/>
+                <constraint firstItem="Dsk-Fg-Gx3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hyW-FP-rjZ"/>
+                <constraint firstItem="URw-IA-uGB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="100" id="pUE-kE-zS7"/>
+                <constraint firstAttribute="trailing" secondItem="Dsk-Fg-Gx3" secondAttribute="trailing" id="rml-VX-xKD"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="ad_background" width="320" height="480"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
 </document>

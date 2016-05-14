@@ -7,6 +7,7 @@
 //
 
 #import "JDNewFeatureController.h"
+#import "JDTabBarController.h"
 
 @interface JDNewFeatureController ()
 
@@ -17,6 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+/**
+ *  点击开始微博：
+ *
+ *  @param sender
+ */
+- (IBAction)clickToStartWeibo:(UIButton *)sender {
+    JDLog(@"点击了开始微博按钮....");
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    JDTabBarController *tabBarVC = [[JDTabBarController alloc] init];
+    window.rootViewController = tabBarVC;
 }
 
 @end
