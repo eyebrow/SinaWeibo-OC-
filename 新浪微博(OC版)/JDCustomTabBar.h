@@ -20,6 +20,13 @@
  *  @param endPoint     当前button的tag。
  */
 -(void)customTabBar:(JDCustomTabBar *)customTabBar didClickWithStartPoint:(NSInteger)startPoint endPoint:(NSInteger)endPoint;
+/**
+ *  执行此代理方法，进入撰写微博界面：
+ *
+ *  @param customTabBar
+ *  @param composeBtn   
+ */
+-(void)customTabBar:(JDCustomTabBar *)customTabBar didClickComposeButton:(UIButton *)composeBtn;
 
 @end
 

@@ -129,7 +129,9 @@
 }
 
 -(void)clickToComposeNewWeibo:(UIButton *)sender {
-    JDLog(@"点击了写微博的按钮....");
+    if ([self.delegate respondsToSelector:@selector(customTabBar:didClickComposeButton:)]) {
+        [self.delegate customTabBar:self didClickComposeButton:sender];
+    }
 }
 
 -(void)layoutSubviews {

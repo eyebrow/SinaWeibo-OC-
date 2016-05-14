@@ -40,28 +40,36 @@
     formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     // 指定服务器返回时间的格式：
     formatter.dateFormat = @"EEE MMM  dd HH:mm:ss Z yyyy";
+    // 通过格式将日期字符串转换为日期：
     NSDate *createDate = [formatter dateFromString:_created_at];
     
     // 判断时间：
     if ([createDate isThisYear]) {
+        // 今年：
         if ([createDate isToday]) {
+            // 今天：
             NSDateComponents *cmps = [createDate distanceFromNow];
             if (cmps.hour >= 1) {
-                // 大于一小时：
+                // 大于1小时：
                 return [NSString stringWithFormat:@"%tu小时前", cmps.hour];
             } else if (cmps.minute > 1) {
+                // 一小时以内：
                 return [NSString stringWithFormat:@"%tu分钟前", cmps.minute];
             } else {
+                // 更早：
                 return @"刚刚";
             }
         } else if ([createDate isYesterday]) {
+            // 昨天：
             formatter.dateFormat = @"昨天 HH时:mm分";
             return [formatter stringFromDate:createDate];
         } else {
+            // 更早：
             formatter.dateFormat = @"MM月dd日 HH时:mm分";
             return [formatter stringFromDate:createDate];
         }
     } else {
+        // 如果不是今年，那么就显示具体的年月日时间：
         formatter.dateFormat = @"yy年MM月dd日 HH时:mm分";
         return [formatter stringFromDate:createDate];
     }

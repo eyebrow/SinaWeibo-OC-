@@ -167,8 +167,43 @@
         JDLog(@"微博模型数组.... %@", statusModelsArray);
         // 刷新数据：
         [self.tableView reloadData];
+        // 显示刷新了多少条数据：
+        [self showNewWeiboStatusesCount:statusModelsArray.count];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         JDLog(@"加载新微博数据失败.... %@", error);
+    }];
+}
+
+/**
+ *  显示刷新的微博数量：
+ *
+ *  @param statusesCount
+ */
+-(void)showNewWeiboStatusesCount:(NSInteger)statusesCount {
+    UILabel *countLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, JDScreenWidth, 25)];
+    // 有新微博才显示：
+    if (statusesCount == 0) {
+        countLabel.text = @"目前还没有新微博";
+    } else {
+        countLabel.text = [NSString stringWithFormat:@"刷新到%ld条新微博", statusesCount];
+    }
+    countLabel.font = [UIFont systemFontOfSize:14.0f];
+    countLabel.textAlignment = NSTextAlignmentCenter;
+    [countLabel setBackgroundColor:[UIColor orangeColor]];
+    [self.navigationController.view addSubview:countLabel];
+    countLabel.alpha = 0.0;
+    
+    // 动画显示新微博数量：
+    [UIView animateWithDuration:0.5f animations:^{
+        countLabel.alpha = 1.0f;
+    } completion:^(BOOL finished) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:1.5f animations:^{
+                countLabel.alpha = 0.0;
+            } completion:^(BOOL finished) {
+                [countLabel removeFromSuperview];
+            }];
+        });
     }];
 }
 

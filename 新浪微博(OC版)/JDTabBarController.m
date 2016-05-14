@@ -13,6 +13,7 @@
 #import "JDProfileController.h"
 #import "JDNavigationController.h"
 #import "JDCustomTabBar.h"
+#import "JDComposeController.h"
 
 @interface JDTabBarController () <JDCustomTabBarDelegate>
 
@@ -125,6 +126,13 @@
 -(void)customTabBar:(JDCustomTabBar *)customTabBar didClickWithStartPoint:(NSInteger)startPoint endPoint:(NSInteger)endPoint {
     // 一行代码切换控制器：
     self.selectedIndex = endPoint;
+}
+
+-(void)customTabBar:(JDCustomTabBar *)customTabBar didClickComposeButton:(UIButton *)composeBtn {
+    JDLog(@"点击了写微博的按钮....");
+    JDComposeController *composeVC = [[JDComposeController alloc] init];
+    JDNavigationController *navVC = [[JDNavigationController alloc] initWithRootViewController:composeVC];
+    [self presentViewController:navVC animated:YES completion:nil];
 }
 
 @end
