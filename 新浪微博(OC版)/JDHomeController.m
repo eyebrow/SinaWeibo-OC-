@@ -14,8 +14,12 @@
 #import "JDWelcomeView.h"
 #import "AFNetworking.h"
 #import "JDAccountModel.h"
+#import "UIImageView+WebCache.h"
 
+// 获取用户信息的链接：
 #define kUsersInfoURL @"https://api.weibo.com/2/users/show.json"
+// 获取最新微博数据的链接：
+#define kNewWeiboStatusesURL @"https://api.weibo.com/2/statuses/home_timeline.json"
 
 @interface JDHomeController () {
     UIWindow *_window;
@@ -30,10 +34,21 @@
  *  导航条的titleView：
  */
 @property (nonatomic, weak) JDCustomTitleView *titleButton;
+/**
+ *  用于存放微博数据的数组：
+ */
+@property (nonatomic, strong) NSMutableArray *statusesArray;
 
 @end
 
 @implementation JDHomeController
+
+-(NSMutableArray *)statusesArray {
+    if (!_statusesArray) {
+        _statusesArray = [NSMutableArray array];
+    }
+    return _statusesArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,14 +90,17 @@
         self.welcomView.infoText = @"当你关注一些人后，他们发布的最新消息会显示在这里。";
     } else {
         // 如果welcomeView == nil，则表明用户已经完成授权：
-        [self setupUserInfo];
+        // 加载用户信息：
+        [self loadUserInfo];
+        // 加载最新微博数据：
+        [self loadNewWeiboStatuses];
     }
 }
 
 /**
  *  初始化用户信息：
  */
--(void)setupUserInfo {
+-(void)loadUserInfo {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
@@ -102,6 +120,27 @@
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         JDLog(@"设置用户信息出错.... %@", error);
+    }];
+}
+
+/**
+ *  加载最新微博数据：
+ */
+-(void)loadNewWeiboStatuses {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"access_token"] = account.access_token;
+    
+    [manager GET:kNewWeiboStatusesURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        JDLog(@"加载新微博数据成功.... %@", responseObject[@"statuses"]);
+        // addObject是将一个数组本身作为元素添加到进去，而addObjectsFromArray是将一个数组中的元素一个一个取出来再加入另一个数组：
+        [self.statusesArray addObjectsFromArray:responseObject[@"statuses"]];
+        // 刷新数据：
+        [self.tableView reloadData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        JDLog(@"加载新微博数据失败.... %@", error);
     }];
 }
 
@@ -202,6 +241,30 @@
     UIStoryboard *scanSB = [UIStoryboard storyboardWithName:@"JDScanCodeController" bundle:nil];
     JDScanCodeController *scanVC = [scanSB instantiateInitialViewController];
     [self presentViewController:scanVC animated:YES completion:nil];
+}
+
+#pragma mark - UITableViewDataSource & Delegate
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.statusesArray.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *reuseID = @"WEIBOCELL";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseID];
+    }
+    NSDictionary *status = self.statusesArray[indexPath.row];
+    NSDictionary *user = status[@"user"];
+    cell.textLabel.text = user[@"name"];
+    cell.detailTextLabel.text = status[@"text"];
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:user[@"profile_image_url"]] placeholderImage:[UIImage imageNamed:@"avatar_default_big"]];
+    return cell;
 }
 
 @end
