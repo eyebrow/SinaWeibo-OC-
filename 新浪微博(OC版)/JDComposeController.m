@@ -8,8 +8,16 @@
 
 #import "JDComposeController.h"
 #import "JDComposeTextView.h"
+#import "JDAccountModel.h"
+
+#define kStatusesUpdateURL @"https://api.weibo.com/2/statuses/update.json"
 
 @interface JDComposeController () <UITextViewDelegate>
+
+/**
+ *  自定义的textView：
+ */
+@property (nonatomic, weak) JDComposeTextView *textView;
 
 @end
 
@@ -25,8 +33,7 @@
  */
 -(void)setupComposeController {
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(clickToCloseComposePage:)];
-    self.navigationItem.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"发送" style:UIBarButtonItemStylePlain target:self action:@selector(clickToConfirmSend:)];
-    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"发送" style:UIBarButtonItemStylePlain target:self action:@selector(clickToConfirmSend:)];
     // 添加自定义textView：
     JDComposeTextView *textView = [[JDComposeTextView alloc] initWithFrame:self.view.bounds];
     // 设置提示文字：
@@ -34,6 +41,19 @@
     // 设置滚动：
     textView.delegate = self;
     [self.view addSubview:textView];
+    self.textView = textView;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+}
+
+/**
+ *  添加一个工具条：
+ */
+-(void)addToolsBar {
+    
 }
 
 /**
@@ -43,6 +63,7 @@
  */
 -(void)clickToCloseComposePage:(UIBarButtonItem *)sender {
     JDLog(@"点击了关闭撰写微博界面的按钮....");
+    [self.view endEditing:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -53,12 +74,33 @@
  */
 -(void)clickToConfirmSend:(UIBarButtonItem *)sender {
     JDLog(@"点击了确认发送一条新微博的按钮....");
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"access_token"] = account.access_token;
+    parameters[@"status"] = self.textView.text;
+    
+    [SVProgressHUD show];
+    [manager POST:kStatusesUpdateURL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        JDLog(@"发送微博成功.... %@", responseObject);
+        [SVProgressHUD showSuccessWithStatus:@"发送成功"];
+        [self clickToCloseComposePage:nil];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        JDLog(@"发送微博失败.... %@", error);
+        [SVProgressHUD showErrorWithStatus:@"发送失败"];
+    }];
+    [SVProgressHUD dismiss];
 }
 
 #pragma mark - UITextViewDelegate
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [self.view endEditing:YES];
+}
+
+-(void)textViewDidChange:(UITextView *)textView {
+    self.navigationItem.rightBarButtonItem.enabled = textView.text.length > 0;
 }
 
 @end

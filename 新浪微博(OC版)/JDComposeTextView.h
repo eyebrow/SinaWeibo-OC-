@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class JDComposeTextView;
+
 @interface JDComposeTextView : UITextView
 
 /**
