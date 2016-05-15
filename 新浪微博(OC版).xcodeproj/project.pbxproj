@@ -47,6 +47,7 @@
 		EAA944B21CDEF71500928507 /* JDCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944B11CDEF71500928507 /* JDCustomTabBar.m */; };
 		EAA944B51CDEF73900928507 /* JDCustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944B41CDEF73900928507 /* JDCustomTabBarItem.m */; };
 		EAA944B81CDF21A200928507 /* UIView+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944B71CDF21A200928507 /* UIView+JDExtension.m */; };
+		EAB136D81CE80110007C9B44 /* JDComposeToolsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB136D71CE80110007C9B44 /* JDComposeToolsBar.m */; };
 		EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */; };
 		EAEBD4451CE77BD100147E08 /* JDComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4441CE77BD100147E08 /* JDComposeController.m */; };
 		EAEBD4481CE77FA900147E08 /* JDComposeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4471CE77FA900147E08 /* JDComposeTextView.m */; };
@@ -152,6 +153,8 @@
 		EAA944B41CDEF73900928507 /* JDCustomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomTabBarItem.m; sourceTree = "<group>"; };
 		EAA944B61CDF21A200928507 /* UIView+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JDExtension.h"; sourceTree = "<group>"; };
 		EAA944B71CDF21A200928507 /* UIView+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JDExtension.m"; sourceTree = "<group>"; };
+		EAB136D61CE80110007C9B44 /* JDComposeToolsBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDComposeToolsBar.h; sourceTree = "<group>"; };
+		EAB136D71CE80110007C9B44 /* JDComposeToolsBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDComposeToolsBar.m; sourceTree = "<group>"; };
 		EAEBD43C1CE75C2C00147E08 /* NSDate+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JDExtension.h"; sourceTree = "<group>"; };
 		EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JDExtension.m"; sourceTree = "<group>"; };
 		EAEBD4431CE77BD100147E08 /* JDComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDComposeController.h; sourceTree = "<group>"; };
@@ -602,6 +605,8 @@
 			children = (
 				EAEBD4461CE77FA900147E08 /* JDComposeTextView.h */,
 				EAEBD4471CE77FA900147E08 /* JDComposeTextView.m */,
+				EAB136D61CE80110007C9B44 /* JDComposeToolsBar.h */,
+				EAB136D71CE80110007C9B44 /* JDComposeToolsBar.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -816,6 +821,7 @@
 				EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */,
 				EA5247ED1CE6F6C0001EFFCB /* JDUserModel.m in Sources */,
 				EAA944911CDEE9F900928507 /* JDAppDelegate.m in Sources */,
+				EAB136D81CE80110007C9B44 /* JDComposeToolsBar.m in Sources */,
 				EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */,
 				EAA944961CDEEC0E00928507 /* JDTabBarController.m in Sources */,
 				EAA944561CDEE87800928507 /* main.m in Sources */,

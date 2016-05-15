@@ -9,6 +9,7 @@
 #import "JDComposeController.h"
 #import "JDComposeTextView.h"
 #import "JDAccountModel.h"
+#import "JDComposeToolsBar.h"
 
 #define kStatusesUpdateURL @"https://api.weibo.com/2/statuses/update.json"
 
@@ -18,6 +19,7 @@
  *  自定义的textView：
  */
 @property (nonatomic, weak) JDComposeTextView *textView;
+@property (nonatomic, weak) JDComposeToolsBar *toolsBar;
 
 @end
 
@@ -34,6 +36,7 @@
 -(void)setupComposeController {
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(clickToCloseComposePage:)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"发送" style:UIBarButtonItemStylePlain target:self action:@selector(clickToConfirmSend:)];
+    
     // 添加自定义textView：
     JDComposeTextView *textView = [[JDComposeTextView alloc] initWithFrame:self.view.bounds];
     // 设置提示文字：
@@ -42,18 +45,49 @@
     textView.delegate = self;
     [self.view addSubview:textView];
     self.textView = textView;
+    
+    // 添加toolsBar：
+    CGFloat width = JDScreenWidth;
+    CGFloat height = 30;
+    CGFloat x = 0;
+    CGFloat y = JDScreenHeight - height;
+    JDComposeToolsBar *toolsBar = [[JDComposeToolsBar alloc] initWithFrame:CGRectMake(x, y, width, height)];
+    [self.view addSubview:toolsBar];
+    // 监听键盘弹出和收起，动态改变键盘toolsBar的位置：
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    self.toolsBar = toolsBar;
+}
+
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+/**
+ *  键盘弹出时调用的方法：
+ */
+-(void)keyboardWillShow:(NSNotification *)sender {
+    // 取出键盘的高度：
+    CGRect kbFrame = [sender.userInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGFloat kbHeight = kbFrame.size.height;
+    // toolsBar随着键盘一同弹出：
+    [UIView animateWithDuration:0.25 animations:^{
+        self.toolsBar.y = JDScreenHeight - kbHeight - self.toolsBar.height;
+    }];
+}
+
+/**
+ *  键盘收起时调用的方法：
+ */
+-(void)keyboardWillHide:(NSNotification *)sender {
+    [UIView animateWithDuration:0.25 animations:^{
+        self.toolsBar.y = JDScreenHeight - self.toolsBar.height;
+    }];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationItem.rightBarButtonItem.enabled = NO;
-}
-
-/**
- *  添加一个工具条：
- */
--(void)addToolsBar {
-    
 }
 
 /**
