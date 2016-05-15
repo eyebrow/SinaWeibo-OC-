@@ -10,7 +10,7 @@
 
 #import "JDComposeToolsBar.h"
 
-#define kButtonsCount 5
+#define kButtonsCount 5.0
 
 @interface JDComposeToolsBar ()
 
@@ -67,6 +67,7 @@
  *  初始化ComposeToolsBar：
  */
 -(void)setupComposeToolsBar {
+    [self setBackgroundColor:[UIColor yellowColor]];
     // 创建5个按钮并设置图片：
     for (int i = 0; i < kButtonsCount; i++) {
         UIButton *toolBtn = [[UIButton alloc] init];

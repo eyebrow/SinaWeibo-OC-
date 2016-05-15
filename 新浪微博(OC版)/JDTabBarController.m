@@ -130,7 +130,8 @@
 
 -(void)customTabBar:(JDCustomTabBar *)customTabBar didClickComposeButton:(UIButton *)composeBtn {
     JDLog(@"点击了写微博的按钮....");
-    JDComposeController *composeVC = [[JDComposeController alloc] init];
+    UIStoryboard *composeSB = [UIStoryboard storyboardWithName:@"JDComposeController" bundle:nil];
+    JDComposeController *composeVC = [composeSB instantiateInitialViewController];
     JDNavigationController *navVC = [[JDNavigationController alloc] initWithRootViewController:composeVC];
     [self presentViewController:navVC animated:YES completion:nil];
 }

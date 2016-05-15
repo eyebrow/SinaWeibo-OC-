@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="An0-xk-9N0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Compose Controller-->
+        <scene sceneID="9yV-kc-RAa">
+            <objects>
+                <viewController id="An0-xk-9N0" customClass="JDComposeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8IY-Ea-TIn"/>
+                        <viewControllerLayoutGuide type="bottom" id="QtH-rX-tK2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WGO-ff-TCd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFA-LB-bJq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="yvE-UP-zgL"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qv1-Dt-yAK">
+                                <rect key="frame" x="0.0" y="250" width="600" height="350"/>
+                                <connections>
+                                    <segue destination="wqg-ET-9Np" kind="embed" id="Ajc-8y-E5v"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qv1-Dt-yAK" firstAttribute="leading" secondItem="WGO-ff-TCd" secondAttribute="leading" id="Hp0-xa-Fwh"/>
+                            <constraint firstItem="Qv1-Dt-yAK" firstAttribute="top" secondItem="BFA-LB-bJq" secondAttribute="bottom" id="QL6-LS-0b0"/>
+                            <constraint firstItem="BFA-LB-bJq" firstAttribute="top" secondItem="WGO-ff-TCd" secondAttribute="top" id="RfL-iu-y19"/>
+                            <constraint firstItem="QtH-rX-tK2" firstAttribute="top" secondItem="Qv1-Dt-yAK" secondAttribute="bottom" id="YyA-TC-fek"/>
+                            <constraint firstItem="BFA-LB-bJq" firstAttribute="leading" secondItem="WGO-ff-TCd" secondAttribute="leading" id="h2D-w8-UB6"/>
+                            <constraint firstAttribute="trailing" secondItem="BFA-LB-bJq" secondAttribute="trailing" id="meP-vD-Izs"/>
+                            <constraint firstAttribute="trailing" secondItem="Qv1-Dt-yAK" secondAttribute="trailing" id="obj-P8-JZg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textViewContainerView" destination="BFA-LB-bJq" id="Ms8-MM-XE1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNj-JY-XHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="307"/>
+        </scene>
+        <!--Photo Controller-->
+        <scene sceneID="PyR-hw-h2T">
+            <objects>
+                <collectionViewController id="wqg-ET-9Np" customClass="JDPhotoController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dU3-fQ-wNF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2BG-hN-uEb">
+                            <size key="itemSize" width="70" height="70"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PHOTOCELL" id="QX7-e7-C3q" customClass="JDPhotoCell">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiG-rn-u97">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                            <state key="normal" backgroundImage="compose_pic_add"/>
+                                            <state key="highlighted" backgroundImage="compose_pic_add_highlighted"/>
+                                            <connections>
+                                                <action selector="clickToChoosePhotoFromAlbum:" destination="QX7-e7-C3q" eventType="touchUpInside" id="KLP-ra-Tqj"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ua-xJ-RaG">
+                                            <rect key="frame" x="48" y="48" width="22" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="22" id="owz-mR-ioL"/>
+                                                <constraint firstAttribute="height" constant="22" id="tLn-3s-RO9"/>
+                                            </constraints>
+                                            <state key="normal" image="compose_location_icon_delete"/>
+                                            <connections>
+                                                <action selector="clickToDeletePhoto:" destination="QX7-e7-C3q" eventType="touchUpInside" id="gqF-Wf-E2p"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tiG-rn-u97" secondAttribute="trailing" id="5A8-bq-Z76"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ua-xJ-RaG" secondAttribute="trailing" id="6RA-5G-byS"/>
+                                    <constraint firstItem="tiG-rn-u97" firstAttribute="leading" secondItem="QX7-e7-C3q" secondAttribute="leading" id="Egy-Ot-6n6"/>
+                                    <constraint firstAttribute="bottom" secondItem="8ua-xJ-RaG" secondAttribute="bottom" id="LfJ-NZ-zBM"/>
+                                    <constraint firstItem="tiG-rn-u97" firstAttribute="top" secondItem="QX7-e7-C3q" secondAttribute="top" id="XvV-Hh-1fe"/>
+                                    <constraint firstAttribute="bottom" secondItem="tiG-rn-u97" secondAttribute="bottom" id="iv1-t5-0XN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="deleteButton" destination="8ua-xJ-RaG" id="ock-5h-2nP"/>
+                                    <outlet property="photoButton" destination="tiG-rn-u97" id="Yt8-fF-JtQ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="wqg-ET-9Np" id="Zrp-02-eIt"/>
+                            <outlet property="delegate" destination="wqg-ET-9Np" id="aFD-7p-Cfi"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="flowLayout" destination="2BG-hN-uEb" id="Xdu-lJ-bLF"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqa-NV-eaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="939"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compose_location_icon_delete" width="7" height="7"/>
+        <image name="compose_pic_add" width="70" height="70"/>
+        <image name="compose_pic_add_highlighted" width="70" height="70"/>
+    </resources>
+</document>
