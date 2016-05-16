@@ -14,4 +14,8 @@
 
 @implementation JDUserModel
 
+-(BOOL)isVip {
+    return self.mbtype.integerValue > 2;
+}
+
 @end

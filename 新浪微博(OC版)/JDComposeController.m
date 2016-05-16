@@ -184,6 +184,7 @@
     [SVProgressHUD dismiss];
 }
 
+// 利用segue拦截控制器切换：
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     self.photoVC = segue.destinationViewController;
 }

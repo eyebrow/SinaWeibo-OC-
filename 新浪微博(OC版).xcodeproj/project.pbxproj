@@ -51,6 +51,10 @@
 		EAB136DA1CE81781007C9B44 /* JDComposeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136D91CE81781007C9B44 /* JDComposeController.storyboard */; };
 		EAB136DD1CE8425C007C9B44 /* JDPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB136DC1CE8425C007C9B44 /* JDPhotoCell.m */; };
 		EAB136E01CE8448A007C9B44 /* JDPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB136DF1CE8448A007C9B44 /* JDPhotoController.m */; };
+		EAB136E21CE8BD9E007C9B44 /* JDHomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136E11CE8BD9E007C9B44 /* JDHomeController.storyboard */; };
+		EAB136E41CE8C157007C9B44 /* JDMessageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136E31CE8C157007C9B44 /* JDMessageController.storyboard */; };
+		EAB136E61CE8C209007C9B44 /* JDDiscoverController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136E51CE8C209007C9B44 /* JDDiscoverController.storyboard */; };
+		EAB136E81CE8C21C007C9B44 /* JDProfileController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136E71CE8C21C007C9B44 /* JDProfileController.storyboard */; };
 		EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */; };
 		EAEBD4451CE77BD100147E08 /* JDComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4441CE77BD100147E08 /* JDComposeController.m */; };
 		EAEBD4481CE77FA900147E08 /* JDComposeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4471CE77FA900147E08 /* JDComposeTextView.m */; };
@@ -163,6 +167,10 @@
 		EAB136DC1CE8425C007C9B44 /* JDPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPhotoCell.m; sourceTree = "<group>"; };
 		EAB136DE1CE8448A007C9B44 /* JDPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPhotoController.h; sourceTree = "<group>"; };
 		EAB136DF1CE8448A007C9B44 /* JDPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPhotoController.m; sourceTree = "<group>"; };
+		EAB136E11CE8BD9E007C9B44 /* JDHomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDHomeController.storyboard; sourceTree = "<group>"; };
+		EAB136E31CE8C157007C9B44 /* JDMessageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDMessageController.storyboard; sourceTree = "<group>"; };
+		EAB136E51CE8C209007C9B44 /* JDDiscoverController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDDiscoverController.storyboard; sourceTree = "<group>"; };
+		EAB136E71CE8C21C007C9B44 /* JDProfileController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDProfileController.storyboard; sourceTree = "<group>"; };
 		EAEBD43C1CE75C2C00147E08 /* NSDate+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JDExtension.h"; sourceTree = "<group>"; };
 		EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JDExtension.m"; sourceTree = "<group>"; };
 		EAEBD4431CE77BD100147E08 /* JDComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDComposeController.h; sourceTree = "<group>"; };
@@ -228,6 +236,7 @@
 			children = (
 				EAA944A51CDEEE5300928507 /* JDDiscoverController.h */,
 				EAA944A61CDEEE5300928507 /* JDDiscoverController.m */,
+				EAB136E51CE8C209007C9B44 /* JDDiscoverController.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -527,6 +536,7 @@
 				EAA9449B1CDEEDD100928507 /* JDHomeController.m */,
 				EA4E3A191CE3054D00DC8612 /* JDMenuContentController.h */,
 				EA4E3A1A1CE3054D00DC8612 /* JDMenuContentController.m */,
+				EAB136E11CE8BD9E007C9B44 /* JDHomeController.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -560,6 +570,7 @@
 			children = (
 				EAA9449E1CDEEDF700928507 /* JDProfileController.h */,
 				EAA9449F1CDEEDF700928507 /* JDProfileController.m */,
+				EAB136E71CE8C21C007C9B44 /* JDProfileController.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -569,6 +580,7 @@
 			children = (
 				EAA944A21CDEEE0D00928507 /* JDMessageController.h */,
 				EAA944A31CDEEE0D00928507 /* JDMessageController.m */,
+				EAB136E31CE8C157007C9B44 /* JDMessageController.storyboard */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -749,10 +761,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA870BB91CE56E5A00EF9392 /* JDWelcomeController.xib in Resources */,
+				EAB136E81CE8C21C007C9B44 /* JDProfileController.storyboard in Resources */,
 				EA05FEA31CE017F0004C6756 /* JDScanCodeController.storyboard in Resources */,
+				EAB136E41CE8C157007C9B44 /* JDMessageController.storyboard in Resources */,
+				EAB136E61CE8C209007C9B44 /* JDDiscoverController.storyboard in Resources */,
 				EAB136DA1CE81781007C9B44 /* JDComposeController.storyboard in Resources */,
 				EAA944611CDEE87800928507 /* Assets.xcassets in Resources */,
 				EA05FEAE1CE0A56F004C6756 /* JDMyIDCardController.xib in Resources */,
+				EAB136E21CE8BD9E007C9B44 /* JDHomeController.storyboard in Resources */,
 				EA870BBE1CE56E7500EF9392 /* JDNewFeatureController.xib in Resources */,
 				EA4E3A2F1CE3201700DC8612 /* JDWelcomeView.xib in Resources */,
 			);

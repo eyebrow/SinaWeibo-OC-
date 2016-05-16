@@ -14,6 +14,15 @@
 
 @property (nonatomic, strong) JDStatusModel *status;
 
+/**
+ *  快速创建cell：
+ *
+ *  @param tableView
+ *
+ *  @return 
+ */
 +(instancetype)getWeiboCellWithTableView:(UITableView *)tableView;
+
+-(CGFloat)getCellHeightWithStatus:(JDStatusModel *)status;
 
 @end

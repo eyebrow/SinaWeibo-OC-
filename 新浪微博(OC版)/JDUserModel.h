@@ -22,5 +22,20 @@
  *  用户头像：
  */
 @property (nonatomic, copy) NSString *profile_image_url;
+/**
+ *  会员等级：
+ */
+@property (nonatomic, strong) NSNumber *mbrank;
+/**
+ *  会员类型：
+ */
+@property (nonatomic, strong) NSNumber *mbtype;
+
+/**
+ *  判断是不是会员：
+ *
+ *  @return
+ */
+-(BOOL)isVip;
 
 @end

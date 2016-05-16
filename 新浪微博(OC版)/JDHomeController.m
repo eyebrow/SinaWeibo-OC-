@@ -347,4 +347,10 @@
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    JDWeiboCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WEIBOCELL"];
+    JDStatusModel *status = self.statusesArray[indexPath.row];
+    return [cell getCellHeightWithStatus:status];
+}
+
 @end

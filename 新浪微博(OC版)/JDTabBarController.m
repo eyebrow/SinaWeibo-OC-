@@ -84,20 +84,16 @@
  */
 -(void)setupTabBarController {
     // 主页：
-    JDHomeController *homeVC = [[JDHomeController alloc] init];
-    homeVC = (JDHomeController *)[self createChildControllerWithViewController:homeVC title:@"首页" normalImageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    JDHomeController *homeVC = (JDHomeController *)[self createChildControllerWithStoryboardName:@"JDHomeController" title:@"首页" normalImageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
     self.homeVC = homeVC;
     // 消息中心：
-    JDMessageController *messageVC = [[JDMessageController alloc] init];
-    messageVC = (JDMessageController *)[self createChildControllerWithViewController:messageVC title:@"消息" normalImageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
+    JDMessageController *messageVC = (JDMessageController *)[self createChildControllerWithStoryboardName:@"JDMessageController" title:@"消息" normalImageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
     self.messageVC = messageVC;
     // 发现：
-    JDDiscoverController *discoverVC = [[JDDiscoverController alloc] init];
-    discoverVC = (JDDiscoverController *)[self createChildControllerWithViewController:discoverVC title:@"发现" normalImageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+    JDDiscoverController *discoverVC = (JDDiscoverController *)[self createChildControllerWithStoryboardName:@"JDDiscoverController" title:@"发现" normalImageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
     self.discoverVC = discoverVC;
     // 个人中心：
-    JDProfileController *profileVC = [[JDProfileController alloc] init];
-    profileVC = (JDProfileController *)[self createChildControllerWithViewController:profileVC title:@"我" normalImageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
+    JDProfileController *profileVC = (JDProfileController *)[self createChildControllerWithStoryboardName:@"JDProfileController" title:@"我" normalImageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
     self.profileVC = profileVC;
 }
 
@@ -119,6 +115,14 @@
     JDNavigationController *navVC = [[JDNavigationController alloc] initWithRootViewController:viewController];
     [self addChildViewController:navVC];
     return viewController;
+}
+
+// 通过storyboard的方式创建控制器：
+-(UIViewController *)createChildControllerWithStoryboardName:(NSString *)storyboardName title:(NSString *)title normalImageName:(NSString *)norImageName selectedImageName:(NSString *)selImageName {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UIViewController *vc = [sb instantiateInitialViewController];
+    [self createChildControllerWithViewController:vc title:title normalImageName:norImageName selectedImageName:selImageName];
+    return vc;
 }
 
 #pragma mark - JDCustomTabBarDelegate:
