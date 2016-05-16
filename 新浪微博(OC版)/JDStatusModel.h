@@ -31,15 +31,15 @@
 /**
  *  转发数；
  */
-@property (nonatomic, assign) NSInteger reposts_count;
+@property (nonatomic, strong) NSNumber *reposts_count;
 /**
  *  评论数：
  */
-@property (nonatomic, assign) NSInteger comments_count;
+@property (nonatomic, strong) NSNumber *comments_count;
 /**
  *  赞数：
  */
-@property (nonatomic, assign) NSInteger attitudes_count;
+@property (nonatomic, strong) NSNumber *attitudes_count;
 
 /**
  *  用户模型：

@@ -84,6 +84,23 @@
  *  是否是转发：
  */
 @property (nonatomic, assign) BOOL isFroward;
+/**
+ *  底部试图：
+ */
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bootomViewHeight;
+/**
+ *  转发按钮：
+ */
+@property (weak, nonatomic) IBOutlet UIButton *forwardButton;
+/**
+ *  评论按钮：
+ */
+@property (weak, nonatomic) IBOutlet UIButton *reviewButton;
+/**
+ *  点赞按钮：
+ */
+@property (weak, nonatomic) IBOutlet UIButton *approveButton;
+
 
 @end
 
@@ -128,6 +145,9 @@
         self.forwardViewHeight.constant = 0;
         self.forwardView.hidden = YES;
     }
+    
+    // 底部视图：
+    [self setupBootomViewWithStatus:status user:user];
 }
 
 /**
@@ -275,6 +295,37 @@
 }
 
 /**
+ *  初始化底部视图：
+ *
+ *  @param user
+ *  @param user
+ */
+-(void)setupBootomViewWithStatus:(JDStatusModel *)status user:(JDUserModel *)user {
+    [self setButtonTitleWithCount:status.reposts_count normalTitle:@"转发" targetButton:self.forwardButton];
+    [self setButtonTitleWithCount:status.comments_count normalTitle:@"评论" targetButton:self.reviewButton];
+    [self setButtonTitleWithCount:status.attitudes_count normalTitle:@"赞" targetButton:self.approveButton];
+}
+
+-(void)setButtonTitleWithCount:(NSNumber *)count normalTitle:(NSString *)norTitle targetButton:(UIButton *)targetBtn {
+    if (count.longLongValue > 0) {
+        // 格式处理：
+        NSString *title = nil;
+        if (count.longLongValue > 10000) {
+            double number = count.longLongValue / 10000.0;
+            title = [NSString stringWithFormat:@"%.1f万", number];
+            // 如果title中存在.0，则替换为空：
+            title = [title stringByReplacingOccurrencesOfString:@".0" withString:@""];
+        } else {
+            title = [NSString stringWithFormat:@"%lld", count.longLongValue];
+        }
+        // 有转发：
+        [targetBtn setTitle:title forState:UIControlStateNormal];
+    } else {
+        [targetBtn setTitle:norTitle forState:UIControlStateNormal];
+    }
+}
+
+/**
  *  返回cell的高度：
  *
  *  @param status
@@ -284,13 +335,15 @@
 -(CGFloat)getCellHeightWithStatus:(JDStatusModel *)status {
     self.status = status;
     [self layoutIfNeeded];
+    // 取出底部视图的高度：
+    CGFloat bootomViewHeight = self.bootomViewHeight.constant;
     if (self.status.retweeted_status == nil) {
         // 没有转发：
         self.isFroward = NO;
-        return self.originalWeiboHeight.constant + kMargin * 2;
+        return self.originalWeiboHeight.constant + kMargin * 2 + bootomViewHeight;
     } else {
         self.isFroward = YES;
-        return self.forwardView.y + self.forwardViewHeight.constant + kMargin * 2;
+        return self.forwardView.y + self.forwardViewHeight.constant + kMargin * 2 + bootomViewHeight;
     }
 }
 
@@ -316,6 +369,35 @@
     }
     cell.photo = photo;
     return cell;
+}
+
+#pragma mark - 底部视图按钮的事件监听：
+
+/**
+ *  点击转发微博：
+ *
+ *  @param sender
+ */
+- (IBAction)clickToForward:(UIButton *)sender {
+    JDLog(@"点击了转发微博....");
+}
+
+/**
+ *  点击评论微博：
+ *
+ *  @param sender
+ */
+- (IBAction)clickToPublishReview:(UIButton *)sender {
+    JDLog(@"点击了评论微博....");
+}
+
+/**
+ *  点赞：
+ *
+ *  @param sender
+ */
+- (IBAction)clickToApprove:(UIButton *)sender {
+    JDLog(@"点赞....");
 }
 
 @end
