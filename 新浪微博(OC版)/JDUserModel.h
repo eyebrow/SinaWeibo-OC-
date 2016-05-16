@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger) {
+    // 没有认证：
+    JDUserVerifiedTypeNone = -1,
+    // 黄v：
+    JDUserVerifiedTypePersonal = 0,
+    // 蓝v：
+    JDUserVerifiedTypeEnterprice = 2,
+    // 媒体：
+    JDUserVerifiedTypeMedia = 3,
+    // 网站：
+    JDUserVerifiedTypeWebsite = 5,
+    // 达人：
+    JDUserVerifiedTypeDaRen = 220
+} JDUserVerifiedType;
+
 @interface JDUserModel : NSObject
 
 /**
@@ -30,6 +45,10 @@
  *  会员类型：
  */
 @property (nonatomic, strong) NSNumber *mbtype;
+/**
+ *  认证类型：
+ */
+@property (nonatomic, assign) JDUserVerifiedType verified_type;
 
 /**
  *  判断是不是会员：

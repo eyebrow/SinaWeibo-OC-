@@ -9,11 +9,12 @@
 #import "JDWeiboCell.h"
 #import "JDUserModel.h"
 #import "JDStatusModel.h"
+#import "JDWeiboPhotoCell.h"
 
 // 间隙：
 #define kMargin 8
 
-@interface JDWeiboCell ()
+@interface JDWeiboCell () <UICollectionViewDataSource>
 
 /**
  *  头像：
@@ -47,6 +48,14 @@
  *  存放以上控件的view的高度：
  */
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *originalWeiboHeight;
+/**
+ *  微博照片容器的高度：
+ */
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *photoCollectionViewHeight;
+/**
+ *  用于显示photo的collectionView：
+ */
+@property (weak, nonatomic) IBOutlet UICollectionView *photosCollectionView;
 
 @end
 
@@ -55,6 +64,9 @@
 -(void)awakeFromNib {
     // 原创微博正文最大的宽度：
     self.contentLabel.preferredMaxLayoutWidth = JDScreenWidth - kMargin * 2;
+    [self.photosCollectionView setBackgroundColor:[UIColor clearColor]];
+    self.photosCollectionView.dataSource = self;
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 +(instancetype)getWeiboCellWithTableView:(UITableView *)tableView {
@@ -90,14 +102,88 @@
         // 还原颜色：
         [self.nameLabel setTextColor:[UIColor blackColor]];
     }
+    // 认证类型：
+    /**
+    typedef NS_ENUM(NSInteger) {
+        // 没有认证：
+        JDUserVerifiedTypeNone = -1,
+        // 黄v：
+        JDUserVerifiedTypePersonal = 0,
+        // 蓝v：
+        JDUserVerifiedTypeEnterprice = 2,
+        // 媒体：
+        JDUserVerifiedTypeMedia = 3,
+        // 网站：
+        JDUserVerifiedTypeWebsite = 5,
+        // 达人：
+        JDUserVerifiedTypeDaRen = 220
+    } JDUserVerifiedType;
+     */
+    self.verifyImageView.hidden = NO;
+    switch (user.verified_type) {
+        case JDUserVerifiedTypeNone:
+            self.verifyImageView.hidden = YES;
+            break;
+        case JDUserVerifiedTypePersonal:
+            self.verifyImageView.image = [UIImage imageNamed:@"avatar_vip"];
+            break;
+        case JDUserVerifiedTypeEnterprice:
+        case JDUserVerifiedTypeMedia:
+        case JDUserVerifiedTypeWebsite:
+            self.verifyImageView.image = [UIImage imageNamed:@"avatar_enterprise_vip"];
+            break;
+        case JDUserVerifiedTypeDaRen:
+            self.verifyImageView.image = [UIImage imageNamed:@"avatar_grassroot"];
+            break;
+        default:
+            break;
+    }
+    
     self.iconImageView.contentMode = UIViewContentModeCenter;
     // cell高度：
     self.originalWeiboHeight.constant = [self.contentLabel systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + self.contentLabel.y + kMargin;
+    
+    // 设置微博配图：
+    NSInteger photosCount = status.pic_urls.count;
+    if (photosCount > 0) {
+        // 有配图：
+        // 计算行数：
+        NSInteger row = 0;
+        if (photosCount % 3 == 0) {
+            row = photosCount / 3;
+        } else {
+            row = photosCount % 3;
+        }
+        // 计算高度：
+        CGFloat photoHeight = 80;
+        CGFloat photoMargin = 10;
+        CGFloat rowHeight = photoHeight * row + (row - 1) * photoMargin;
+        self.photoCollectionViewHeight.constant = rowHeight;
+        self.originalWeiboHeight.constant += self.photoCollectionViewHeight.constant + kMargin;
+    } else {
+        // 没有配图：
+        self.photoCollectionViewHeight.constant = 0;
+    }
 }
 
 -(CGFloat)getCellHeightWithStatus:(JDStatusModel *)status {
     self.status = status;
     return self.originalWeiboHeight.constant + kMargin * 2;
+}
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.status.pic_urls.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    JDWeiboPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WEIBOPHOTOCELL" forIndexPath:indexPath];
+    JDPhotoModel *photo = self.status.pic_urls[indexPath.item];
+    cell.photo = photo;
+    return cell;
 }
 
 @end

@@ -32,6 +32,7 @@
 		EA870BBD1CE56E7500EF9392 /* JDNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA870BBB1CE56E7500EF9392 /* JDNewFeatureController.m */; };
 		EA870BBE1CE56E7500EF9392 /* JDNewFeatureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA870BBC1CE56E7500EF9392 /* JDNewFeatureController.xib */; };
 		EAA6F42C1CE388C600574B04 /* JDLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA6F42B1CE388C600574B04 /* JDLoginController.m */; };
+		EAA899971CE9956A00A1F481 /* JDWeiboPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA899961CE9956A00A1F481 /* JDWeiboPhotoCell.m */; };
 		EAA944561CDEE87800928507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA944551CDEE87800928507 /* main.m */; };
 		EAA944611CDEE87800928507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA944601CDEE87800928507 /* Assets.xcassets */; };
 		EAA9446F1CDEE87800928507 /* _____OC__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9446E1CDEE87800928507 /* _____OC__Tests.m */; };
@@ -127,6 +128,8 @@
 		EA870BBC1CE56E7500EF9392 /* JDNewFeatureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDNewFeatureController.xib; sourceTree = "<group>"; };
 		EAA6F42A1CE388C600574B04 /* JDLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDLoginController.h; sourceTree = "<group>"; };
 		EAA6F42B1CE388C600574B04 /* JDLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDLoginController.m; sourceTree = "<group>"; };
+		EAA899951CE9956A00A1F481 /* JDWeiboPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWeiboPhotoCell.h; sourceTree = "<group>"; };
+		EAA899961CE9956A00A1F481 /* JDWeiboPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWeiboPhotoCell.m; sourceTree = "<group>"; };
 		EAA944511CDEE87800928507 /* 新浪微博(OC版).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博(OC版).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA944551CDEE87800928507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAA944601CDEE87800928507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -548,6 +551,8 @@
 				EA4E3A141CE1774B00DC8612 /* JDCustomTitleView.m */,
 				EA5247E21CE6EF41001EFFCB /* JDWeiboCell.h */,
 				EA5247E31CE6EF41001EFFCB /* JDWeiboCell.m */,
+				EAA899951CE9956A00A1F481 /* JDWeiboPhotoCell.h */,
+				EAA899961CE9956A00A1F481 /* JDWeiboPhotoCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -872,6 +877,7 @@
 				EA05FEA11CE017C1004C6756 /* JDScanCodeController.m in Sources */,
 				EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */,
 				EA4E3A261CE31E6900DC8612 /* JDBaseController.m in Sources */,
+				EAA899971CE9956A00A1F481 /* JDWeiboPhotoCell.m in Sources */,
 				EAEBD4481CE77FA900147E08 /* JDComposeTextView.m in Sources */,
 				EA05FEA61CE02E32004C6756 /* JDQRCodeController.m in Sources */,
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,
