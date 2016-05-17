@@ -14,4 +14,13 @@
 
 @property (nonatomic, strong) JDPhotoModel *photo;
 
+/**
+ *  获取当前cell上的图片：
+ *
+ *  @return 
+ */
+-(UIImage *)getImageFromCurrentCell;
+
+-(UIImageView *)getImageViewFromCurrentCell;
+
 @end

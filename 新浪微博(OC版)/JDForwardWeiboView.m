@@ -14,7 +14,7 @@
 
 #define kMargin 8
 
-@interface JDForwardWeiboView () <UICollectionViewDataSource>
+@interface JDForwardWeiboView () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 /**
  *  @了谁：
@@ -36,10 +36,6 @@
  *  展示转发微博照片的collectionView的高度：
  */
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *forwardPhotoCollectionViewHeight;
-/**
- *  是否是转发：
- */
-@property (nonatomic, assign) BOOL isFroward;
 
 @end
 
@@ -50,6 +46,7 @@
     self.forwardContentLabel.preferredMaxLayoutWidth = JDScreenWidth - kMargin * 2;
     [self.forwardPhotoCollcectionView setBackgroundColor:[UIColor clearColor]];
     self.forwardPhotoCollcectionView.dataSource = self;
+    self.forwardPhotoCollcectionView.delegate = self;
 }
 
 -(void)setStatus:(JDStatusModel *)status {
@@ -119,6 +116,12 @@
     JDPhotoModel *photo = self.status.retweeted_status.pic_urls[indexPath.item];
     cell.photo = photo;
     return cell;
+}
+
+#pragma mark - UICollectionViewDelegate.
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    JDLog(@"点击了转发微博的配图....");
 }
 
 @end

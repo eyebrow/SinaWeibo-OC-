@@ -9,7 +9,6 @@
 #import "JDWeiboCell.h"
 #import "JDUserModel.h"
 #import "JDStatusModel.h"
-#import "JDWeiboPhotoCell.h"
 #import "JDOriginalWeiboView.h"
 #import "JDForwardWeiboView.h"
 #import "JDWeiboBottomView.h"

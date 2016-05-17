@@ -9,7 +9,7 @@
 #import "JDWeiboPhotoCell.h"
 #import "JDPhotoModel.h"
 
-@interface JDWeiboPhotoCell ()
+@interface JDWeiboPhotoCell () 
 
 /**
  *  图片：
@@ -35,6 +35,14 @@
     } else {
         self.gifIconImageView.hidden = YES;
     }
+}
+
+-(UIImage *)getImageFromCurrentCell {
+    return self.photoImageView.image;
+}
+
+-(UIImageView *)getImageViewFromCurrentCell {
+    return self.photoImageView;
 }
 
 @end

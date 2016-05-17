@@ -60,6 +60,14 @@
 		EAC6C06E1CEA9D1500155B8B /* JDForwardWeiboView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C06D1CEA9D1500155B8B /* JDForwardWeiboView.m */; };
 		EAC6C0721CEA9D9100155B8B /* JDWeiboBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */; };
 		EAC6C0751CEABA6300155B8B /* JDForwardPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0741CEABA6300155B8B /* JDForwardPhotoCell.m */; };
+		EAC6C08F1CEAE7C900155B8B /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0811CEAE7C900155B8B /* MJPhoto.m */; };
+		EAC6C0901CEAE7C900155B8B /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAC6C0821CEAE7C900155B8B /* MJPhotoBrowser.bundle */; };
+		EAC6C0911CEAE7C900155B8B /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0841CEAE7C900155B8B /* MJPhotoBrowser.m */; };
+		EAC6C0921CEAE7C900155B8B /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0861CEAE7C900155B8B /* MJPhotoLoadingView.m */; };
+		EAC6C0931CEAE7C900155B8B /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0881CEAE7C900155B8B /* MJPhotoProgressView.m */; };
+		EAC6C0941CEAE7C900155B8B /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C08A1CEAE7C900155B8B /* MJPhotoToolbar.m */; };
+		EAC6C0951CEAE7C900155B8B /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C08C1CEAE7C900155B8B /* MJPhotoView.m */; };
+		EAC6C0961CEAE7C900155B8B /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C08E1CEAE7C900155B8B /* SDWebImageManager+MJ.m */; };
 		EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */; };
 		EAEBD4451CE77BD100147E08 /* JDComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4441CE77BD100147E08 /* JDComposeController.m */; };
 		EAEBD4481CE77FA900147E08 /* JDComposeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4471CE77FA900147E08 /* JDComposeTextView.m */; };
@@ -186,6 +194,21 @@
 		EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWeiboBottomView.m; sourceTree = "<group>"; };
 		EAC6C0731CEABA6300155B8B /* JDForwardPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDForwardPhotoCell.h; sourceTree = "<group>"; };
 		EAC6C0741CEABA6300155B8B /* JDForwardPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDForwardPhotoCell.m; sourceTree = "<group>"; };
+		EAC6C0801CEAE7C900155B8B /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
+		EAC6C0811CEAE7C900155B8B /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
+		EAC6C0821CEAE7C900155B8B /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
+		EAC6C0831CEAE7C900155B8B /* MJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowser.h; sourceTree = "<group>"; };
+		EAC6C0841CEAE7C900155B8B /* MJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowser.m; sourceTree = "<group>"; };
+		EAC6C0851CEAE7C900155B8B /* MJPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoLoadingView.h; sourceTree = "<group>"; };
+		EAC6C0861CEAE7C900155B8B /* MJPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoLoadingView.m; sourceTree = "<group>"; };
+		EAC6C0871CEAE7C900155B8B /* MJPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoProgressView.h; sourceTree = "<group>"; };
+		EAC6C0881CEAE7C900155B8B /* MJPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoProgressView.m; sourceTree = "<group>"; };
+		EAC6C0891CEAE7C900155B8B /* MJPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoToolbar.h; sourceTree = "<group>"; };
+		EAC6C08A1CEAE7C900155B8B /* MJPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoToolbar.m; sourceTree = "<group>"; };
+		EAC6C08B1CEAE7C900155B8B /* MJPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoView.h; sourceTree = "<group>"; };
+		EAC6C08C1CEAE7C900155B8B /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
+		EAC6C08D1CEAE7C900155B8B /* SDWebImageManager+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+MJ.h"; sourceTree = "<group>"; };
+		EAC6C08E1CEAE7C900155B8B /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
 		EAEBD43C1CE75C2C00147E08 /* NSDate+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JDExtension.h"; sourceTree = "<group>"; };
 		EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JDExtension.m"; sourceTree = "<group>"; };
 		EAEBD4431CE77BD100147E08 /* JDComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDComposeController.h; sourceTree = "<group>"; };
@@ -478,6 +501,7 @@
 		EAA9448C1CDEE98300928507 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				EAC6C07A1CEAE7A200155B8B /* Frameworks */,
 				EAA944871CDEE92A00928507 /* JDWeiboHeaders.pch */,
 				EAA9448F1CDEE9F900928507 /* JDAppDelegate.h */,
 				EAA944901CDEE9F900928507 /* JDAppDelegate.m */,
@@ -634,6 +658,36 @@
 				EAC6C0741CEABA6300155B8B /* JDForwardPhotoCell.m */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		EAC6C07A1CEAE7A200155B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6C07F1CEAE7C900155B8B /* MJPhotoBrowser */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC6C07F1CEAE7C900155B8B /* MJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6C0801CEAE7C900155B8B /* MJPhoto.h */,
+				EAC6C0811CEAE7C900155B8B /* MJPhoto.m */,
+				EAC6C0821CEAE7C900155B8B /* MJPhotoBrowser.bundle */,
+				EAC6C0831CEAE7C900155B8B /* MJPhotoBrowser.h */,
+				EAC6C0841CEAE7C900155B8B /* MJPhotoBrowser.m */,
+				EAC6C0851CEAE7C900155B8B /* MJPhotoLoadingView.h */,
+				EAC6C0861CEAE7C900155B8B /* MJPhotoLoadingView.m */,
+				EAC6C0871CEAE7C900155B8B /* MJPhotoProgressView.h */,
+				EAC6C0881CEAE7C900155B8B /* MJPhotoProgressView.m */,
+				EAC6C0891CEAE7C900155B8B /* MJPhotoToolbar.h */,
+				EAC6C08A1CEAE7C900155B8B /* MJPhotoToolbar.m */,
+				EAC6C08B1CEAE7C900155B8B /* MJPhotoView.h */,
+				EAC6C08C1CEAE7C900155B8B /* MJPhotoView.m */,
+				EAC6C08D1CEAE7C900155B8B /* SDWebImageManager+MJ.h */,
+				EAC6C08E1CEAE7C900155B8B /* SDWebImageManager+MJ.m */,
+			);
+			path = MJPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		EAEBD43F1CE77B9300147E08 /* Compose */ = {
@@ -799,6 +853,7 @@
 				EAB136E41CE8C157007C9B44 /* JDMessageController.storyboard in Resources */,
 				EAB136E61CE8C209007C9B44 /* JDDiscoverController.storyboard in Resources */,
 				EAB136DA1CE81781007C9B44 /* JDComposeController.storyboard in Resources */,
+				EAC6C0901CEAE7C900155B8B /* MJPhotoBrowser.bundle in Resources */,
 				EAA944611CDEE87800928507 /* Assets.xcassets in Resources */,
 				EA05FEAE1CE0A56F004C6756 /* JDMyIDCardController.xib in Resources */,
 				EAB136E21CE8BD9E007C9B44 /* JDHomeController.storyboard in Resources */,
@@ -885,15 +940,19 @@
 				EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */,
 				EAB136E01CE8448A007C9B44 /* JDPhotoController.m in Sources */,
 				EAC6C0721CEA9D9100155B8B /* JDWeiboBottomView.m in Sources */,
+				EAC6C08F1CEAE7C900155B8B /* MJPhoto.m in Sources */,
 				EA5247ED1CE6F6C0001EFFCB /* JDUserModel.m in Sources */,
+				EAC6C0951CEAE7C900155B8B /* MJPhotoView.m in Sources */,
 				EAA944911CDEE9F900928507 /* JDAppDelegate.m in Sources */,
 				EAB136D81CE80110007C9B44 /* JDComposeToolsBar.m in Sources */,
 				EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */,
 				EAA944961CDEEC0E00928507 /* JDTabBarController.m in Sources */,
+				EAC6C0941CEAE7C900155B8B /* MJPhotoToolbar.m in Sources */,
 				EAC6C0751CEABA6300155B8B /* JDForwardPhotoCell.m in Sources */,
 				EAC6C06B1CEA9CFE00155B8B /* JDOriginalWeiboView.m in Sources */,
 				EAA944561CDEE87800928507 /* main.m in Sources */,
 				EA870BAD1CE550D800EF9392 /* JDAccountModel.m in Sources */,
+				EAC6C0921CEAE7C900155B8B /* MJPhotoLoadingView.m in Sources */,
 				EA5247E71CE6F6A1001EFFCB /* JDStatusModel.m in Sources */,
 				EAA944AD1CDEF12D00928507 /* JDNavigationController.m in Sources */,
 				EAEBD4451CE77BD100147E08 /* JDComposeController.m in Sources */,
@@ -904,6 +963,7 @@
 				EAA944B51CDEF73900928507 /* JDCustomTabBarItem.m in Sources */,
 				EA05FEAD1CE0A56F004C6756 /* JDMyIDCardController.m in Sources */,
 				EAA944A01CDEEDF700928507 /* JDProfileController.m in Sources */,
+				EAC6C0961CEAE7C900155B8B /* SDWebImageManager+MJ.m in Sources */,
 				EAA944B21CDEF71500928507 /* JDCustomTabBar.m in Sources */,
 				EAA6F42C1CE388C600574B04 /* JDLoginController.m in Sources */,
 				EA05FEA11CE017C1004C6756 /* JDScanCodeController.m in Sources */,
@@ -915,6 +975,8 @@
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,
 				EA870BB81CE56E5A00EF9392 /* JDWelcomeController.m in Sources */,
 				EA4E3A1B1CE3054D00DC8612 /* JDMenuContentController.m in Sources */,
+				EAC6C0931CEAE7C900155B8B /* MJPhotoProgressView.m in Sources */,
+				EAC6C0911CEAE7C900155B8B /* MJPhotoBrowser.m in Sources */,
 				EA4E3A151CE1774B00DC8612 /* JDCustomTitleView.m in Sources */,
 				EA5247EA1CE6F6B1001EFFCB /* JDPhotoModel.m in Sources */,
 				EA5247E41CE6EF41001EFFCB /* JDWeiboCell.m in Sources */,
