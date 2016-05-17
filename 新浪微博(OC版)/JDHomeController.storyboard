@@ -183,7 +183,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WEIBOPHOTOCELL" id="C0j-39-mmn" customClass="JDWeiboPhotoCell">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WEIBOPHOTOCELL" id="C0j-39-mmn" customClass="JDForwardPhotoCell">
                                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -216,8 +216,8 @@
                                                                 <constraint firstItem="gsr-VK-RxB" firstAttribute="leading" secondItem="C0j-39-mmn" secondAttribute="leading" id="kFC-IK-SuI"/>
                                                             </constraints>
                                                             <connections>
-                                                                <outlet property="gifIconImageView" destination="eMB-G2-YHD" id="PLD-lk-jv3"/>
-                                                                <outlet property="photoImageView" destination="gsr-VK-RxB" id="AVh-YQ-3xy"/>
+                                                                <outlet property="gifIconImageView" destination="eMB-G2-YHD" id="iip-ND-50G"/>
+                                                                <outlet property="photoImageView" destination="gsr-VK-RxB" id="Qrs-lt-qoF"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -299,7 +299,6 @@
                                             </constraints>
                                             <connections>
                                                 <outlet property="approveButton" destination="0Xq-7I-1Ek" id="K5b-yF-ImU"/>
-                                                <outlet property="bootomViewHeight" destination="1XB-s6-0Ql" id="iOo-69-74N"/>
                                                 <outlet property="forwardButton" destination="QQe-AN-74P" id="W7g-7v-grH"/>
                                                 <outlet property="reviewButton" destination="xPM-S1-4pg" id="r0w-Yv-9pp"/>
                                             </connections>

@@ -1,8 +1,3 @@
-
-
-
-
-
 //
 //  JDForwardWeiboView.m
 //  新浪微博(OC版)
@@ -14,7 +9,7 @@
 #import "JDForwardWeiboView.h"
 #import "JDStatusModel.h"
 #import "JDUserModel.h"
-#import "JDWeiboPhotoCell.h"
+#import "JDForwardPhotoCell.h"
 #import "JDPhotoModel.h"
 
 #define kMargin 8
@@ -120,7 +115,7 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    JDWeiboPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WEIBOPHOTOCELL" forIndexPath:indexPath];
+    JDForwardPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WEIBOPHOTOCELL" forIndexPath:indexPath];
     JDPhotoModel *photo = self.status.retweeted_status.pic_urls[indexPath.item];
     cell.photo = photo;
     return cell;

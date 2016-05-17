@@ -14,10 +14,6 @@
 @interface JDWeiboBottomView ()
 
 /**
- *  底部试图：
- */
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bootomViewHeight;
-/**
  *  转发按钮：
  */
 @property (weak, nonatomic) IBOutlet UIButton *forwardButton;
