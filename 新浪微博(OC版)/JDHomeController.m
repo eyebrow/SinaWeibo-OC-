@@ -78,6 +78,9 @@
  *  初始化导航栏：
  */
 -(void)setupNavigationBar {
+    // 去掉分割线：
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView setBackgroundColor:[UIColor clearColor]];
     // 设置导航条：
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem createBarButtonItemWithTitle:nil normalImageName:@"navigationbar_friendsearch" highlightedImageName:@"navigationbar_friendsearch_highlighted" target:self action:@selector(clickToSearchFriends:)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem createBarButtonItemWithTitle:nil normalImageName:@"navigationbar_pop" highlightedImageName:@"navigationbar_pop_highlighted" target:self action:@selector(clickToUseCamera:)];
