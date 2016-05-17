@@ -11,7 +11,7 @@
 #import "JDCustomTabBarItem.h"
 
 // self中一共有5个按钮：
-#define kButtonsCount 5
+#define kButtonsCount 5.0
 
 @interface JDCustomTabBar ()
 
@@ -59,7 +59,7 @@
 -(void)setupCustomTabBar {
     [self createComposeButton];
     [self setBackgroundColor:[UIColor whiteColor]];
-    self.alpha = 0.9f;
+    self.alpha = 0.95f;
 }
 
 /**
@@ -128,6 +128,11 @@
     [composeBtn addTarget:self action:@selector(clickToComposeNewWeibo:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+/**
+ *  点击撰写一条新微博：
+ *
+ *  @param sender
+ */
 -(void)clickToComposeNewWeibo:(UIButton *)sender {
     if ([self.delegate respondsToSelector:@selector(customTabBar:didClickComposeButton:)]) {
         [self.delegate customTabBar:self didClickComposeButton:sender];

@@ -150,6 +150,10 @@
  *  加载最新微博数据：
  */
 -(void)loadNewWeiboStatuses {
+    // 加载最新微博后隐藏新微博提示：
+    self.tabBarItem.badgeValue = @"";
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];

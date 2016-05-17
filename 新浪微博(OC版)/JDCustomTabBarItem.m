@@ -13,6 +13,12 @@
 // self的高度：
 #define kContentHeight contentRect.size.height
 
+@interface JDCustomTabBarItem ()
+
+@property (nonatomic, weak) UIButton *badgeButton;
+
+@end
+
 @implementation JDCustomTabBarItem
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -40,10 +46,20 @@
     self.titleLabel.font = [UIFont systemFontOfSize:12.0f];
     // 图片：
     self.imageView.contentMode = UIViewContentModeCenter;
+    // 添加提示按钮：
+    UIButton *badgeBtn = [[UIButton alloc] init];
+    [badgeBtn setBackgroundImage:[UIImage imageNamed:@"main_badge"] forState:UIControlStateNormal];
+    [self addSubview:badgeBtn];
+    badgeBtn.titleLabel.font = [UIFont systemFontOfSize:11.0f];
+    badgeBtn.hidden = YES;
+    self.badgeButton = badgeBtn;
 }
 
 -(void)layoutSubviews {
     [super layoutSubviews];
+    self.badgeButton.size = self.badgeButton.currentBackgroundImage.size;
+    self.badgeButton.y = 0;
+    self.badgeButton.x = self.width - self.badgeButton.width;
 }
 
 /**
@@ -56,6 +72,36 @@
     [self setImage:item.image forState:UIControlStateNormal];
     [self setImage:item.selectedImage forState:UIControlStateSelected];
     [self setTitle:item.title forState:UIControlStateNormal];
+    
+    // 利用KVO监听item值的改变：
+    [item addObserver:self forKeyPath:@"badgeValue" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+-(void)dealloc {
+    [_item removeObserver:self forKeyPath:@"badgeValue"];
+}
+
+/**
+ *  被监听对象的值改变时代用此方法：
+ *
+ *  @param keyPath 被监听的属性；
+ *  @param object  被监听的对象；
+ *  @param change  改变的值；
+ *  @param context 监听时传入的参数。
+ */
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    JDLog(@"%@", change);
+    NSNumber *unreadsCount = change[@"new"];
+    if (unreadsCount.integerValue > 0) {
+        self.badgeButton.hidden = NO;
+        if (unreadsCount.integerValue > 99) {
+            [self.badgeButton setTitle:@"N" forState:UIControlStateNormal];
+        } else {
+            [self.badgeButton setTitle:[unreadsCount description] forState:UIControlStateNormal];
+        }
+    } else {
+        self.badgeButton.hidden = YES;
+    }
 }
 
 /**

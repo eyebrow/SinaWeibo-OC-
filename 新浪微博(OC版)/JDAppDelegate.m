@@ -19,6 +19,10 @@
 @implementation JDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 请求用户授权：
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    
     UIWindow *window = [[UIWindow alloc] initWithFrame:JDScreenBounds];
     [window setBackgroundColor:[UIColor whiteColor]];
     JDTabBarController *tabBarVC = [[JDTabBarController alloc] init];
@@ -34,6 +38,13 @@
     }
     self.window = window;
     return YES;
+}
+
+// app进入后台后调用：
+-(void)applicationDidEnterBackground:(UIApplication *)application {
+    // 开启后台任务：
+    // 由于音乐类app的优先级最高，不易被ios杀死，所以一般可以将app注册为一个音乐app：
+    [application beginBackgroundTaskWithExpirationHandler:nil];
 }
 
 @end

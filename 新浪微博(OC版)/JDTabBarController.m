@@ -14,6 +14,9 @@
 #import "JDNavigationController.h"
 #import "JDCustomTabBar.h"
 #import "JDComposeController.h"
+#import "JDAccountModel.h"
+
+#define kUnreadURL @"https://rm.api.weibo.com/2/remind/unread_count.json"
 
 @interface JDTabBarController () <JDCustomTabBarDelegate>
 
@@ -49,6 +52,35 @@
     customTabBar.frame = self.tabBar.frame;
     customTabBar.delegate = self;
     self.customTabBar = customTabBar;
+    
+    // 开启定时器，获取未读信息：
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:20.0f target:self selector:@selector(getUnreadWeibosCount) userInfo:nil repeats:YES];
+    // 为了保证即使程序进入后台也能够获取未读信息，所以此时应该把timmer加入runloop：
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+/**
+ *  获取未读微博的数量：
+ */
+-(void)getUnreadWeibosCount {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"access_token"] = account.access_token;
+    parameters[@"uid"] = account.uid;
+    
+    [manager GET:kUnreadURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        JDLog(@"获取未读微博信息成功....");
+        NSNumber *unreadsCount = responseObject[@"status"];
+        if (unreadsCount.integerValue > 0) {
+            // 有未读数据：
+            self.homeVC.tabBarItem.badgeValue = [unreadsCount description];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        JDLog(@"获取未读微博信息失败.... %@", error);
+    }];
 }
 
 // 视图即将加载时调用：
@@ -130,6 +162,22 @@
 -(void)customTabBar:(JDCustomTabBar *)customTabBar didClickWithStartPoint:(NSInteger)startPoint endPoint:(NSInteger)endPoint {
     // 一行代码切换控制器：
     self.selectedIndex = endPoint;
+    // 拿到当前控制器：
+    JDNavigationController *navVC = self.selectedViewController;
+    UIViewController *vc = navVC.topViewController;
+    
+    // 当在首页点击首页按钮时，如果有新微博则刷新微博，如果没有则会到最顶部：
+    if ([vc isKindOfClass:[JDHomeController class]]) {
+        if (self.homeVC.tabBarItem.badgeValue.integerValue > 0) {
+            JDLog(@"下拉刷新....");
+            [self.homeVC.tableView.mj_header beginRefreshing];
+        } else {
+            JDLog(@"回滚到顶部....");
+            // 取出顶部cell：
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+            [self.homeVC.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        }
+    }
 }
 
 -(void)customTabBar:(JDCustomTabBar *)customTabBar didClickComposeButton:(UIButton *)composeBtn {
