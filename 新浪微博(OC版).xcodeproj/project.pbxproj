@@ -56,6 +56,9 @@
 		EAB136E41CE8C157007C9B44 /* JDMessageController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136E31CE8C157007C9B44 /* JDMessageController.storyboard */; };
 		EAB136E61CE8C209007C9B44 /* JDDiscoverController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136E51CE8C209007C9B44 /* JDDiscoverController.storyboard */; };
 		EAB136E81CE8C21C007C9B44 /* JDProfileController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB136E71CE8C21C007C9B44 /* JDProfileController.storyboard */; };
+		EAC6C06B1CEA9CFE00155B8B /* JDOriginalWeiboView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C06A1CEA9CFE00155B8B /* JDOriginalWeiboView.m */; };
+		EAC6C06E1CEA9D1500155B8B /* JDForwardWeiboView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C06D1CEA9D1500155B8B /* JDForwardWeiboView.m */; };
+		EAC6C0721CEA9D9100155B8B /* JDWeiboBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */; };
 		EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */; };
 		EAEBD4451CE77BD100147E08 /* JDComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4441CE77BD100147E08 /* JDComposeController.m */; };
 		EAEBD4481CE77FA900147E08 /* JDComposeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4471CE77FA900147E08 /* JDComposeTextView.m */; };
@@ -174,6 +177,12 @@
 		EAB136E31CE8C157007C9B44 /* JDMessageController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDMessageController.storyboard; sourceTree = "<group>"; };
 		EAB136E51CE8C209007C9B44 /* JDDiscoverController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDDiscoverController.storyboard; sourceTree = "<group>"; };
 		EAB136E71CE8C21C007C9B44 /* JDProfileController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JDProfileController.storyboard; sourceTree = "<group>"; };
+		EAC6C0691CEA9CFE00155B8B /* JDOriginalWeiboView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDOriginalWeiboView.h; sourceTree = "<group>"; };
+		EAC6C06A1CEA9CFE00155B8B /* JDOriginalWeiboView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDOriginalWeiboView.m; sourceTree = "<group>"; };
+		EAC6C06C1CEA9D1500155B8B /* JDForwardWeiboView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDForwardWeiboView.h; sourceTree = "<group>"; };
+		EAC6C06D1CEA9D1500155B8B /* JDForwardWeiboView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDForwardWeiboView.m; sourceTree = "<group>"; };
+		EAC6C0701CEA9D9100155B8B /* JDWeiboBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWeiboBottomView.h; sourceTree = "<group>"; };
+		EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWeiboBottomView.m; sourceTree = "<group>"; };
 		EAEBD43C1CE75C2C00147E08 /* NSDate+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JDExtension.h"; sourceTree = "<group>"; };
 		EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JDExtension.m"; sourceTree = "<group>"; };
 		EAEBD4431CE77BD100147E08 /* JDComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDComposeController.h; sourceTree = "<group>"; };
@@ -553,6 +562,12 @@
 				EA5247E31CE6EF41001EFFCB /* JDWeiboCell.m */,
 				EAA899951CE9956A00A1F481 /* JDWeiboPhotoCell.h */,
 				EAA899961CE9956A00A1F481 /* JDWeiboPhotoCell.m */,
+				EAC6C0691CEA9CFE00155B8B /* JDOriginalWeiboView.h */,
+				EAC6C06A1CEA9CFE00155B8B /* JDOriginalWeiboView.m */,
+				EAC6C06C1CEA9D1500155B8B /* JDForwardWeiboView.h */,
+				EAC6C06D1CEA9D1500155B8B /* JDForwardWeiboView.m */,
+				EAC6C0701CEA9D9100155B8B /* JDWeiboBottomView.h */,
+				EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -852,14 +867,17 @@
 				EA5247E11CE6D1B2001EFFCB /* UIWindow+JDExtension.m in Sources */,
 				EA870BBD1CE56E7500EF9392 /* JDNewFeatureController.m in Sources */,
 				EAA944A41CDEEE0D00928507 /* JDMessageController.m in Sources */,
+				EAC6C06E1CEA9D1500155B8B /* JDForwardWeiboView.m in Sources */,
 				EA4E3A211CE30FBB00DC8612 /* JDCustomSearchBar.m in Sources */,
 				EA05FEA91CE02E4E004C6756 /* JDBarCodeController.m in Sources */,
 				EAB136E01CE8448A007C9B44 /* JDPhotoController.m in Sources */,
+				EAC6C0721CEA9D9100155B8B /* JDWeiboBottomView.m in Sources */,
 				EA5247ED1CE6F6C0001EFFCB /* JDUserModel.m in Sources */,
 				EAA944911CDEE9F900928507 /* JDAppDelegate.m in Sources */,
 				EAB136D81CE80110007C9B44 /* JDComposeToolsBar.m in Sources */,
 				EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */,
 				EAA944961CDEEC0E00928507 /* JDTabBarController.m in Sources */,
+				EAC6C06B1CEA9CFE00155B8B /* JDOriginalWeiboView.m in Sources */,
 				EAA944561CDEE87800928507 /* main.m in Sources */,
 				EA870BAD1CE550D800EF9392 /* JDAccountModel.m in Sources */,
 				EA5247E71CE6F6A1001EFFCB /* JDStatusModel.m in Sources */,

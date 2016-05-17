@@ -23,7 +23,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="499.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-tR-UcA" userLabel="原创微博">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIN-tR-UcA" userLabel="原创微博" customClass="JDOriginalWeiboView">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G7c-Me-gtE">
@@ -142,8 +142,20 @@
                                                 <constraint firstItem="RgF-2L-7kO" firstAttribute="top" secondItem="g0X-NO-mJI" secondAttribute="bottom" constant="8" id="ma7-y9-VD8"/>
                                                 <constraint firstItem="9Tl-Ae-X3a" firstAttribute="top" secondItem="G7c-Me-gtE" secondAttribute="top" id="zKa-nY-ZVg"/>
                                             </constraints>
+                                            <connections>
+                                                <outlet property="contentLabel" destination="g0X-NO-mJI" id="GwG-LD-cKm"/>
+                                                <outlet property="iconImageView" destination="G7c-Me-gtE" id="YKG-Js-yqb"/>
+                                                <outlet property="nameLabel" destination="9Tl-Ae-X3a" id="l0l-3p-PXN"/>
+                                                <outlet property="originalWeiboHeight" destination="5bi-Go-Vpc" id="73e-it-Dvb"/>
+                                                <outlet property="photoCollectionViewHeight" destination="mas-67-QXk" id="dgK-MF-YTg"/>
+                                                <outlet property="photosCollectionView" destination="RgF-2L-7kO" id="7Pa-Sb-hRL"/>
+                                                <outlet property="sourceLabel" destination="wJW-g7-kYx" id="yWS-oS-65T"/>
+                                                <outlet property="timeLabel" destination="Kof-22-hbp" id="qxl-XL-D5K"/>
+                                                <outlet property="verifyImageView" destination="B76-by-DZ9" id="K9W-xx-yiQ"/>
+                                                <outlet property="vipImageView" destination="buS-eH-Zv2" id="8ig-Bw-PgO"/>
+                                            </connections>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9N-eB-oiI" userLabel="转发微博">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9N-eB-oiI" userLabel="转发微博" customClass="JDForwardWeiboView">
                                             <rect key="frame" x="0.0" y="200" width="600" height="200"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvT-uB-ea4">
@@ -221,8 +233,15 @@
                                                 <constraint firstItem="iV1-dM-S4R" firstAttribute="top" secondItem="HvT-uB-ea4" secondAttribute="bottom" constant="10" id="qXX-Ef-SU8"/>
                                                 <constraint firstItem="iV1-dM-S4R" firstAttribute="leading" secondItem="HvT-uB-ea4" secondAttribute="leading" id="reU-aq-8wi"/>
                                             </constraints>
+                                            <connections>
+                                                <outlet property="forwardContentLabel" destination="iV1-dM-S4R" id="2WA-Os-pfy"/>
+                                                <outlet property="forwardNameLabel" destination="HvT-uB-ea4" id="S6q-RJ-afy"/>
+                                                <outlet property="forwardPhotoCollcectionView" destination="hcx-S5-rny" id="rJ0-XL-Iel"/>
+                                                <outlet property="forwardPhotoCollectionViewHeight" destination="kgi-TC-gnQ" id="qWf-MV-FJe"/>
+                                                <outlet property="forwardViewHeight" destination="ijY-gr-G6C" id="6qv-aO-G0c"/>
+                                            </connections>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKh-5q-iYQ">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKh-5q-iYQ" customClass="JDWeiboBottomView">
                                             <rect key="frame" x="0.0" y="400" width="600" height="33"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQe-AN-74P">
@@ -234,7 +253,7 @@
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="clickToForward:" destination="1TJ-WI-NPD" eventType="touchUpInside" id="zar-lC-BAN"/>
+                                                        <action selector="clickToForward:" destination="GKh-5q-iYQ" eventType="touchUpInside" id="3di-Wb-cEZ"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xq-7I-1Ek">
@@ -246,7 +265,7 @@
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="clickToApprove:" destination="1TJ-WI-NPD" eventType="touchUpInside" id="GZT-av-vXs"/>
+                                                        <action selector="clickToApprove:" destination="GKh-5q-iYQ" eventType="touchUpInside" id="yIM-YI-Aav"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPM-S1-4pg">
@@ -258,7 +277,7 @@
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="clickToPublishReview:" destination="1TJ-WI-NPD" eventType="touchUpInside" id="kOi-Cp-hue"/>
+                                                        <action selector="clickToPublishReview:" destination="GKh-5q-iYQ" eventType="touchUpInside" id="dqX-2h-469"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -278,6 +297,12 @@
                                                 <constraint firstItem="0Xq-7I-1Ek" firstAttribute="height" secondItem="QQe-AN-74P" secondAttribute="height" id="y7m-Pf-gEu"/>
                                                 <constraint firstAttribute="trailing" secondItem="0Xq-7I-1Ek" secondAttribute="trailing" id="yCL-Jd-tzk"/>
                                             </constraints>
+                                            <connections>
+                                                <outlet property="approveButton" destination="0Xq-7I-1Ek" id="K5b-yF-ImU"/>
+                                                <outlet property="bootomViewHeight" destination="1XB-s6-0Ql" id="iOo-69-74N"/>
+                                                <outlet property="forwardButton" destination="QQe-AN-74P" id="W7g-7v-grH"/>
+                                                <outlet property="reviewButton" destination="xPM-S1-4pg" id="r0w-Yv-9pp"/>
+                                            </connections>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -294,26 +319,9 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.44081095657597769" green="0.84748362194954607" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="approveButton" destination="0Xq-7I-1Ek" id="8IX-4F-W5Y"/>
-                                    <outlet property="bootomViewHeight" destination="1XB-s6-0Ql" id="uiK-KZ-6Ll"/>
-                                    <outlet property="contentLabel" destination="g0X-NO-mJI" id="cao-6R-xSd"/>
-                                    <outlet property="forwardButton" destination="QQe-AN-74P" id="Jux-fM-21j"/>
-                                    <outlet property="forwardContentLabel" destination="iV1-dM-S4R" id="I70-5z-6y5"/>
-                                    <outlet property="forwardNameLabel" destination="HvT-uB-ea4" id="2bu-vK-08J"/>
-                                    <outlet property="forwardPhotoCollcectionView" destination="hcx-S5-rny" id="4we-b7-0PY"/>
-                                    <outlet property="forwardPhotoCollectionViewHeight" destination="kgi-TC-gnQ" id="f5v-9v-TTp"/>
-                                    <outlet property="forwardView" destination="L9N-eB-oiI" id="ggN-26-S45"/>
-                                    <outlet property="forwardViewHeight" destination="ijY-gr-G6C" id="haQ-KJ-Clf"/>
-                                    <outlet property="iconImageView" destination="G7c-Me-gtE" id="NJT-0E-pSh"/>
-                                    <outlet property="nameLabel" destination="9Tl-Ae-X3a" id="mTa-PY-FtS"/>
-                                    <outlet property="originalWeiboHeight" destination="5bi-Go-Vpc" id="roJ-w4-V2c"/>
-                                    <outlet property="photoCollectionViewHeight" destination="mas-67-QXk" id="b8h-VA-jvx"/>
-                                    <outlet property="photosCollectionView" destination="RgF-2L-7kO" id="sGe-sE-mnD"/>
-                                    <outlet property="reviewButton" destination="xPM-S1-4pg" id="uV5-0X-eTv"/>
-                                    <outlet property="sourceLabel" destination="wJW-g7-kYx" id="eNS-2g-h3G"/>
-                                    <outlet property="timeLabel" destination="Kof-22-hbp" id="438-BG-EZG"/>
-                                    <outlet property="verifyImageView" destination="B76-by-DZ9" id="nVq-ye-dNU"/>
-                                    <outlet property="vipImageView" destination="buS-eH-Zv2" id="tus-1u-m5s"/>
+                                    <outlet property="forwardWeiboView" destination="L9N-eB-oiI" id="toi-xQ-7lC"/>
+                                    <outlet property="originalWeiboView" destination="hIN-tR-UcA" id="6Kc-Bg-Day"/>
+                                    <outlet property="weiboBottomView" destination="GKh-5q-iYQ" id="6Wg-FU-whx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
