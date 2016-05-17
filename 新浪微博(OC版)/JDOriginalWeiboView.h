@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JDBaseWeiboView.h"
 
-@class JDStatusModel;
-
-@interface JDOriginalWeiboView : UIView
-
-@property (nonatomic, strong) JDStatusModel *status;
+@interface JDOriginalWeiboView : JDBaseWeiboView
 
 @end

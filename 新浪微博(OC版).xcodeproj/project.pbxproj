@@ -59,7 +59,6 @@
 		EAC6C06B1CEA9CFE00155B8B /* JDOriginalWeiboView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C06A1CEA9CFE00155B8B /* JDOriginalWeiboView.m */; };
 		EAC6C06E1CEA9D1500155B8B /* JDForwardWeiboView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C06D1CEA9D1500155B8B /* JDForwardWeiboView.m */; };
 		EAC6C0721CEA9D9100155B8B /* JDWeiboBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */; };
-		EAC6C0751CEABA6300155B8B /* JDForwardPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0741CEABA6300155B8B /* JDForwardPhotoCell.m */; };
 		EAC6C08F1CEAE7C900155B8B /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0811CEAE7C900155B8B /* MJPhoto.m */; };
 		EAC6C0901CEAE7C900155B8B /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAC6C0821CEAE7C900155B8B /* MJPhotoBrowser.bundle */; };
 		EAC6C0911CEAE7C900155B8B /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0841CEAE7C900155B8B /* MJPhotoBrowser.m */; };
@@ -68,6 +67,7 @@
 		EAC6C0941CEAE7C900155B8B /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C08A1CEAE7C900155B8B /* MJPhotoToolbar.m */; };
 		EAC6C0951CEAE7C900155B8B /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C08C1CEAE7C900155B8B /* MJPhotoView.m */; };
 		EAC6C0961CEAE7C900155B8B /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C08E1CEAE7C900155B8B /* SDWebImageManager+MJ.m */; };
+		EAC6C0991CEB04D800155B8B /* JDBaseWeiboView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC6C0981CEB04D800155B8B /* JDBaseWeiboView.m */; };
 		EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */; };
 		EAEBD4451CE77BD100147E08 /* JDComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4441CE77BD100147E08 /* JDComposeController.m */; };
 		EAEBD4481CE77FA900147E08 /* JDComposeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEBD4471CE77FA900147E08 /* JDComposeTextView.m */; };
@@ -192,8 +192,6 @@
 		EAC6C06D1CEA9D1500155B8B /* JDForwardWeiboView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDForwardWeiboView.m; sourceTree = "<group>"; };
 		EAC6C0701CEA9D9100155B8B /* JDWeiboBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWeiboBottomView.h; sourceTree = "<group>"; };
 		EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWeiboBottomView.m; sourceTree = "<group>"; };
-		EAC6C0731CEABA6300155B8B /* JDForwardPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDForwardPhotoCell.h; sourceTree = "<group>"; };
-		EAC6C0741CEABA6300155B8B /* JDForwardPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDForwardPhotoCell.m; sourceTree = "<group>"; };
 		EAC6C0801CEAE7C900155B8B /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
 		EAC6C0811CEAE7C900155B8B /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
 		EAC6C0821CEAE7C900155B8B /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
@@ -209,6 +207,8 @@
 		EAC6C08C1CEAE7C900155B8B /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
 		EAC6C08D1CEAE7C900155B8B /* SDWebImageManager+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+MJ.h"; sourceTree = "<group>"; };
 		EAC6C08E1CEAE7C900155B8B /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
+		EAC6C0971CEB04D800155B8B /* JDBaseWeiboView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDBaseWeiboView.h; sourceTree = "<group>"; };
+		EAC6C0981CEB04D800155B8B /* JDBaseWeiboView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDBaseWeiboView.m; sourceTree = "<group>"; };
 		EAEBD43C1CE75C2C00147E08 /* NSDate+JDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JDExtension.h"; sourceTree = "<group>"; };
 		EAEBD43D1CE75C2C00147E08 /* NSDate+JDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JDExtension.m"; sourceTree = "<group>"; };
 		EAEBD4431CE77BD100147E08 /* JDComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDComposeController.h; sourceTree = "<group>"; };
@@ -592,6 +592,8 @@
 				EAC6C06D1CEA9D1500155B8B /* JDForwardWeiboView.m */,
 				EAC6C0701CEA9D9100155B8B /* JDWeiboBottomView.h */,
 				EAC6C0711CEA9D9100155B8B /* JDWeiboBottomView.m */,
+				EAC6C0971CEB04D800155B8B /* JDBaseWeiboView.h */,
+				EAC6C0981CEB04D800155B8B /* JDBaseWeiboView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -654,8 +656,6 @@
 				EA5247E31CE6EF41001EFFCB /* JDWeiboCell.m */,
 				EAA899951CE9956A00A1F481 /* JDWeiboPhotoCell.h */,
 				EAA899961CE9956A00A1F481 /* JDWeiboPhotoCell.m */,
-				EAC6C0731CEABA6300155B8B /* JDForwardPhotoCell.h */,
-				EAC6C0741CEABA6300155B8B /* JDForwardPhotoCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -948,7 +948,6 @@
 				EA870BB01CE55AB300EF9392 /* NSString+JDExtension.m in Sources */,
 				EAA944961CDEEC0E00928507 /* JDTabBarController.m in Sources */,
 				EAC6C0941CEAE7C900155B8B /* MJPhotoToolbar.m in Sources */,
-				EAC6C0751CEABA6300155B8B /* JDForwardPhotoCell.m in Sources */,
 				EAC6C06B1CEA9CFE00155B8B /* JDOriginalWeiboView.m in Sources */,
 				EAA944561CDEE87800928507 /* main.m in Sources */,
 				EA870BAD1CE550D800EF9392 /* JDAccountModel.m in Sources */,
@@ -970,6 +969,7 @@
 				EAEBD43E1CE75C2C00147E08 /* NSDate+JDExtension.m in Sources */,
 				EA4E3A261CE31E6900DC8612 /* JDBaseController.m in Sources */,
 				EAA899971CE9956A00A1F481 /* JDWeiboPhotoCell.m in Sources */,
+				EAC6C0991CEB04D800155B8B /* JDBaseWeiboView.m in Sources */,
 				EAEBD4481CE77FA900147E08 /* JDComposeTextView.m in Sources */,
 				EA05FEA61CE02E32004C6756 /* JDQRCodeController.m in Sources */,
 				EAA944AA1CDEEF5C00928507 /* UIImage+JDExtension.m in Sources */,

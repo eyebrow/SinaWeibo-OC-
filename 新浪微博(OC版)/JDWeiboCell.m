@@ -49,7 +49,7 @@
 -(void)setStatus:(JDStatusModel *)status {
     _status = status;
     self.originalWeiboView.status = status;
-    self.forwardWeiboView.status = status;
+    self.forwardWeiboView.status = status.retweeted_status;
     self.weiboBottomView.status = status;
     
     // 判断是否有转发微博：

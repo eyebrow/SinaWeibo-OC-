@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JDBaseWeiboView.h"
 
 @class JDStatusModel;
 
-@interface JDForwardWeiboView : UIView
-
-@property (nonatomic, strong) JDStatusModel *status;
+@interface JDForwardWeiboView : JDBaseWeiboView
 
 @property (nonatomic, assign) CGFloat forwardHeight;
 

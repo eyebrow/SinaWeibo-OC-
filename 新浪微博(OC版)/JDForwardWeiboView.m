@@ -7,14 +7,10 @@
 //
 
 #import "JDForwardWeiboView.h"
-#import "JDStatusModel.h"
-#import "JDUserModel.h"
-#import "JDForwardPhotoCell.h"
-#import "JDPhotoModel.h"
 
 #define kMargin 8
 
-@interface JDForwardWeiboView () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface JDForwardWeiboView ()
 
 /**
  *  @了谁：
@@ -45,13 +41,11 @@
     // 转发微博正文最大的宽度：
     self.forwardContentLabel.preferredMaxLayoutWidth = JDScreenWidth - kMargin * 2;
     [self.forwardPhotoCollcectionView setBackgroundColor:[UIColor clearColor]];
-    self.forwardPhotoCollcectionView.dataSource = self;
-    self.forwardPhotoCollcectionView.delegate = self;
 }
 
 -(void)setStatus:(JDStatusModel *)status {
-    _status = status;
-    JDUserModel *user = status.retweeted_status.user;
+    [super setStatus:status];
+    JDUserModel *user = status.user;
     [self setupForwardWeiboTextWithStatus:status user:user];
     [self setupForwardWeiboPhotoWithStatus:status user:user];
 }
@@ -64,7 +58,7 @@
  */
 -(void)setupForwardWeiboTextWithStatus:(JDStatusModel *)status user:(JDUserModel *)user {
     // 判断微博是否有转发：
-    self.forwardNameLabel.text = [NSString stringWithFormat:@"@%@", status.retweeted_status.user.name];
+    self.forwardNameLabel.text = [NSString stringWithFormat:@"@%@", status.user.name];
     self.forwardContentLabel.text = status.retweeted_status.text;
     self.forwardViewHeight.constant = [self.forwardContentLabel systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + self.forwardContentLabel.y + kMargin;
 }
@@ -76,7 +70,7 @@
  *  @param user
  */
 -(void)setupForwardWeiboPhotoWithStatus:(JDStatusModel *)status user:(JDUserModel *)user {
-    NSInteger photosCount = status.retweeted_status.pic_urls.count;
+    NSInteger photosCount = status.pic_urls.count;
     if (photosCount > 0) {
         NSInteger row = 0;
         if (photosCount %3 == 0) {
@@ -99,29 +93,6 @@
 -(void)setForwardHeight:(CGFloat)forwardHeight {
     _forwardHeight = forwardHeight;
     self.forwardViewHeight.constant = forwardHeight;
-}
-
-#pragma mark - UICollectionViewDataSource.
-
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.status.retweeted_status.pic_urls.count;
-}
-
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    JDForwardPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WEIBOPHOTOCELL" forIndexPath:indexPath];
-    JDPhotoModel *photo = self.status.retweeted_status.pic_urls[indexPath.item];
-    cell.photo = photo;
-    return cell;
-}
-
-#pragma mark - UICollectionViewDelegate.
-
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    JDLog(@"点击了转发微博的配图....");
 }
 
 @end

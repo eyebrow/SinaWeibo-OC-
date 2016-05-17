@@ -8,18 +8,10 @@
 //
 
 #import "JDOriginalWeiboView.h"
-#import "JDStatusModel.h"
-#import "JDUserModel.h"
-#import "JDWeiboPhotoCell.h"
-#import "JDPhotoModel.h"
-#import "MJPhoto.h"
-#import "MJPhotoBrowser.h"
 
 #define kMargin 8
 
-@interface JDOriginalWeiboView () <UICollectionViewDataSource, UICollectionViewDelegate> {
-    UIWindow *_window;
-}
+@interface JDOriginalWeiboView ()
 
 /**
  *  头像：
@@ -61,10 +53,6 @@
  *  用于显示photo的collectionView：
  */
 @property (weak, nonatomic) IBOutlet UICollectionView *photosCollectionView;
-/**
- *  蒙板：
- */
-@property (nonatomic, weak) UIButton *coverButton;
 
 @end
 
@@ -74,12 +62,10 @@
     // 原创微博正文最大的宽度：
     self.contentLabel.preferredMaxLayoutWidth = JDScreenWidth - kMargin * 2;
     [self.photosCollectionView setBackgroundColor:[UIColor clearColor]];
-    self.photosCollectionView.dataSource = self;
-    self.photosCollectionView.delegate = self;
 }
 
 -(void)setStatus:(JDStatusModel *)status {
-    _status = status;
+    [super setStatus:status];
     JDUserModel *user = status.user;
     [self setupOriginalWeiboTextWithStatus:status user:user];
     [self setupOriginalWeiboPhotoWithStatus:status user:user];
@@ -187,78 +173,6 @@
         // 没有配图：
         self.photoCollectionViewHeight.constant = 0;
     }
-}
-
-#pragma mark - UICollectionViewDataSource.
-
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.status.pic_urls.count;
-}
-
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    JDWeiboPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WEIBOPHOTOCELL" forIndexPath:indexPath];
-    JDPhotoModel *photo = self.status.pic_urls[indexPath.item];
-    cell.photo = photo;
-    return cell;
-}
-
-#pragma mark - UICollectionViewDelegate.
-
-// collectionView的item被电击时调用：
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    JDLog(@"点击了原创微博的配图....");
-    /**
-    _window = [UIApplication sharedApplication].keyWindow;
-    // 添加蒙版：
-    UIButton *coverBtn = [[UIButton alloc] initWithFrame:JDScreenBounds];
-    [coverBtn setBackgroundColor:[UIColor blackColor]];
-    [_window addSubview:coverBtn];
-    [coverBtn addTarget:self action:@selector(clickToClosePhotosBrowser:) forControlEvents:UIControlEventTouchUpInside];
-    self.coverButton = coverBtn;
-    // 添加imageView：
-    UIImageView *photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, JDScreenWidth, JDScreenWidth)];
-    [coverBtn addSubview:photoImageView];
-    // 下载大图：
-    // 取出模型：
-    JDPhotoModel *photo = self.status.pic_urls[indexPath.item];
-    [photoImageView sd_setImageWithURL:[NSURL URLWithString:photo.bmiddle_pic] placeholderImage:[UIImage imageNamed:@"avatar_default_big"]];
-    
-    // 取出当前点击cell的照片：
-    JDWeiboPhotoCell *cell = (JDWeiboPhotoCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    UIImage *photoImage = [cell getImageFromCurrentCell];
-    // 动画加载照片：
-    CGFloat x = 0;
-    CGFloat width = JDScreenWidth;
-    CGFloat height =
-     */
-    
-    // 创建图片浏览器：
-    MJPhotoBrowser *browder = [[MJPhotoBrowser alloc] init];
-    // 指定浏览器显示的内容：
-    NSMutableArray *photosArray = [NSMutableArray array];
-    for (int i = 0; i < self.status.pic_urls.count; i++) {
-        MJPhoto *photo = [[MJPhoto alloc] init];
-        JDPhotoModel *model = self.status.pic_urls[i];
-        photo.url = [NSURL URLWithString:model.bmiddle_pic];
-        JDLog(@"%@", photo.url);
-        NSIndexPath *indexP = [NSIndexPath indexPathForRow:i inSection:0];
-        JDWeiboPhotoCell *cell = (JDWeiboPhotoCell *)[collectionView cellForItemAtIndexPath:indexP];
-        photo.srcImageView = [cell getImageViewFromCurrentCell];
-        [photosArray addObject:photo];
-    }
-    browder.photos = photosArray;
-    browder.currentPhotoIndex = indexPath.item;
-    [browder show];
-}
-
--(void)clickToClosePhotosBrowser:(UIButton *)sender {
-    JDLog(@"退出照片浏览器....");
-    [self.coverButton removeFromSuperview];
-    _window = nil;
 }
 
 @end
