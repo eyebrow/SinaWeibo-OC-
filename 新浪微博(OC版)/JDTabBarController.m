@@ -77,6 +77,7 @@
         if (unreadsCount.integerValue > 0) {
             // 有未读数据：
             self.homeVC.tabBarItem.badgeValue = [unreadsCount description];
+            [UIApplication sharedApplication].applicationIconBadgeNumber = unreadsCount.integerValue;
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         JDLog(@"获取未读微博信息失败.... %@", error);
@@ -166,16 +167,22 @@
     JDNavigationController *navVC = self.selectedViewController;
     UIViewController *vc = navVC.topViewController;
     
-    // 当在首页点击首页按钮时，如果有新微博则刷新微博，如果没有则会到最顶部：
+    // 点击首页按钮才会触发：
     if ([vc isKindOfClass:[JDHomeController class]]) {
-        if (self.homeVC.tabBarItem.badgeValue.integerValue > 0) {
-            JDLog(@"下拉刷新....");
-            [self.homeVC.tableView.mj_header beginRefreshing];
-        } else {
-            JDLog(@"回滚到顶部....");
-            // 取出顶部cell：
-            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-            [self.homeVC.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        // 只有在首页点击首页时才会触发：
+        if (startPoint == 0 && endPoint == 0) {
+            // 如果有新微博则刷新微博：
+            if (self.homeVC.tabBarItem.badgeValue.integerValue > 0) {
+                JDLog(@"下拉刷新....");
+                [self.homeVC.tableView.mj_header beginRefreshing];
+            } else {
+                // 如果没有则会到最顶部：
+                JDLog(@"回滚到顶部....");
+                // 取出顶部cell：
+                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+                [self.homeVC.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+                
+            }
         }
     }
 }
