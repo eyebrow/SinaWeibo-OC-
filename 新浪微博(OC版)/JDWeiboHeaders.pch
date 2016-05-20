@@ -33,7 +33,6 @@
 
 #import "UIImageView+WebCache.h"
 #import "MJExtension.h"
-#import "AFNetworking.h"
 #import "SVProgressHUD.h"
 #import "MJRefresh.h"
 #import "JDNetworkTools.h"

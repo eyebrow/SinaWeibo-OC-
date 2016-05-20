@@ -8,6 +8,7 @@
 //
 
 #import "JDNetworkTools.h"
+#import "AFNetworking.h"
 #import "JDAccountModel.h"
 #import "JDUserModel.h"
 #import "JDUnreadCountModel.h"

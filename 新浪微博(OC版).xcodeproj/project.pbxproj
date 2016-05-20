@@ -408,6 +408,20 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		EA9D966F1CEEF85000D78E69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EA9D96701CEEF85600D78E69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		EAA6F4261CE3869600574B04 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -515,6 +529,8 @@
 		EAA944891CDEE93300928507 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EA9D96701CEEF85600D78E69 /* View */,
+				EA9D966F1CEEF85000D78E69 /* Model */,
 				EAA9449D1CDEEDE400928507 /* Controller */,
 			);
 			name = Profile;
