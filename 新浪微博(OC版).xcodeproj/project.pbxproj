@@ -284,15 +284,6 @@
 			name = ScanCode;
 			sourceTree = "<group>";
 		};
-		EA0A10E01CEBF2C00071B913 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				EA0A10E11CEBF3220071B913 /* JDNetworkTools.h */,
-				EA0A10E21CEBF3220071B913 /* JDNetworkTools.m */,
-			);
-			name = Tools;
-			sourceTree = "<group>";
-		};
 		EA4E3A1C1CE30EDE00DC8612 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +379,31 @@
 		EA870BB41CE56E2F00EF9392 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EA9D966D1CEEF23500D78E69 /* NetworkTools */ = {
+			isa = PBXGroup;
+			children = (
+				EA0A10E11CEBF3220071B913 /* JDNetworkTools.h */,
+				EA0A10E21CEBF3220071B913 /* JDNetworkTools.m */,
+				EA9D966E1CEEF24900D78E69 /* Model */,
+			);
+			name = NetworkTools;
+			sourceTree = "<group>";
+		};
+		EA9D966E1CEEF24900D78E69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA9D965B1CED8CAD00D78E69 /* JDUnreadCountModel.h */,
+				EA9D965C1CED8CAD00D78E69 /* JDUnreadCountModel.m */,
+				EA9D965E1CEDB81000D78E69 /* JDStatusRequestModel.h */,
+				EA9D965F1CEDB81000D78E69 /* JDStatusRequestModel.m */,
+				EA9D96671CEDF24B00D78E69 /* JDGetStatusModel.h */,
+				EA9D96681CEDF24B00D78E69 /* JDGetStatusModel.m */,
+				EA9D966A1CEDF30E00D78E69 /* JDGetStatusResultModel.h */,
+				EA9D966B1CEDF30E00D78E69 /* JDGetStatusResultModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -525,7 +541,6 @@
 		EAA9448C1CDEE98300928507 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				EA0A10E01CEBF2C00071B913 /* Tools */,
 				EAC6C07A1CEAE7A200155B8B /* Frameworks */,
 				EAA944871CDEE92A00928507 /* JDWeiboHeaders.pch */,
 				EAA9448F1CDEE9F900928507 /* JDAppDelegate.h */,
@@ -566,6 +581,7 @@
 		EAA944921CDEEAA000928507 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA9D966D1CEEF23500D78E69 /* NetworkTools */,
 				EAEBD43F1CE77B9300147E08 /* Compose */,
 				EA870BB11CE56DE100EF9392 /* NewFeature */,
 				EAA6F4261CE3869600574B04 /* OAuth */,
@@ -632,10 +648,6 @@
 				EA5247E91CE6F6B1001EFFCB /* JDPhotoModel.m */,
 				EA5247EB1CE6F6C0001EFFCB /* JDUserModel.h */,
 				EA5247EC1CE6F6C0001EFFCB /* JDUserModel.m */,
-				EA9D96671CEDF24B00D78E69 /* JDGetStatusModel.h */,
-				EA9D96681CEDF24B00D78E69 /* JDGetStatusModel.m */,
-				EA9D966A1CEDF30E00D78E69 /* JDGetStatusResultModel.h */,
-				EA9D966B1CEDF30E00D78E69 /* JDGetStatusResultModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -663,10 +675,6 @@
 		EAA944AE1CDEF6F700928507 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EA9D965B1CED8CAD00D78E69 /* JDUnreadCountModel.h */,
-				EA9D965C1CED8CAD00D78E69 /* JDUnreadCountModel.m */,
-				EA9D965E1CEDB81000D78E69 /* JDStatusRequestModel.h */,
-				EA9D965F1CEDB81000D78E69 /* JDStatusRequestModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
