@@ -1,0 +1,15 @@
+//
+//  JDGetStatusResultModel.h
+//  新浪微博(OC版)
+//
+//  Created by JiangDi on 16/5/19.
+//  Copyright © 2016年 Google. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface JDGetStatusResultModel : NSObject
+
+@property (nonatomic, strong) NSArray *statuses;
+
+@end

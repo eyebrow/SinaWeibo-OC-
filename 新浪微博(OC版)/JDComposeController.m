@@ -11,9 +11,7 @@
 #import "JDAccountModel.h"
 #import "JDComposeToolsBar.h"
 #import "JDPhotoController.h"
-
-#define kStatusesUpdateURL @"https://api.weibo.com/2/statuses/update.json"
-#define kStatusesUploadURL @"https://upload.api.weibo.com/2/statuses/upload.json"
+#import "JDStatusRequestModel.h"
 
 @interface JDComposeController () <UITextViewDelegate>
 
@@ -133,29 +131,20 @@
  *  发送带图片的微博
  */
 -(void)sendNewStatusWithImage {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDNetworkTools *tools = [JDNetworkTools shardNetworkTools];
     JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"access_token"] = account.access_token;
-    parameters[@"status"] = self.textView.text;
-#warning 二进制数据不能通过字典来传输。
-//    parameters[@"pic"] = [self.photoVC.photosArray firstObject];
+    JDStatusRequestModel *statusRequest = [[JDStatusRequestModel alloc] init];
+    statusRequest.access_token = account.access_token;
+    statusRequest.status = self.textView.text;
+    statusRequest.image = [self.photoVC.photosArray lastObject];
     
-    [manager POST:kStatusesUploadURL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        // 取出图片：
-        UIImage *photoImage = [self.photoVC.photosArray firstObject];
-//        JDLog(@"----------------- %@", photoImage);
-        NSData *photoData = UIImagePNGRepresentation(photoImage);
-//        JDLog(@"+++++++++++++++++ %@", photoData);
-        // 上传图片文件：
-        [formData appendPartWithFileData:photoData name:@"pic" fileName:@"photo" mimeType:@"image/png"];
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [tools sendNewStatusWithParameters:statusRequest andProgress:^(NSProgress *downloadProgress) {
+    } andResult:^(id object) {
         [self.view endEditing:YES];
         JDLog(@"发送带图片的微博成功....");
         [SVProgressHUD showSuccessWithStatus:@"发送成功"];
         [self clickToCloseComposePage:nil];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSError *error) {
         JDLog(@"发送带图片的微博失败.... %@", error);
         [SVProgressHUD showErrorWithStatus:@"发送失败"];
     }];
@@ -165,23 +154,21 @@
  *  发送纯文本微博：
  */
 -(void)sendNewStatusOnlyText {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDNetworkTools *tools = [JDNetworkTools shardNetworkTools];
     JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"access_token"] = account.access_token;
-    parameters[@"status"] = self.textView.text;
+    JDStatusRequestModel *statusRequest = [[JDStatusRequestModel alloc] init];
+    statusRequest.access_token = account.access_token;
+    statusRequest.status = self.textView.text;
     
-    [SVProgressHUD show];
-    [manager POST:kStatusesUpdateURL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        JDLog(@"发送微博成功.... %@", responseObject);
+    [tools sendNewStatusWithParameters:statusRequest andProgress:^(NSProgress *downloadProgress) {
+    } andResult:^(id object) {
+        JDLog(@"发送微博成功.... %@", object);
         [SVProgressHUD showSuccessWithStatus:@"发送成功"];
         [self clickToCloseComposePage:nil];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        JDLog(@"发送微博失败.... %@", error);
+    } failure:^(NSError *error) {
         [SVProgressHUD showErrorWithStatus:@"发送失败"];
+        JDLog(@"发送微博失败.... %@", error);
     }];
-    [SVProgressHUD dismiss];
 }
 
 // 利用segue拦截控制器切换：

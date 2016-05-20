@@ -11,12 +11,11 @@
 #import "JDAccountModel.h"
 #import "JDNewFeatureController.h"
 #import "JDWelcomeController.h"
+#import "JDNetworkTools.h"
 
-#define kAuthorizeURL @"https://api.weibo.com/oauth2/authorize"
-#define kClientID @"474455695"
-#define kRedirectURI @"http://ios.itcast.cn"
-#define kAccessToeknURL @"https://api.weibo.com/oauth2/access_token"
-#define kAppSecret @"ecb665fe78736e713b4043ddf24e4a7d"
+#define JDAuthorizeURL @"https://api.weibo.com/oauth2/authorize"
+#define JDClientID @"474455695"
+#define JDRedirectURI  @"http://ios.itcast.cn"
 
 @interface JDLoginController () <UIWebViewDelegate>
 
@@ -55,7 +54,7 @@
  *  加载登录授权页面：
  */
 -(void)loadLoginPage {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@", kAuthorizeURL, kClientID, kRedirectURI]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@", JDAuthorizeURL, JDClientID, JDRedirectURI]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     UIWebView *loginWebView = (UIWebView *)self.view;
     [loginWebView loadRequest:request];
@@ -135,31 +134,19 @@
      redirect_uri	true	string	回调地址，需需与注册应用里的回调地址一致。
      */
     
-    // 创建网络请求管理对象：
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    // 设置manager支持的类型：
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
-    // 封装请求参数：
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"client_id"] = kClientID;
-    parameters[@"client_secret"] = kAppSecret;
-    parameters[@"grant_type"] = @"authorization_code";
-    parameters[@"code"] = code;
-    parameters[@"redirect_uri"] = kRedirectURI;
-    
-    // 发送POST请求：
-    [manager POST:kAccessToeknURL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        JDLog(@"请求成功.... %@", responseObject);
+    JDNetworkTools *tools = [JDNetworkTools shardNetworkTools];
+    [tools getAccessTokenWithCode:code andProgress:^(NSProgress *downloadProgress) {
+    } andResult:^(id object) {
+        JDLog(@"请求成功.... %@", object);
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
         [window chooseRootViewController];
         // 字典转模型：
-        JDAccountModel *account = [JDAccountModel mj_objectWithKeyValues:responseObject];
+        JDAccountModel *account = (JDAccountModel *)object;
         BOOL result = [account svaeAccountToSandbox];
         if (result) {
             JDLog(@"保存授权信息成功....");
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSError *error) {
         JDLog(@"请求失败.... %@", error);
     }];
 }

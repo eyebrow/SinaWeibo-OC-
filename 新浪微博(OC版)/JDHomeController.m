@@ -16,13 +16,11 @@
 #import "JDStatusModel.h"
 #import "JDUserModel.h"
 #import "JDWeiboCell.h"
+#import "JDGetStatusResultModel.h"
+#import "JDGetStatusModel.h"
 
-// 获取用户信息的链接：
-#define kUsersInfoURL @"https://api.weibo.com/2/users/show.json"
-// 获取最新微博数据的链接：
-#define kNewWeiboStatusesURL @"https://api.weibo.com/2/statuses/home_timeline.json"
 // 获取更多微博数据的链接：
-#define kMoreWeiboStatusesURL kNewWeiboStatusesURL
+#define kMoreWeiboStatusesURL @"https://api.weibo.com/2/statuses/home_timeline.json"
 
 @interface JDHomeController () {
     UIWindow *_window;
@@ -107,24 +105,23 @@
  *  初始化用户信息：
  */
 -(void)loadUserInfo {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"access_token"] = account.access_token;
-    parameters[@"uid"] = account.uid;
-    
-    [manager GET:kUsersInfoURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        JDLog(@"获取用户信息成功.... %@", responseObject);
+    // 创建网络工具类：
+    JDNetworkTools *tools = [JDNetworkTools shardNetworkTools];
+    // 发送请求，获取用户信息：
+    [tools loadUserInfoWithProgress:^(NSProgress * _Nonnull downloadProgress) {
+    } andResutl:^(id object) {
+        JDLog(@"获取用户信息成功.... %@", object);
+        JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
+        JDUserModel *user = (JDUserModel *)object;
         // 存储用户头像：
         NSString *lastIconURLStr = account.profile_image_url;
-        NSString *currentIconUrlStr = responseObject[@"profile_image_url"];
+        NSString *currentIconUrlStr = user.profile_image_url;
         // 重新保存授权模型：
         if (lastIconURLStr != nil && ![lastIconURLStr isEqualToString:currentIconUrlStr]) {
             account.profile_image_url = currentIconUrlStr;
             [account svaeAccountToSandbox];
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSError * _Nonnull error) {
         JDLog(@"设置用户信息出错.... %@", error);
     }];
 }
@@ -154,29 +151,24 @@
     self.tabBarItem.badgeValue = @"";
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDNetworkTools *tools = [JDNetworkTools shardNetworkTools];
+    JDGetStatusModel *getStatus = [[JDGetStatusModel alloc] init];
     JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"access_token"] = account.access_token;
-    //
+    getStatus.access_token = account.access_token;
+    NSString *firstStatusID = [[self.statusesArray firstObject] idstr];
     if (self.statusesArray != nil) {
-        parameters[@"since_id"] = [[self.statusesArray firstObject] idstr];
+        getStatus.since_id = [NSNumber numberWithLongLong:firstStatusID.longLongValue];
     }
     
-    [manager GET:kNewWeiboStatusesURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        JDLog(@"加载新微博数据成功.... %@", responseObject[@"statuses"]);
-        // 字典数组转模型数组：
-        NSArray *statusModelsArray = [JDStatusModel mj_objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
-        // addObject是将一个数组本身作为元素添加到进去，而addObjectsFromArray是将一个数组中的元素一个一个取出来再加入另一个数组：
-        //        [self.statusesArray addObjectsFromArray:statusModelsArray];
-        [self.statusesArray insertObjects:statusModelsArray atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, statusModelsArray.count)]];
-        JDLog(@"微博模型数组.... %@", statusModelsArray);
-        // 刷新数据：
+    [tools loadHomeWeiboStatusesWithParameters:getStatus andProgress:^(NSProgress *downloadProgress) {
+    } andResult:^(id object) {
+        JDGetStatusResultModel *getStatusResult = (JDGetStatusResultModel *)object;
+        NSRange range = NSMakeRange(0, getStatusResult.statuses.count);
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:range];
+        [self.statusesArray insertObjects:getStatusResult.statuses atIndexes:indexSet];
         [self.tableView reloadData];
-        // 显示刷新了多少条数据：
-        [self showNewWeiboStatusesCount:statusModelsArray.count];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [self showNewWeiboStatusesCount:getStatusResult.statuses.count];
+    } failure:^(NSError *error) {
         JDLog(@"加载新微博数据失败.... %@", error);
     }];
 }
@@ -218,22 +210,22 @@
  *  加载更多微博数据：
  */
 -(void)loadMoreWeiboStatuses {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    JDNetworkTools *tools = [JDNetworkTools shardNetworkTools];
     JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"access_token"] = account.access_token;
+    JDGetStatusModel *getStatus = [[JDGetStatusModel alloc] init];
+    getStatus.access_token = account.access_token;
     // 取出数组的最后一个元素的ID：
     NSString *lastStatusesID = [[self.statusesArray lastObject] idstr];
     if (lastStatusesID != nil) {
-        parameters[@"max_id"] = @([lastStatusesID longLongValue] - 1);
+        getStatus.max_id = @([lastStatusesID longLongValue] - 1);
     }
     
-    [manager GET:kMoreWeiboStatusesURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSArray *statusModelsArray = [JDStatusModel mj_objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
-        [self.statusesArray addObjectsFromArray:statusModelsArray];
+    [tools loadHomeWeiboStatusesWithParameters:getStatus andProgress:^(NSProgress *downloadProgress) {
+    } andResult:^(id object) {
+        JDGetStatusResultModel *getStatusResult = (JDGetStatusResultModel *)object;
+        [self.statusesArray addObjectsFromArray:getStatusResult.statuses];
         [self.tableView reloadData];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSError *error) {
         
     }];
 }

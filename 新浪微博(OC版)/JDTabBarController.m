@@ -15,8 +15,8 @@
 #import "JDCustomTabBar.h"
 #import "JDComposeController.h"
 #import "JDAccountModel.h"
-
-#define kUnreadURL @"https://rm.api.weibo.com/2/remind/unread_count.json"
+#import "JDNetworkTools.h"
+#import "JDUnreadCountModel.h"
 
 @interface JDTabBarController () <JDCustomTabBarDelegate>
 
@@ -63,23 +63,18 @@
  *  获取未读微博的数量：
  */
 -(void)getUnreadWeibosCount {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    JDAccountModel *account = [JDAccountModel getAccountFromSandbox];
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"access_token"] = account.access_token;
-    parameters[@"uid"] = account.uid;
-    
-    [manager GET:kUnreadURL parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    JDNetworkTools *tools = [JDNetworkTools shardNetworkTools];
+    // 发送请求：
+    [tools getUnreadWeibosCountWithProgress:^(NSProgress *downloadProgress) {
+    } andResult:^(id object) {
         JDLog(@"获取未读微博信息成功....");
-        NSNumber *unreadsCount = responseObject[@"status"];
-        if (unreadsCount.integerValue > 0) {
+        JDUnreadCountModel *unreadCount = (JDUnreadCountModel *)object;
+        if (unreadCount.status.integerValue > 0) {
             // 有未读数据：
-            self.homeVC.tabBarItem.badgeValue = [unreadsCount description];
-            [UIApplication sharedApplication].applicationIconBadgeNumber = unreadsCount.integerValue;
+            self.homeVC.tabBarItem.badgeValue = [unreadCount.status description];
+            [UIApplication sharedApplication].applicationIconBadgeNumber = unreadCount.status.integerValue;
         }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSError *error) {
         JDLog(@"获取未读微博信息失败.... %@", error);
     }];
 }
